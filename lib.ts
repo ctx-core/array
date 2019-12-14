@@ -478,7 +478,7 @@ export function _a1__idx__invert(a1__idx:falsy|number[]):undefined|any[] {
 	}
 	return a1__idx__invert
 }
-type ctx__idx__sort = {
+export type ctx__idx__sort = {
 	a1__idx__sort:number[],
 	a1__val__sort:any[],
 }

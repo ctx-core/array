@@ -293,7 +293,7 @@ export declare function _a1__idx(count: number, start?: number): any[];
  * @example `_a1__idx__invert([2, 1, 3, 0]) -> [3, 1, 0, 2]`
  */
 export declare function _a1__idx__invert(a1__idx: falsy | number[]): undefined | any[];
-declare type ctx__idx__sort = {
+export declare type ctx__idx__sort = {
     a1__idx__sort: number[];
     a1__val__sort: any[];
 };
