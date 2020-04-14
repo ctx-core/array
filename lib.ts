@@ -824,7 +824,7 @@ export const _next_idx = _idx__next
  * @returns {Int}
  */
 export function _idx__circular(length:number, idx = 0):number {
-	return (length + (idx % length)) % length
+	return ((length + (idx % length)) % length) || 0
 }
 export const _circular_idx = _idx__circular
 /**
