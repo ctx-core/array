@@ -412,7 +412,7 @@ export declare function _fn__hash__item__idx(_item: (any: any, number: any) => a
  * @param {Array} a1
  * @returns {Object}
  */
-export declare const _hash__item__idx: (a1: false | "" | 0 | any[]) => any;
+export declare const _hash__item__idx: (a1: falsy | any[]) => any;
 /**
  * Returns a Hash where each key is `a1[idx][key]` & value is `idx`.
  * @param {Array<Object>} a1
