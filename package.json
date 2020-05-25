@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "15.5.20",
+	"version": "15.5.21",
 	"description": "ctx-core array",
 	"main": "lib.js",
 	"module": "lib.js",
@@ -30,10 +30,10 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@ctx-core/combinators": "^4.2.16",
-		"@ctx-core/function": "^13.0.5",
-		"@ctx-core/object": "^8.0.13",
-		"@ctx-core/set": "^6.1.38"
+		"@ctx-core/combinators": "^4.2.17",
+		"@ctx-core/function": "^13.0.6",
+		"@ctx-core/object": "^8.0.14",
+		"@ctx-core/set": "^6.1.39"
 	},
 	"devDependencies": {
 		"typescript": "^3.9.3"
