@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "15.5.22",
+	"version": "15.5.23",
 	"description": "ctx-core array",
 	"main": "lib.js",
 	"module": "lib.js",
@@ -31,9 +31,9 @@
 	},
 	"dependencies": {
 		"@ctx-core/combinators": "^4.2.17",
-		"@ctx-core/function": "^13.0.7",
-		"@ctx-core/object": "^8.0.15",
-		"@ctx-core/set": "^6.1.40"
+		"@ctx-core/function": "^13.0.8",
+		"@ctx-core/object": "^8.0.16",
+		"@ctx-core/set": "^6.1.41"
 	},
 	"devDependencies": {
 		"typescript": "^3.9.6"
