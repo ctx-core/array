@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "15.5.24",
+	"version": "15.5.25",
 	"description": "ctx-core array",
 	"main": "index.js",
 	"module": "index.js",
@@ -30,10 +30,10 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@ctx-core/combinators": "^4.2.17",
-		"@ctx-core/function": "^13.0.8",
-		"@ctx-core/object": "^8.1.0",
-		"@ctx-core/set": "^6.1.41"
+		"@ctx-core/combinators": "^4.2.18",
+		"@ctx-core/function": "^13.0.9",
+		"@ctx-core/object": "^8.1.1",
+		"@ctx-core/set": "^6.1.42"
 	},
 	"devDependencies": {
 		"typescript": "^3.9.6"
