@@ -15,16 +15,16 @@ import {
 	_eq,
 	eq,
 	concat,
-	_a1__wrap,
+	_wrap_a1,
 } from '@ctx-core/function'
-export { isArray, concat, _a1__wrap }
+export { isArray, concat, _wrap_a1 }
 import {
 	_union__set,
 	_intersection__set,
 	_difference__set,
 } from '@ctx-core/set'
 import { I, I__ } from '@ctx-core/combinators'
-type nowrap__a2 = any[]|any[][]
+import { a2_nowrap_type } from './a2_nowrap_type'
 type compare = (a:any, b:any)=>number
 type compare__1 = (any, number?)=>number
 type _is_match = (any, number?)=>boolean
@@ -33,7 +33,7 @@ type _val__item_key_idx = (val:any, item:any, string, number)=>any
  * @typedef {*|*[]} nowrap__a1
  */
 /**
- * @typedef {[]|*[][]} nowrap__a2
+ * @typedef {[]|*[][]} a2_nowrap_type
  */
 /**
  * @typedef {function(...*): *} fn__spread
@@ -57,104 +57,112 @@ export function _spread(fn:(...any)=>any):(a1:any|any[])=>any {
 	return a1=>spread(fn, a1)
 }
 /**
- * Returns `nowrap__a2` wrapped as a 2-dimensional array
- * @param {[]} nowrap__a2
+ * Returns `a2_nowrap_type` wrapped as a 2-dimensional array
+ * @param {[]} a2_nowrap
  * @returns {*[][]}
  */
-export function _a2__wrap(nowrap__a2:nowrap__a2):undefined|any[] {
-	return map(_a1__wrap(nowrap__a2), _a1__wrap)
+export function _wrap_a2(a2_nowrap:a2_nowrap_type):undefined|any[] {
+	return map(_wrap_a1(a2_nowrap), _wrap_a1)
 }
+export const _a2__wrap = _wrap_a2
 /**
- * Is a1__a `===` to a1__b? Checks first level equality.
+ * Is a_a1 `===` b_a1? Checks first level equality.
  * @param {*[]} a1__a
- * @param {*[]} a1__b
+ * @param {*[]} b_a1
  * @returns {Boolean}
  */
-export function _eql__a1(a1__a:any[], a1__b:any[]):boolean {
-	if (a1__a === a1__b) return true
-	if (a1__a == null || a1__b == null) return false
-	if (a1__a.length != a1__b.length) return false
-	for (let i = 0; i < a1__a.length; ++i) {
-		if (a1__a[i] !== a1__b[i]) return false
+export function _eql_a1(a_a1:any[], b_a1:any[]):boolean {
+	if (a_a1 === b_a1) return true
+	if (a_a1 == null || b_a1 == null) return false
+	if (a_a1.length != b_a1.length) return false
+	for (let i = 0; i < a_a1.length; ++i) {
+		if (a_a1[i] !== b_a1[i]) return false
 	}
 	return true
 }
+export const _eql__a1 = _eql_a1
 /**
- * Is a1__a `===` to a1__b based on `fn(a, b, i)`? Checks first level equality.
- * @param {*[]} a1__a
- * @param {*[]} a1__b
+ * Is a_a1 `===` to b_a1 based on `fn(a, b, i)`? Checks first level equality.
+ * @param {*[]} a_a1
+ * @param {*[]} b_a1
  * @param {function(*, *, Int)} fn
  * @returns {Boolean}
  */
-export function _eql__a1__fn(a1__a:any[], a1__b:any[], fn:(a:any, b:any, number)=>unknown):boolean {
-	if (a1__a === a1__b) return true
-	if (a1__a == null || a1__b == null) return false
-	if (a1__a.length != a1__b.length) return false
-	for (let i = 0; i < a1__a.length; ++i) {
-		if (!fn(a1__a[i], a1__b[i], i)) return false
+export function _eql_fn_a1(a_a1:any[], b_a1:any[], fn:(a:any, b:any, number)=>unknown):boolean {
+	if (a_a1 === b_a1) return true
+	if (a_a1 == null || b_a1 == null) return false
+	if (a_a1.length != b_a1.length) return false
+	for (let i = 0; i < a_a1.length; ++i) {
+		if (!fn(a_a1[i], b_a1[i], i)) return false
 	}
 	return true
 }
+export const _eql__a1__fn = _eql_fn_a1
 /**
- * Returns a hash of arrays grouped by each key in each `ctx` in `a1__ctx`.
- * @param {nowrap__a1} nowrap__a1__ctx
+ * Returns a hash of arrays grouped by each key in each `ctx` in `ctx_a1`.
+ * @param {a1_nowrap} ctx_a1_nowrap
  * @returns {Object.<string, Array>}
  */
-export function _hash__key__a1(nowrap__a1__ctx:any|any[]):any {
-	const a1__ctx = _a1__wrap(nowrap__a1__ctx)
-	const hash__key__a1 = {}
-	for (let i = 0; i < a1__ctx.length; i++) {
-		const ctx = a1__ctx[i]
+export function _a1_key_hash(ctx_a1_nowrap:any|any[]):any {
+	const ctx_a1 = _wrap_a1(ctx_a1_nowrap)
+	const a1_key_hash = {}
+	for (let i = 0; i < ctx_a1.length; i++) {
+		const ctx = ctx_a1[i]
 		for (let key in ctx) {
 			const value = ctx[key]
-			hash__key__a1[key] = concat(
-				hash__key__a1[key] || [],
+			a1_key_hash[key] = concat(
+				a1_key_hash[key] || [],
 				value
 			)
 		}
 	}
-	return hash__key__a1
+	return a1_key_hash
 }
+export const _hash__key__a1 = _a1_key_hash
 /**
  * Returns length of `a1`
  * @param {*[]|falsy} a1
  * @returns {Int|falsy}
  */
-export function _length__a1(a1:any[]):undefined|number {
+export function _a1_length(a1:any[]):undefined|number {
 	return a1 ? a1.length : void 0
 }
+export const _length__a1 = _a1_length
 /**
  * Returns true if `a1` is has a length
  * @param {*[]|falsy} a1
  * @returns {boolean}
  */
-export function _present__a1(a1:any|any[]):boolean {
-	return !!_length__a1(a1)
+export function _a1_present(a1:any|any[]):boolean {
+	return !!_a1_length(a1)
 }
+export const _present__a1 = _a1_present
 export const concat__a1 = concat
 /**
  * Returns true if argument is an array with more than one item
  * @param {*[]|falsy} a1
  * @returns {boolean}
  */
-export function _has__multiple(a1:any[]):boolean {
-	return _length__a1(a1) > 1
+export function _has_multiple(a1:any[]):boolean {
+	return _a1_length(a1) > 1
 }
-export const _has__multiple__a1 = _has__multiple
+export const _has__multiple = _has_multiple
+export const _has__multiple__a1 = _has_multiple
 /**
  * Array#`concat`, setting falsy values to an empty Array (`[]`).
  * @param {*[]} a1
- * @param {...*} a1__rest
+ * @param {...*} rest_a1
  * @returns {*[]}
  */
-export function concat__default__a1(a1:any|any[], ...a1__rest:any[]):any[] {
-	let a1__ = a1 ? _a1__wrap(a1) : []
-	for (let i = 0; i < a1__rest.length; i++) {
-		a1__ = a1__.concat(a1__rest[i] || [])
+export function concat_truthy_a1(a1:any|any[], ...rest_a1:any[]):any[] {
+	let a1__ = a1 ? _wrap_a1(a1) : []
+	for (let i = 0; i < rest_a1.length; i++) {
+		a1__ = a1__.concat(rest_a1[i] || [])
 	}
 	return a1__
 }
-export const concat__truthy = concat__default__a1
+export const concat__default__a1 = concat_truthy_a1
+export const concat__truthy = concat_truthy_a1
 /**
  * Delegates to Array#indexOf
  * @param {*[]} a1
@@ -181,10 +189,11 @@ export function insert(a1:any[], idx:number, ...a1__item:any):any[] {
  * @param {Int} count
  * @returns {*[]}
  */
-export function remove__idx(a1:any[], idx:number, count = 1):any[] {
+export function remove_idx(a1:any[], idx:number, count = 1):any[] {
 	return a1.splice(idx, count)
 }
-export const remove__index = remove__idx
+export const remove__idx = remove_idx
+export const remove__index = remove_idx
 /**
  * Remove each `...a1__item` from `a1`.
  * @param {*[]} a1
@@ -221,36 +230,19 @@ export function _last(a1:falsy|any[]):undefined|any {
 }
 export const _last__a1 = _last
 /**
- * Flattens the a1 & it's children into an a1 without chunks
- * @param {[]} a1
- * @returns {[]|falsy}
- */
-export function flatten(a1:falsy|any[]):undefined|any {
-	if (!a1) return
-	return a1.reduce(
-		(a, b)=>
-			concat(
-				a,
-				isArray(b)
-				? flatten(b)
-				: b),
-		[]
-	)
-}
-/**
  * Splits array into chunks
  * @param {*[]} a1
- * @param {Int} length__chunk Length of each chunk
+ * @param {Int} chunk_length Length of each chunk
  * @returns {*[][]} The 2d array of chunks
  */
-export function _a2__chunk(a1:any[], length__chunk:number):any[] {
+export function _chunk_a2(a1:any[], chunk_length:number):any[] {
 	let a1__chunk = []
-	for (let i = 0; i < a1.length; i += length__chunk) {
-		a1__chunk.push(slice(a1, i, i + length__chunk))
+	for (let i = 0; i < a1.length; i += chunk_length) {
+		a1__chunk.push(slice(a1, i, i + chunk_length))
 	}
 	return a1__chunk
 }
-export const flatten__a1 = flatten
+export const _a2__chunk = _chunk_a2
 /**
  * Removes null values from the array
  * @param {*[]} a1
@@ -258,15 +250,16 @@ export const flatten__a1 = flatten
  */
 export function compact(a1:falsy|any[]):undefined|any[] {
 	if (!a1) return
-	const a1__ = []
+	const a1_ = []
 	for (let i = a1.length; i >= 0; --i) {
 		const val = a1[i]
 		if (val) {
-			a1__.push(val)
+			a1_.push(val)
 		}
 	}
-	return a1__
+	return a1_
 }
+export const compact_a1 = compact
 export const compact__a1 = compact
 /**
  * @typedef {function(*, Int, *[]): *} predicate
@@ -291,6 +284,7 @@ export function every(
 	}
 	return true
 }
+export const every_a1 = every
 export const every__a1 = every
 /**
  * Returns a function that returns from [every](#every) with the given `predicate` function.
@@ -300,6 +294,7 @@ export const every__a1 = every
 export function _every(predicate:(any, number, a1)=>unknown):(a1:any[])=>boolean {
 	return a1=>every(a1, predicate)
 }
+export const _every_fn = _every
 export const _fn__every = _every
 /**
  * Returns true if some `predicate(value)` is truthy
@@ -317,6 +312,7 @@ export function some(a1:any[], predicate:(any, number, a1)=>unknown):boolean {
 	}
 	return false
 }
+export const some_a1 = some
 export const some__a1 = some
 /**
  * Returns a function that returns from [some](#some) with given `predicate` function.
@@ -326,14 +322,15 @@ export const some__a1 = some
 export function _some(predicate:(any, number, a1)=>unknown):(a1:any[])=>boolean {
 	return a1=>some(a1, predicate)
 }
+export const _some_fn = _some
 export const _fn__some = _some
 /**
  * Returns the _union of n arrays
- * @param {nowrap__a2} nowrap__a2 - Performs the _union on the 2d array.
+ * @param {a2_nowrap_type} a2_nowrap - Performs the _union on the 2d array.
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
-export function _union(nowrap__a2:nowrap__a2):any[] {
-	const a2 = _a2__wrap(nowrap__a2)
+export function _union(a2_nowrap:a2_nowrap_type):any[] {
+	const a2 = _wrap_a2(a2_nowrap)
 	return Array.from(_union__set(a2))
 }
 export const _union__a1 = _union
@@ -341,21 +338,21 @@ export const _uniq = _union
 export const _uniq__a1 = _uniq
 /**
  * Returns the _intersection of n arrays
- * @param {nowrap__a2} nowrap__a2 - Performs the _intersection on the arrays.
+ * @param {a2_nowrap_type} a2_nowrap - Performs the _intersection on the arrays.
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
-export function _intersection(nowrap__a2:nowrap__a2):any[] {
-	const a2 = _a2__wrap(nowrap__a2)
+export function _intersection(a2_nowrap:a2_nowrap_type):any[] {
+	const a2 = _wrap_a2(a2_nowrap)
 	return Array.from(_intersection__set(a2))
 }
 export const _intersection__a1 = _intersection
 /**
  * Returns the _difference of n arrays
- * @param {nowrap__a2} nowrap__a2 - Performs the _difference on the 2d Array.
+ * @param {a2_nowrap_type} a2_nowrap - Performs the _difference on the 2d Array.
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
-export function _difference(nowrap__a2:nowrap__a2):any[] {
-	const a2 = _a2__wrap(nowrap__a2)
+export function _difference(a2_nowrap:a2_nowrap_type):any[] {
+	const a2 = _wrap_a2(a2_nowrap)
 	return Array.from(_difference__set(a2))
 }
 export const _difference__a1 = _difference
@@ -433,15 +430,16 @@ export const fn__compare__desc = compare__desc
  * @param {Boolean} [asc=true] ascending or descending
  * @returns {fn__compare} Function that compares two `value[key]`
  */
-export function _compare__key(key:any, asc = true):(a:any, b:any)=>number {
+export function _key_compare(key:any, asc = true):(a:any, b:any)=>number {
 	return (a, b)=>{
 		if (a[key] < b[key]) return asc ? -1 : 1
 		if (a[key] > b[key]) return asc ? 1 : -1
 		return 0
 	}
 }
-export const _sort__key = _compare__key
-export const _sort__key__a1 = _compare__key
+export const _compare__key = _key_compare
+export const _sort__key = _key_compare
+export const _sort__key__a1 = _key_compare
 /**
  * Sorts a copy of `a1` by the `compare` function.
  * @param {*[]} a1
@@ -457,27 +455,29 @@ export function _a1__sort(a1:falsy|any[], compare?:compare):undefined|any[] {
  * @param {Int} start=0
  * @returns {Int[]}
  */
-export function _a1__idx(count:number, start = 0):any[] {
-	const a1__idx = []
+export function _idx_a1(count:number, start = 0):any[] {
+	const idx_a1 = []
 	for (let i = 0; i < count; i++) {
-		a1__idx.push(start + i)
+		idx_a1.push(start + i)
 	}
-	return a1__idx
+	return idx_a1
 }
+export const _a1__idx = _idx_a1
 /**
- * Returns an Array of indices inverted from `a1__idx`.
- * @param {Int[]} a1__idx
+ * Returns an Array of indices inverted from `idx_a1`.
+ * @param {Int[]} idx_a1
  * @returns {*[]|*}
- * @example `_a1__idx__invert([2, 1, 3, 0]) -> [3, 1, 0, 2]`
+ * @example `_invert_idx_a1([2, 1, 3, 0]) -> [3, 1, 0, 2]`
  */
-export function _a1__idx__invert(a1__idx:falsy|number[]):undefined|any[] {
-	if (!a1__idx) return
+export function _invert_idx_a1(idx_a1:falsy|number[]):undefined|any[] {
+	if (!idx_a1) return
 	const a1__idx__invert = []
-	for (let i = 0; i < a1__idx.length; i++) {
-		a1__idx__invert[a1__idx[i]] = i
+	for (let i = 0; i < idx_a1.length; i++) {
+		a1__idx__invert[idx_a1[i]] = i
 	}
 	return a1__idx__invert
 }
+export const _a1__idx__invert = _invert_idx_a1
 export type ctx__idx__sort = {
 	a1__idx__sort:number[],
 	a1__val__sort:any[],
@@ -548,28 +548,28 @@ export function _a1__idx__sort(ctx__idx__sort:falsy|ctx__idx__sort):undefined|nu
 	return ctx__idx__sort ? ctx__idx__sort.a1__idx__sort : void 0
 }
 /**
- * Sort `a1__val` by an array of indices in `a1__idx__sort`.
- * @param {*[]} a1__val
+ * Sort `val_a1` by an array of indices in `a1__idx__sort`.
+ * @param {*[]} val_a1
  * @param {Int[]} a1__idx__sort
  * @returns {Array}
  */
-export function _a1__sort__idx(a1__val:falsy|any[], a1__idx__sort:falsy|number[]):undefined|number[] {
-	if (!a1__idx__sort || !a1__val) return
+export function _a1__sort__idx(val_a1:falsy|any[], a1__idx__sort:falsy|number[]):undefined|number[] {
+	if (!a1__idx__sort || !val_a1) return
 	const a1__sort__idx = []
 	for (let i = 0; i < a1__idx__sort.length; i++) {
 		const idx = a1__idx__sort[i]
-		a1__sort__idx.push(a1__val[idx])
+		a1__sort__idx.push(val_a1[idx])
 	}
 	return a1__sort__idx
 }
 /**
- * Returns [ctx__idx__sort](#ctx__idx__sort) derived from `a1__val` sorted by `a1__idx__sort`.
- * @param {Array} a1__val
+ * Returns [ctx__idx__sort](#ctx__idx__sort) derived from `val_a1` sorted by `a1__idx__sort`.
+ * @param {Array} val_a1
  * @param {Array<Int>} a1__idx__sort
  * @returns {ctx__idx__sort}
  */
-export function _ctx__idx__sort__a1__sort__idx(a1__val:any[], a1__idx__sort:number[]):ctx__idx__sort {
-	const a1__val__sort = _a1__sort__idx(a1__val, a1__idx__sort)
+export function _ctx__idx__sort__a1__sort__idx(val_a1:any[], a1__idx__sort:number[]):ctx__idx__sort {
+	const a1__val__sort = _a1__sort__idx(val_a1, a1__idx__sort)
 	return {
 		a1__val__sort,
 		a1__idx__sort,
@@ -598,20 +598,20 @@ export const rank__a1 = rank
  * @returns {integer} the rank of the items where the compare function === 0
  */
 export function rank__binarySort(a1:any[], compare__1:compare__1):number {
-	let index__min = 0
-	let index__max = a1.length - 1
-	let index__current
-	let element__current
-	while (index__min <= index__max) {
-		index__current = (index__min + index__max) / 2 | 0
-		element__current = a1[index__current]
-		const compare__sort = compare__1(element__current, index__current)
+	let min_index = 0
+	let max_index = a1.length - 1
+	let current_index
+	let current_element
+	while (min_index <= max_index) {
+		current_index = (min_index + max_index) / 2 | 0
+		current_element = a1[current_index]
+		const compare__sort = compare__1(current_element, current_index)
 		if (compare__sort > 0) {
-			index__min = index__current + 1
+			min_index = current_index + 1
 		} else if (compare__sort < 0) {
-			index__max = index__current - 1
+			max_index = current_index - 1
 		} else {
-			return index__current
+			return current_index
 		}
 	}
 	return -1
@@ -730,22 +730,23 @@ export function _fn__hash__key__idx(_val:_val__item_key_idx):(a1:falsy|any[], ke
  * @param {Array} a1
  * @returns {Int}
  */
-export function idx__random(a1:any[]):number {
+export function _random_idx(a1:any[]):number {
 	return Math.floor(Math.random() * a1.length)
 }
+export const idx__random = _random_idx
 /**
  * Calls push on a1
  * @param {array} a1
- * @param {...number} a1__arg
+ * @param {...number} arg_a1
  * @returns {[]|null}
  */
-export function push(a1:falsy|any[], ...a1__arg:any):undefined|any[] {
-	return a1 ? a1.push.apply(a1, a1__arg) : void 0
+export function push(a1:falsy|any[], ...arg_a1:any):undefined|any[] {
+	return a1 ? a1.push.apply(a1, arg_a1) : void 0
 }
 /**
  * Calls slice on a1
  * @param {array} a1
- * @param {...number} a1__arg
+ * @param {...number} arg_a1
  * @returns {[]|null}
  */
 export function slice(a1:falsy|any[], idx__begin?:number, idx__end?:number):undefined|any[] {
@@ -754,11 +755,11 @@ export function slice(a1:falsy|any[], idx__begin?:number, idx__end?:number):unde
 /**
  * Calls splice on a1
  * @param {[]}a1
- * @param {...number}a1__arg
+ * @param {...number}arg_a1
  * @returns {[]|null}
  */
-export function splice(a1:falsy|any[], start:number, delete_count?:number, ...a1__arg:any):undefined|any[] {
-	return a1 ? a1.splice(start, delete_count, ...a1__arg) : void 0
+export function splice(a1:falsy|any[], start:number, delete_count?:number, ...arg_a1:any):undefined|any[] {
+	return a1 ? a1.splice(start, delete_count, ...arg_a1) : void 0
 }
 /**
  * Returns an Array from slicing an a1 from an a1's offset from position i
@@ -771,21 +772,21 @@ export function slice__i__offset(a1:falsy|any[], i:number, offset = 1):undefined
 	return slice(a1, i * offset, (i + 1) * offset)
 }
 /**
- * Returns a `slice` function with the given `...a1__arg` that takes a Array `a1` as it's argument.
- * @param {...number} a1__arg
+ * Returns a `slice` function with the given `...arg_a1` that takes a Array `a1` as it's argument.
+ * @param {...number} arg_a1
  * @returns {function(Array):(Array|null)}
  */
-export function _slice(...a1__arg:any):(a1:falsy|any[])=>undefined|any[] {
-	return a1=>slice(a1, ...a1__arg)
+export function _slice(...arg_a1:any):(a1:falsy|any[])=>undefined|any[] {
+	return a1=>slice(a1, ...arg_a1)
 }
 export const _fn__slice = _slice
 /**
- * Returns a function that slices the spread argument array with `a1__arg`
- * @param {...number} a1__arg
+ * Returns a function that slices the spread argument array with `arg_a1`
+ * @param {...number} arg_a1
  * @returns {function(...[*]): *[]}
  */
-export function _slice__spread(...a1__arg:any):(...a1:any)=>undefined|any[] {
-	return (...a1)=>slice(a1, ...a1__arg)
+export function _slice__spread(...arg_a1:any):(...a1:any)=>undefined|any[] {
+	return (...a1)=>slice(a1, ...arg_a1)
 }
 export const _fn__slice__spread = _slice__spread
 /**
@@ -904,31 +905,31 @@ export const _fn__reduce = _reduce
  * @param {...Array} a2__zipWith
  * @returns {Array<Array>}
  */
-export function zip(nowrap__a2:nowrap__a2):undefined|any[] {
-	return zipWith(nowrap__a2, I)
+export function zip(a2_nowrap:a2_nowrap_type):undefined|any[] {
+	return zipWith(a2_nowrap, I)
 }
 /**
- * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `nowrap__a2`.
- * @param {*|Array<Array>} nowrap__a2
+ * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `a2_nowrap_type`.
+ * @param {*|Array<Array>} a2_nowrap
  * @param {function(Array, number)} fn
  * @returns {Array<Array>}
  */
 export function zipWith(
-	nowrap__a2:nowrap__a2,
+	a2_nowrap:a2_nowrap_type,
 	fn:(...any)=>any = ((..._)=>{})
 ):undefined|any[] {
-	if (!nowrap__a2) return
-	const a2 = _a2__wrap(nowrap__a2)
+	if (!a2_nowrap) return
+	const a2 = _wrap_a2(a2_nowrap)
 	const [a1 = [], ...a2__rest] = a2
-	const a1__zipWith = []
+	const zipWith_a1 = []
 	for (let i = 0; i < a1.length; i++) {
-		const a1__arg = [a1[i]]
+		const arg_a1 = [a1[i]]
 		for (let j = 0; j < a2__rest.length; j++) {
-			a1__arg.push(a2__rest[j][i])
+			arg_a1.push(a2__rest[j][i])
 		}
-		a1__zipWith.push(fn.call(a1__zipWith, a1__arg, i))
+		zipWith_a1.push(fn.call(zipWith_a1, arg_a1, i))
 	}
-	return a1__zipWith
+	return zipWith_a1
 }
 /**
  * Returns a function that returns [zipWith](#zipWith) with `fn` argument.
@@ -940,58 +941,57 @@ export function _zipWith(fn:(...any)=>any):(...a2:any[])=>undefined|any[] {
 }
 export const _fn__zipWith = _zipWith
 /**
- * Returns a sparsely populated Array with `a1__idx` indices & `a1__val` values
- * @param {Array<number>} a1__idx - Indices of returned Array.
- * @param {Array} a1__val - Values of returned Array.
+ * Returns a sparsely populated Array with `idx_a1` indices & `val_a1` values
+ * @param {Array<number>} idx_a1 - Indices of returned Array.
+ * @param {Array} val_a1 - Values of returned Array.
  * @returns {Array}
  */
-export function _a1__sparse(a1__idx:number[], a1__val:any[]):any[] {
-	const a1__sparse = []
-	for (let i = 0; i < a1__idx.length; i++) {
-		const idx = a1__idx[i]
-		a1__sparse[idx] = a1__val[i]
+export function _sparse_a1(idx_a1:number[], val_a1:any[]):any[] {
+	const sparse_a1 = []
+	for (let i = 0; i < idx_a1.length; i++) {
+		const idx = idx_a1[i]
+		sparse_a1[idx] = val_a1[i]
 	}
-	return a1__sparse
+	return sparse_a1
 }
+export const _a1__sparse = _sparse_a1
 /**
  * Array of indices.
- * @typedef {Array<Int>} a1__idx
+ * @typedef {Array<Int>} idx_a1
  */
 /**
  * Array of values.
- * @typedef {Array<Int>} a1__val
+ * @typedef {Array<Int>} val_a1
  */
 /**
  * `ctx` of values & indices.
  * @typedef {{
- *   a1__idx: a1__idx,
- *   a1__idx: a1__idx,
- *   a1__val: a1__val,
- *   a1__val: a1__val,
+ *   idx_a1: idx_a1,
+ *   val_a1: val_a1,
  * }} ctx__idx
  */
-type ctx__compact__a1__sparse = {
-	a1__idx:number[],
-	a1__val:any[],
+type compact_a1_ctx_type = {
+	idx_a1:number[],
+	val_a1:any[],
 }
 /**
  * Returns a [ctx__idx](#ctx__idx).
  * @param {Array} a1__sparse
  * @returns {ctx__idx}
  */
-export function _ctx__compact__a1__sparse(a1__sparse:any[]):ctx__compact__a1__sparse {
-	const a1__idx = []
-	const a1__val = []
+export function _compact_a1_ctx(a1__sparse:any[]):compact_a1_ctx_type {
+	const idx_a1 = []
+	const val_a1 = []
 	for (let i = 0; i < a1__sparse.length; i++) {
 		const val = a1__sparse[i]
 		if (val != undefined) {
-			a1__idx.push(i)
-			a1__val.push(val)
+			idx_a1.push(i)
+			val_a1.push(val)
 		}
 	}
 	return {
-		a1__idx,
-		a1__val,
+		idx_a1,
+		val_a1,
 	}
 }
 /**
@@ -1001,28 +1001,28 @@ export function _ctx__compact__a1__sparse(a1__sparse:any[]):ctx__compact__a1__sp
  */
 export function _fn__ctx__compact__a1__thold__entry(fn__eq = eq) {
 	return a1__val__=>{
-		const a1__idx = []
-		const a1__val = []
+		const idx_a1 = []
+		const val_a1 = []
 		if (a1__val__) {
 			for (let i = 0; i < a1__val__.length; i++) {
 				const val = a1__val__[i]
 				const val__prev = a1__val__[i - 1]
 				if (!i || (fn__eq ? !fn__eq([val, val__prev]) : (val !== val__prev))) {
-					a1__idx.push(i)
-					a1__val.push(val)
+					idx_a1.push(i)
+					val_a1.push(val)
 				}
 			}
 		}
 		return {
-			a1__idx,
-			a1__val,
+			idx_a1,
+			val_a1,
 		}
 	}
 }
 /**
  * Returns a [ctx__idx](#ctx__idx) of presumably sorted items in `a1__val__` at each index of the new item for each changed item.
  * @param {Array} a1__val__
- * @returns {{ a1__idx, a1__val }}
+ * @returns {{ idx_a1, val_a1 }}
  */
 export const _ctx__compact__a1__thold__entry = _fn__ctx__compact__a1__thold__entry()
 /**
@@ -1032,8 +1032,8 @@ export const _ctx__compact__a1__thold__entry = _fn__ctx__compact__a1__thold__ent
  */
 export function _fn__ctx__compact__a1__thold__exit(fn__eq = eq) {
 	return a1__val__=>{
-		const a1__idx = []
-		const a1__val = []
+		const idx_a1 = []
+		const val_a1 = []
 		if (a1__val__) {
 			const length__a1__val__ = a1__val__.length
 			for (let idx = 0; idx < a1__val__.length; idx++) {
@@ -1048,14 +1048,14 @@ export function _fn__ctx__compact__a1__thold__exit(fn__eq = eq) {
 						: val !== val__next
 					)
 				) {
-					a1__idx.push(idx)
-					a1__val.push(val)
+					idx_a1.push(idx)
+					val_a1.push(val)
 				}
 			}
 		}
 		return {
-			a1__idx,
-			a1__val,
+			idx_a1,
+			val_a1,
 		}
 	}
 }
@@ -1111,14 +1111,14 @@ export const _fn__filter = _filter
  */
 export function filter__idx(a1:falsy|any[], _is_match:_is_match=I__):undefined|any[] {
 	if (!a1) return
-	const a1__idx = []
+	const idx_a1 = []
 	for (let idx = 0; idx < a1.length; idx++) {
 		const value = a1[idx]
 		if (_is_match(value, idx)) {
-			a1__idx.push(idx)
+			idx_a1.push(idx)
 		}
 	}
-	return a1__idx
+	return idx_a1
 }
 /**
  * Returns function that returns value from [filter__idx](#filter__idx) with `fn` argument.
@@ -1291,13 +1291,13 @@ export function map__inverse(a1) {
 	return map(a1, val=>val ? (1.0 / val) : 0)
 }
 /**
- * Returns Array of values from `a1` with index in `a1__idx`.
- * @param {Array<Int>} a1__idx
+ * Returns Array of values from `a1` with index in `idx_a1`.
+ * @param {Array<Int>} idx_a1
  * @param {Array} a1
  * @returns {Array}
  */
-export function map__a1__idx__in__a1(a1__idx, a1) {
-	return map(a1__idx, idx=>a1[idx])
+export function map__a1__idx__in__a1(idx_a1, a1) {
+	return map(idx_a1, idx=>a1[idx])
 }
 /**
  * Returns 2d Array where `a1__source` is destructured into subarray of length `offset`.
@@ -1317,14 +1317,14 @@ export function _a2__destructure__offset(a1__source, offset = 1) {
 	return a2__destructure__offset
 }
 /**
- * Returns Array of values `>= 0` in `a1__val`.
- * @param {number[]} a1__val
+ * Returns Array of values `>= 0` in `val_a1`.
+ * @param {number[]} val_a1
  * @returns {number[]}
  */
-export function _a1__gte__0(a1__val) {
+export function _a1__gte__0(val_a1) {
 	const a1__gte__0 = []
-	for (let i = 0; i < a1__val.length; i++) {
-		const val = a1__val[i]
+	for (let i = 0; i < val_a1.length; i++) {
+		const val = val_a1[i]
 		if (val >= 0) {
 			a1__gte__0.push(val)
 		}
@@ -1332,14 +1332,14 @@ export function _a1__gte__0(a1__val) {
 	return a1__gte__0
 }
 /**
- * Returns Array of values `<= 0` in `a1__val`.
- * @param {number[]} a1__val
+ * Returns Array of values `<= 0` in `val_a1`.
+ * @param {number[]} val_a1
  * @returns {number[]}
  */
-export function _a1__lte__0(a1__val) {
+export function _a1__lte__0(val_a1) {
 	const a1__lte__0 = []
-	for (let i = 0; i < a1__val.length; i++) {
-		const val = a1__val[i]
+	for (let i = 0; i < val_a1.length; i++) {
+		const val = val_a1[i]
 		if (val <= 0) {
 			a1__lte__0.push(val)
 		}

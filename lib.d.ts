@@ -7,9 +7,9 @@
  * @typedef ArrayLike
  */
 import { isArray } from '@ctx-core/object';
-import { falsy, eq, concat, _a1__wrap } from '@ctx-core/function';
-export { isArray, concat, _a1__wrap };
-declare type nowrap__a2 = any[] | any[][];
+import { falsy, eq, concat, _wrap_a1 } from '@ctx-core/function';
+export { isArray, concat, _wrap_a1 };
+import { a2_nowrap_type } from './a2_nowrap_type';
 declare type compare = (a: any, b: any) => number;
 declare type compare__1 = (any: any, number?: any) => number;
 declare type _is_match = (any: any, number?: any) => boolean;
@@ -18,7 +18,7 @@ declare type _val__item_key_idx = (val: any, item: any, string: any, number: any
  * @typedef {*|*[]} nowrap__a1
  */
 /**
- * @typedef {[]|*[][]} nowrap__a2
+ * @typedef {[]|*[][]} a2_nowrap_type
  */
 /**
  * @typedef {function(...*): *} fn__spread
@@ -37,60 +37,68 @@ export declare function spread(fn: (...any: any[]) => any, a1: any | any[]): any
  */
 export declare function _spread(fn: (...any: any[]) => any): (a1: any | any[]) => any;
 /**
- * Returns `nowrap__a2` wrapped as a 2-dimensional array
- * @param {[]} nowrap__a2
+ * Returns `a2_nowrap_type` wrapped as a 2-dimensional array
+ * @param {[]} a2_nowrap
  * @returns {*[][]}
  */
-export declare function _a2__wrap(nowrap__a2: nowrap__a2): undefined | any[];
+export declare function _wrap_a2(a2_nowrap: a2_nowrap_type): undefined | any[];
+export declare const _a2__wrap: typeof _wrap_a2;
 /**
- * Is a1__a `===` to a1__b? Checks first level equality.
+ * Is a_a1 `===` b_a1? Checks first level equality.
  * @param {*[]} a1__a
- * @param {*[]} a1__b
+ * @param {*[]} b_a1
  * @returns {Boolean}
  */
-export declare function _eql__a1(a1__a: any[], a1__b: any[]): boolean;
+export declare function _eql_a1(a_a1: any[], b_a1: any[]): boolean;
+export declare const _eql__a1: typeof _eql_a1;
 /**
- * Is a1__a `===` to a1__b based on `fn(a, b, i)`? Checks first level equality.
- * @param {*[]} a1__a
- * @param {*[]} a1__b
+ * Is a_a1 `===` to b_a1 based on `fn(a, b, i)`? Checks first level equality.
+ * @param {*[]} a_a1
+ * @param {*[]} b_a1
  * @param {function(*, *, Int)} fn
  * @returns {Boolean}
  */
-export declare function _eql__a1__fn(a1__a: any[], a1__b: any[], fn: (a: any, b: any, number: any) => unknown): boolean;
+export declare function _eql_fn_a1(a_a1: any[], b_a1: any[], fn: (a: any, b: any, number: any) => unknown): boolean;
+export declare const _eql__a1__fn: typeof _eql_fn_a1;
 /**
- * Returns a hash of arrays grouped by each key in each `ctx` in `a1__ctx`.
- * @param {nowrap__a1} nowrap__a1__ctx
+ * Returns a hash of arrays grouped by each key in each `ctx` in `ctx_a1`.
+ * @param {a1_nowrap} ctx_a1_nowrap
  * @returns {Object.<string, Array>}
  */
-export declare function _hash__key__a1(nowrap__a1__ctx: any | any[]): any;
+export declare function _a1_key_hash(ctx_a1_nowrap: any | any[]): any;
+export declare const _hash__key__a1: typeof _a1_key_hash;
 /**
  * Returns length of `a1`
  * @param {*[]|falsy} a1
  * @returns {Int|falsy}
  */
-export declare function _length__a1(a1: any[]): undefined | number;
+export declare function _a1_length(a1: any[]): undefined | number;
+export declare const _length__a1: typeof _a1_length;
 /**
  * Returns true if `a1` is has a length
  * @param {*[]|falsy} a1
  * @returns {boolean}
  */
-export declare function _present__a1(a1: any | any[]): boolean;
+export declare function _a1_present(a1: any | any[]): boolean;
+export declare const _present__a1: typeof _a1_present;
 export declare const concat__a1: typeof concat;
 /**
  * Returns true if argument is an array with more than one item
  * @param {*[]|falsy} a1
  * @returns {boolean}
  */
-export declare function _has__multiple(a1: any[]): boolean;
-export declare const _has__multiple__a1: typeof _has__multiple;
+export declare function _has_multiple(a1: any[]): boolean;
+export declare const _has__multiple: typeof _has_multiple;
+export declare const _has__multiple__a1: typeof _has_multiple;
 /**
  * Array#`concat`, setting falsy values to an empty Array (`[]`).
  * @param {*[]} a1
- * @param {...*} a1__rest
+ * @param {...*} rest_a1
  * @returns {*[]}
  */
-export declare function concat__default__a1(a1: any | any[], ...a1__rest: any[]): any[];
-export declare const concat__truthy: typeof concat__default__a1;
+export declare function concat_truthy_a1(a1: any | any[], ...rest_a1: any[]): any[];
+export declare const concat__default__a1: typeof concat_truthy_a1;
+export declare const concat__truthy: typeof concat_truthy_a1;
 /**
  * Delegates to Array#indexOf
  * @param {*[]} a1
@@ -113,8 +121,9 @@ export declare function insert(a1: any[], idx: number, ...a1__item: any): any[];
  * @param {Int} count
  * @returns {*[]}
  */
-export declare function remove__idx(a1: any[], idx: number, count?: number): any[];
-export declare const remove__index: typeof remove__idx;
+export declare function remove_idx(a1: any[], idx: number, count?: number): any[];
+export declare const remove__idx: typeof remove_idx;
+export declare const remove__index: typeof remove_idx;
 /**
  * Remove each `...a1__item` from `a1`.
  * @param {*[]} a1
@@ -137,25 +146,20 @@ export declare function _first(a1: falsy | any[]): undefined | any;
 export declare function _last(a1: falsy | any[]): undefined | any;
 export declare const _last__a1: typeof _last;
 /**
- * Flattens the a1 & it's children into an a1 without chunks
- * @param {[]} a1
- * @returns {[]|falsy}
- */
-export declare function flatten(a1: falsy | any[]): undefined | any;
-/**
  * Splits array into chunks
  * @param {*[]} a1
- * @param {Int} length__chunk Length of each chunk
+ * @param {Int} chunk_length Length of each chunk
  * @returns {*[][]} The 2d array of chunks
  */
-export declare function _a2__chunk(a1: any[], length__chunk: number): any[];
-export declare const flatten__a1: typeof flatten;
+export declare function _chunk_a2(a1: any[], chunk_length: number): any[];
+export declare const _a2__chunk: typeof _chunk_a2;
 /**
  * Removes null values from the array
  * @param {*[]} a1
  * @returns {*[]} The array with null values removed
  */
 export declare function compact(a1: falsy | any[]): undefined | any[];
+export declare const compact_a1: typeof compact;
 export declare const compact__a1: typeof compact;
 /**
  * @typedef {function(*, Int, *[]): *} predicate
@@ -167,6 +171,7 @@ export declare const compact__a1: typeof compact;
  * @returns {Boolean} true if every `predicate(value)` is truthy
  */
 export declare function every(a1: any[], predicate: (item: any, number: any, a1: any) => unknown): boolean;
+export declare const every_a1: typeof every;
 export declare const every__a1: typeof every;
 /**
  * Returns a function that returns from [every](#every) with the given `predicate` function.
@@ -174,6 +179,7 @@ export declare const every__a1: typeof every;
  * @returns {function(*[]): Boolean}
  */
 export declare function _every(predicate: (any: any, number: any, a1: any) => unknown): (a1: any[]) => boolean;
+export declare const _every_fn: typeof _every;
 export declare const _fn__every: typeof _every;
 /**
  * Returns true if some `predicate(value)` is truthy
@@ -182,6 +188,7 @@ export declare const _fn__every: typeof _every;
  * @returns {Boolean} true if some `predicate(value)` is truthy
  */
 export declare function some(a1: any[], predicate: (any: any, number: any, a1: any) => unknown): boolean;
+export declare const some_a1: typeof some;
 export declare const some__a1: typeof some;
 /**
  * Returns a function that returns from [some](#some) with given `predicate` function.
@@ -189,29 +196,30 @@ export declare const some__a1: typeof some;
  * @returns {function(*[]): Boolean}
  */
 export declare function _some(predicate: (any: any, number: any, a1: any) => unknown): (a1: any[]) => boolean;
+export declare const _some_fn: typeof _some;
 export declare const _fn__some: typeof _some;
 /**
  * Returns the _union of n arrays
- * @param {nowrap__a2} nowrap__a2 - Performs the _union on the 2d array.
+ * @param {a2_nowrap_type} a2_nowrap - Performs the _union on the 2d array.
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
-export declare function _union(nowrap__a2: nowrap__a2): any[];
+export declare function _union(a2_nowrap: a2_nowrap_type): any[];
 export declare const _union__a1: typeof _union;
 export declare const _uniq: typeof _union;
 export declare const _uniq__a1: typeof _union;
 /**
  * Returns the _intersection of n arrays
- * @param {nowrap__a2} nowrap__a2 - Performs the _intersection on the arrays.
+ * @param {a2_nowrap_type} a2_nowrap - Performs the _intersection on the arrays.
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
-export declare function _intersection(nowrap__a2: nowrap__a2): any[];
+export declare function _intersection(a2_nowrap: a2_nowrap_type): any[];
 export declare const _intersection__a1: typeof _intersection;
 /**
  * Returns the _difference of n arrays
- * @param {nowrap__a2} nowrap__a2 - Performs the _difference on the 2d Array.
+ * @param {a2_nowrap_type} a2_nowrap - Performs the _difference on the 2d Array.
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
-export declare function _difference(nowrap__a2: nowrap__a2): any[];
+export declare function _difference(a2_nowrap: a2_nowrap_type): any[];
 export declare const _difference__a1: typeof _difference;
 /**
  * splice out any `array` elements matching `selector`
@@ -269,9 +277,10 @@ export declare const fn__compare__desc: compare;
  * @param {Boolean} [asc=true] ascending or descending
  * @returns {fn__compare} Function that compares two `value[key]`
  */
-export declare function _compare__key(key: any, asc?: boolean): (a: any, b: any) => number;
-export declare const _sort__key: typeof _compare__key;
-export declare const _sort__key__a1: typeof _compare__key;
+export declare function _key_compare(key: any, asc?: boolean): (a: any, b: any) => number;
+export declare const _compare__key: typeof _key_compare;
+export declare const _sort__key: typeof _key_compare;
+export declare const _sort__key__a1: typeof _key_compare;
 /**
  * Sorts a copy of `a1` by the `compare` function.
  * @param {*[]} a1
@@ -285,14 +294,16 @@ export declare function _a1__sort(a1: falsy | any[], compare?: compare): undefin
  * @param {Int} start=0
  * @returns {Int[]}
  */
-export declare function _a1__idx(count: number, start?: number): any[];
+export declare function _idx_a1(count: number, start?: number): any[];
+export declare const _a1__idx: typeof _idx_a1;
 /**
- * Returns an Array of indices inverted from `a1__idx`.
- * @param {Int[]} a1__idx
+ * Returns an Array of indices inverted from `idx_a1`.
+ * @param {Int[]} idx_a1
  * @returns {*[]|*}
- * @example `_a1__idx__invert([2, 1, 3, 0]) -> [3, 1, 0, 2]`
+ * @example `_invert_idx_a1([2, 1, 3, 0]) -> [3, 1, 0, 2]`
  */
-export declare function _a1__idx__invert(a1__idx: falsy | number[]): undefined | any[];
+export declare function _invert_idx_a1(idx_a1: falsy | number[]): undefined | any[];
+export declare const _a1__idx__invert: typeof _invert_idx_a1;
 export declare type ctx__idx__sort = {
     a1__idx__sort: number[];
     a1__val__sort: any[];
@@ -339,19 +350,19 @@ export declare function _a1__val__sort(ctx__idx__sort: falsy | ctx__idx__sort): 
  */
 export declare function _a1__idx__sort(ctx__idx__sort: falsy | ctx__idx__sort): undefined | number[];
 /**
- * Sort `a1__val` by an array of indices in `a1__idx__sort`.
- * @param {*[]} a1__val
+ * Sort `val_a1` by an array of indices in `a1__idx__sort`.
+ * @param {*[]} val_a1
  * @param {Int[]} a1__idx__sort
  * @returns {Array}
  */
-export declare function _a1__sort__idx(a1__val: falsy | any[], a1__idx__sort: falsy | number[]): undefined | number[];
+export declare function _a1__sort__idx(val_a1: falsy | any[], a1__idx__sort: falsy | number[]): undefined | number[];
 /**
- * Returns [ctx__idx__sort](#ctx__idx__sort) derived from `a1__val` sorted by `a1__idx__sort`.
- * @param {Array} a1__val
+ * Returns [ctx__idx__sort](#ctx__idx__sort) derived from `val_a1` sorted by `a1__idx__sort`.
+ * @param {Array} val_a1
  * @param {Array<Int>} a1__idx__sort
  * @returns {ctx__idx__sort}
  */
-export declare function _ctx__idx__sort__a1__sort__idx(a1__val: any[], a1__idx__sort: number[]): ctx__idx__sort;
+export declare function _ctx__idx__sort__a1__sort__idx(val_a1: any[], a1__idx__sort: number[]): ctx__idx__sort;
 /**
  * Returns the rank of the items where the compare function === 0
  * @param {Array} a1
@@ -432,28 +443,29 @@ export declare function _fn__hash__key__idx(_val: _val__item_key_idx): (a1: fals
  * @param {Array} a1
  * @returns {Int}
  */
-export declare function idx__random(a1: any[]): number;
+export declare function _random_idx(a1: any[]): number;
+export declare const idx__random: typeof _random_idx;
 /**
  * Calls push on a1
  * @param {array} a1
- * @param {...number} a1__arg
+ * @param {...number} arg_a1
  * @returns {[]|null}
  */
-export declare function push(a1: falsy | any[], ...a1__arg: any): undefined | any[];
+export declare function push(a1: falsy | any[], ...arg_a1: any): undefined | any[];
 /**
  * Calls slice on a1
  * @param {array} a1
- * @param {...number} a1__arg
+ * @param {...number} arg_a1
  * @returns {[]|null}
  */
 export declare function slice(a1: falsy | any[], idx__begin?: number, idx__end?: number): undefined | any[];
 /**
  * Calls splice on a1
  * @param {[]}a1
- * @param {...number}a1__arg
+ * @param {...number}arg_a1
  * @returns {[]|null}
  */
-export declare function splice(a1: falsy | any[], start: number, delete_count?: number, ...a1__arg: any): undefined | any[];
+export declare function splice(a1: falsy | any[], start: number, delete_count?: number, ...arg_a1: any): undefined | any[];
 /**
  * Returns an Array from slicing an a1 from an a1's offset from position i
  * @param {Array} a1
@@ -463,18 +475,18 @@ export declare function splice(a1: falsy | any[], start: number, delete_count?: 
  */
 export declare function slice__i__offset(a1: falsy | any[], i: number, offset?: number): undefined | any[];
 /**
- * Returns a `slice` function with the given `...a1__arg` that takes a Array `a1` as it's argument.
- * @param {...number} a1__arg
+ * Returns a `slice` function with the given `...arg_a1` that takes a Array `a1` as it's argument.
+ * @param {...number} arg_a1
  * @returns {function(Array):(Array|null)}
  */
-export declare function _slice(...a1__arg: any): (a1: falsy | any[]) => undefined | any[];
+export declare function _slice(...arg_a1: any): (a1: falsy | any[]) => undefined | any[];
 export declare const _fn__slice: typeof _slice;
 /**
- * Returns a function that slices the spread argument array with `a1__arg`
- * @param {...number} a1__arg
+ * Returns a function that slices the spread argument array with `arg_a1`
+ * @param {...number} arg_a1
  * @returns {function(...[*]): *[]}
  */
-export declare function _slice__spread(...a1__arg: any): (...a1: any) => undefined | any[];
+export declare function _slice__spread(...arg_a1: any): (...a1: any) => undefined | any[];
 export declare const _fn__slice__spread: typeof _slice__spread;
 /**
  * Returns offset index, i * offset
@@ -551,14 +563,14 @@ export declare const _fn__reduce: typeof _reduce;
  * @param {...Array} a2__zipWith
  * @returns {Array<Array>}
  */
-export declare function zip(nowrap__a2: nowrap__a2): undefined | any[];
+export declare function zip(a2_nowrap: a2_nowrap_type): undefined | any[];
 /**
- * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `nowrap__a2`.
- * @param {*|Array<Array>} nowrap__a2
+ * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `a2_nowrap_type`.
+ * @param {*|Array<Array>} a2_nowrap
  * @param {function(Array, number)} fn
  * @returns {Array<Array>}
  */
-export declare function zipWith(nowrap__a2: nowrap__a2, fn?: (...any: any[]) => any): undefined | any[];
+export declare function zipWith(a2_nowrap: a2_nowrap_type, fn?: (...any: any[]) => any): undefined | any[];
 /**
  * Returns a function that returns [zipWith](#zipWith) with `fn` argument.
  * @param {function(Array, function)} fn
@@ -567,56 +579,55 @@ export declare function zipWith(nowrap__a2: nowrap__a2, fn?: (...any: any[]) => 
 export declare function _zipWith(fn: (...any: any[]) => any): (...a2: any[]) => undefined | any[];
 export declare const _fn__zipWith: typeof _zipWith;
 /**
- * Returns a sparsely populated Array with `a1__idx` indices & `a1__val` values
- * @param {Array<number>} a1__idx - Indices of returned Array.
- * @param {Array} a1__val - Values of returned Array.
+ * Returns a sparsely populated Array with `idx_a1` indices & `val_a1` values
+ * @param {Array<number>} idx_a1 - Indices of returned Array.
+ * @param {Array} val_a1 - Values of returned Array.
  * @returns {Array}
  */
-export declare function _a1__sparse(a1__idx: number[], a1__val: any[]): any[];
+export declare function _sparse_a1(idx_a1: number[], val_a1: any[]): any[];
+export declare const _a1__sparse: typeof _sparse_a1;
 /**
  * Array of indices.
- * @typedef {Array<Int>} a1__idx
+ * @typedef {Array<Int>} idx_a1
  */
 /**
  * Array of values.
- * @typedef {Array<Int>} a1__val
+ * @typedef {Array<Int>} val_a1
  */
 /**
  * `ctx` of values & indices.
  * @typedef {{
- *   a1__idx: a1__idx,
- *   a1__idx: a1__idx,
- *   a1__val: a1__val,
- *   a1__val: a1__val,
+ *   idx_a1: idx_a1,
+ *   val_a1: val_a1,
  * }} ctx__idx
  */
-declare type ctx__compact__a1__sparse = {
-    a1__idx: number[];
-    a1__val: any[];
+declare type compact_a1_ctx_type = {
+    idx_a1: number[];
+    val_a1: any[];
 };
 /**
  * Returns a [ctx__idx](#ctx__idx).
  * @param {Array} a1__sparse
  * @returns {ctx__idx}
  */
-export declare function _ctx__compact__a1__sparse(a1__sparse: any[]): ctx__compact__a1__sparse;
+export declare function _compact_a1_ctx(a1__sparse: any[]): compact_a1_ctx_type;
 /**
  * Returns a function that returns value from [_ctx__compact__a1__thold__entry](#_ctx__compact__a1__thold__entry)
  * @param {function(*, *): _eq} fn__eq
  * @returns {function(Array): ctx__idx}
  */
 export declare function _fn__ctx__compact__a1__thold__entry(fn__eq?: typeof eq): (a1__val__: any) => {
-    a1__idx: any[];
-    a1__val: any[];
+    idx_a1: any[];
+    val_a1: any[];
 };
 /**
  * Returns a [ctx__idx](#ctx__idx) of presumably sorted items in `a1__val__` at each index of the new item for each changed item.
  * @param {Array} a1__val__
- * @returns {{ a1__idx, a1__val }}
+ * @returns {{ idx_a1, val_a1 }}
  */
 export declare const _ctx__compact__a1__thold__entry: (a1__val__: any) => {
-    a1__idx: any[];
-    a1__val: any[];
+    idx_a1: any[];
+    val_a1: any[];
 };
 /**
  * Returns a function that returns value from [_ctx__compact__a1__thold__exit](#_ctx__compact__a1__thold__exit)
@@ -624,8 +635,8 @@ export declare const _ctx__compact__a1__thold__entry: (a1__val__: any) => {
  * @returns {function(Array): ctx__idx}
  */
 export declare function _fn__ctx__compact__a1__thold__exit(fn__eq?: typeof eq): (a1__val__: any) => {
-    a1__idx: any[];
-    a1__val: any[];
+    idx_a1: any[];
+    val_a1: any[];
 };
 /**
  * Returns a [ctx__idx](#ctx__idx) of presumably sorted items in `a1__val__` at each index of the old item for each changed item.
@@ -634,8 +645,8 @@ export declare function _fn__ctx__compact__a1__thold__exit(fn__eq?: typeof eq): 
  * @returns {ctx__idx}
  */
 export declare const _ctx__compact__a1__thold__exit: (a1__val__: any) => {
-    a1__idx: any[];
-    a1__val: any[];
+    idx_a1: any[];
+    val_a1: any[];
 };
 /**
  * Returns an Object the key & value are set from the zipped `a1__0` & `a1__1` Array of `[key, value]` pairs.
@@ -776,12 +787,12 @@ export declare function map__andand__or(a1: any, a1__attr: any, fn__or: any): an
  */
 export declare function map__inverse(a1: any): any[];
 /**
- * Returns Array of values from `a1` with index in `a1__idx`.
- * @param {Array<Int>} a1__idx
+ * Returns Array of values from `a1` with index in `idx_a1`.
+ * @param {Array<Int>} idx_a1
  * @param {Array} a1
  * @returns {Array}
  */
-export declare function map__a1__idx__in__a1(a1__idx: any, a1: any): any[];
+export declare function map__a1__idx__in__a1(idx_a1: any, a1: any): any[];
 /**
  * Returns 2d Array where `a1__source` is destructured into subarray of length `offset`.
  * @param {Array} a1__source
@@ -790,17 +801,17 @@ export declare function map__a1__idx__in__a1(a1__idx: any, a1: any): any[];
  */
 export declare function _a2__destructure__offset(a1__source: any, offset?: number): any[];
 /**
- * Returns Array of values `>= 0` in `a1__val`.
- * @param {number[]} a1__val
+ * Returns Array of values `>= 0` in `val_a1`.
+ * @param {number[]} val_a1
  * @returns {number[]}
  */
-export declare function _a1__gte__0(a1__val: any): any[];
+export declare function _a1__gte__0(val_a1: any): any[];
 /**
- * Returns Array of values `<= 0` in `a1__val`.
- * @param {number[]} a1__val
+ * Returns Array of values `<= 0` in `val_a1`.
+ * @param {number[]} val_a1
  * @returns {number[]}
  */
-export declare function _a1__lte__0(a1__val: any): any[];
+export declare function _a1__lte__0(val_a1: any): any[];
 /**
  * Returns Array of `obj[a1__key[]]`.
  * @param {Object} obj
