@@ -36,7 +36,7 @@
 		"@ctx-core/set": "^6.1.51"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.7"
+		"typescript": "^4.0.2"
 	},
 	"gitHead": "877b1af6ce7725c5cfa20cc5810c584254a45270"
 }
