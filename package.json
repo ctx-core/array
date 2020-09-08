@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "16.0.16",
+	"version": "17.0.0",
 	"description": "ctx-core array",
 	"main": "./index.js",
 	"module": "./index.js",
@@ -31,7 +31,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/combinators": "^4.2.22",
-		"@ctx-core/function": "^13.2.4",
+		"@ctx-core/function": "^14.0.0",
 		"@ctx-core/object": "^10.0.0",
 		"@ctx-core/set": "^6.1.52"
 	},
