@@ -1,4 +1,4 @@
-import { a2_nowrap_type } from './a2_nowrap_type'
+import type { a2_nowrap_type } from './a2_nowrap_type'
 import { _wrap_a1 } from '@ctx-core/function'
 import { map } from './map'
 /**

@@ -1,6 +1,6 @@
-import { falsy } from '@ctx-core/function';
-import { compare_type } from './compare_type';
-import { sort_idx_ctx_type } from './sort_idx_ctx_type';
+import type { falsy } from '@ctx-core/function';
+import type { compare_type } from './compare_type';
+import type { sort_idx_ctx_type } from './sort_idx_ctx_type';
 /**
  * Returns a [sort_idx_ctx_type](#sort_idx_ctx_type).
  */

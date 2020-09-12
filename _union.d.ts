@@ -1,4 +1,4 @@
-import { a2_nowrap_type } from './a2_nowrap_type';
+import type { a2_nowrap_type } from './a2_nowrap_type';
 /**
  * Returns the _union of n arrays
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}

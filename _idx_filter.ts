@@ -1,6 +1,6 @@
 import { I__ } from '@ctx-core/combinators'
-import { falsy } from '@ctx-core/function'
-import { _is_match_type } from './_is_match_type'
+import type { falsy } from '@ctx-core/function'
+import type { _is_match_type } from './_is_match_type'
 import { idx_filter } from './idx_filter'
 /**
  * Returns function that returns value from [idx_filter](#idx_filter) with `fn` argument.

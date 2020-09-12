@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function';
+import type { falsy } from '@ctx-core/function';
 /**
  * Iterate over each item in `a1` with `fn(a1[i], i)`.
  */

@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function';
+import type { falsy } from '@ctx-core/function';
 /**
  * Removes null values from the array
  */

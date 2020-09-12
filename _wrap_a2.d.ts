@@ -1,4 +1,4 @@
-import { a2_nowrap_type } from './a2_nowrap_type';
+import type { a2_nowrap_type } from './a2_nowrap_type';
 /**
  * Returns `a2_nowrap_type` wrapped as a 2-dimensional array
  */

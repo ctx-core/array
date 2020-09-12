@@ -1,6 +1,6 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 import { I__ } from '@ctx-core/combinators'
-import { _is_match_type } from './_is_match_type'
+import type { _is_match_type } from './_is_match_type'
 /**
  * Returns Array of `idx` indices filtered by `fn`.
  */

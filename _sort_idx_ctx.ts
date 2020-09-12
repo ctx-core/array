@@ -1,7 +1,7 @@
-import { falsy } from '@ctx-core/function'
-import { compare_type } from './compare_type'
+import type { falsy } from '@ctx-core/function'
+import type { compare_type } from './compare_type'
 import { _compare } from './_compare'
-import { sort_idx_ctx_type } from './sort_idx_ctx_type'
+import type { sort_idx_ctx_type } from './sort_idx_ctx_type'
 import { sort } from './sort'
 /**
  * Returns a [sort_idx_ctx_type](#sort_idx_ctx_type).

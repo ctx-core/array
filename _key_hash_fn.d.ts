@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function';
+import type { falsy } from '@ctx-core/function';
 /**
  * Returns a Function using argument `key` that returns value from [_key_hash](#_hash__key).
  */

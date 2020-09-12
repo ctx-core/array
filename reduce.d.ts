@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function';
+import type { falsy } from '@ctx-core/function';
 /**
  * Returns reduced `memo` iterating over `a1` with `fn(memo, a1[], i, a1)`.
  */

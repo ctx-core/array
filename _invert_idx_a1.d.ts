@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function';
+import type { falsy } from '@ctx-core/function';
 /**
  * Returns an Array of indices inverted from `idx_a1`.
  * @example `_invert_idx_a1([2, 1, 3, 0]) -> [3, 1, 0, 2]`

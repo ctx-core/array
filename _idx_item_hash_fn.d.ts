@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function';
+import type { falsy } from '@ctx-core/function';
 /**
  * Returns a function that returns value of `_idx_item_hash` with `_item` argument.
  */

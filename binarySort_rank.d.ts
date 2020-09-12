@@ -1,4 +1,4 @@
-import { compare_1_type } from './compare_1_type';
+import type { compare_1_type } from './compare_1_type';
 /**
  * Returns the rank of the item where the compare function === 0, using binarySort
  */

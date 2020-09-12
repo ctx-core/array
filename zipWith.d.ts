@@ -1,4 +1,4 @@
-import { a2_nowrap_type } from './a2_nowrap_type';
+import type { a2_nowrap_type } from './a2_nowrap_type';
 /**
  * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `a2_nowrap_type`.
  */

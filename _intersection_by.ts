@@ -1,4 +1,4 @@
-import { a2_nowrap_type } from './a2_nowrap_type'
+import type { a2_nowrap_type } from './a2_nowrap_type'
 import { I } from '@ctx-core/combinators'
 import { _wrap_a2 } from './_wrap_a2'
 export function _intersection_by<T>(a2_nowrap:a2_nowrap_type<T>, _by:(T)=>any = I) {

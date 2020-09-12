@@ -1,4 +1,4 @@
-import { a2_nowrap_type } from './a2_nowrap_type'
+import type { a2_nowrap_type } from './a2_nowrap_type'
 import { I } from '@ctx-core/combinators'
 import { zipWith } from './zipWith'
 /**

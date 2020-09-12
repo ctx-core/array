@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 import { slice } from './slice'
 /**
  * Returns a `slice` function with the given `...arg_a1` that takes a Array `a1` as it's argument.

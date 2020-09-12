@@ -1,4 +1,4 @@
-import { _is_match_type } from './_is_match_type';
+import type { _is_match_type } from './_is_match_type';
 /**
  * Returns function that returns value from [filter](#filter) with `fn` argument.
  */

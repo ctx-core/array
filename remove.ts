@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 import { remove_idx } from './remove_idx'
 /**
  * Remove each `...item_a1` from `a1`.

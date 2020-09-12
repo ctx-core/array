@@ -1,4 +1,4 @@
-import { compare_type } from './compare_type';
+import type { compare_type } from './compare_type';
 /**
  * Returns a basic ascending or descending `compare` function to be used for sorting.
  */

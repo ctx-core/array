@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 /**
  * Map return value of `fn(a1[], i)` into an Array.
  */

@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 /**
  * Returns first return value of `fn(a1[idx], idx)` where `fn(a1[idx], idx)` is truthy.
  */

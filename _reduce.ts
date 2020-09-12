@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 import { reduce, reduce_fn_type } from './reduce'
 /**
  * Return Function that returns from `reduce` with `fn` and factory `_memo(a1)`.

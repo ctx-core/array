@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 /**
  * Returns an `Object.<key,value>` of the given `key_hash[a1[][key]] = a1[]`.
  */

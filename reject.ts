@@ -1,4 +1,4 @@
-import { _is_match_type } from './_is_match_type'
+import type { _is_match_type } from './_is_match_type'
 import { filter } from './filter'
 /**
  * Returns Array of items not rejected by `fn`.

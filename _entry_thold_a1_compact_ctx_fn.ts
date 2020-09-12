@@ -1,5 +1,5 @@
 import { eq } from '@ctx-core/function'
-import { compact_a1_ctx_type } from './compact_a1_ctx_type'
+import type { compact_a1_ctx_type } from './compact_a1_ctx_type'
 /**
  * Returns a function that returns a [compact_a1_ctx_type](#compact_a1_ctx_type)
  */

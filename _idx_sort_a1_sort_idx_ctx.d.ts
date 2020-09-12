@@ -1,4 +1,4 @@
-import { sort_idx_ctx_type } from './sort_idx_ctx_type';
+import type { sort_idx_ctx_type } from './sort_idx_ctx_type';
 /**
  * Returns [sort_idx_ctx_type](#sort_idx_ctx_type) derived from `val_a1` sorted by `sort_idx_a1`.
  */

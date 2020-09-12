@@ -1,4 +1,4 @@
-import { falsy } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 import { slice } from './slice'
 /**
  * Returns an Array from slicing an a1 from an a1's offset from position i

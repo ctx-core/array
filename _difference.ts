@@ -1,4 +1,4 @@
-import { a2_nowrap_type } from './a2_nowrap_type'
+import type { a2_nowrap_type } from './a2_nowrap_type'
 import { _difference__set } from '@ctx-core/set'
 import { _wrap_a2 } from './_wrap_a2'
 /**
