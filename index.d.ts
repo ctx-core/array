@@ -1,4 +1,4 @@
-export * from './_a1_key_hash';
+export * from './_key_h_a1';
 export * from './_a1_length';
 export * from './_a1_present';
 export * from './_chunk_a2';
@@ -69,7 +69,6 @@ export * from './_wrap_a2';
 export * from './_zipWith';
 export * from './a1_concat';
 export * from './a1_in_idx_a1_map';
-export * from './a2_nowrap_type';
 export * from './asc_compare';
 export * from './binarySort_rank';
 export * from './compact';

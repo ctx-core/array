@@ -1,8 +1,11 @@
-import type { falsy } from '@ctx-core/function'
 import type { compare_type } from './compare_type'
+import type { maybe } from '@ctx-core/function'
 /**
- * Sort items in `a1` by the `compare` function
+ * Sort items in `in_a1` by the `compare` function
  */
-export function sort(a1:falsy|any[], compare?:compare_type):undefined|any[] {
-	return a1 ? a1.sort(compare) : void 0
+export function sort<I = unknown>(
+	in_a1:maybe<I[]>,
+	compare?:compare_type
+):maybe<I[], undefined> {
+	return in_a1 ? (in_a1 as I[]).sort(compare) : void 0
 }

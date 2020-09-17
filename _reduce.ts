@@ -1,22 +1,20 @@
-import type { falsy } from '@ctx-core/function'
+import type { maybe } from '@ctx-core/function'
 import { reduce, reduce_fn_type } from './reduce'
 /**
  * Return Function that returns from `reduce` with `fn` and factory `_memo(a1)`.
- * @param {function(*, *, number, Array)} fn
- * @param {function(Array)} _memo - Returns a `memo` for [reduce](#reduce)
- * @returns {function(Array, *): *}
  */
-export function _reduce(fn:reduce_fn_type, _memo:falsy|_memo_type):any {
+export function _reduce<I = unknown, O = unknown>(
+	fn:reduce_fn_type<I, O>,
+	_memo:maybe<_memo_type<I, O>>
+):(a1: I[], memo: O) => O {
 	return (
-		(a1, memo)=>
-			reduce(
-				a1,
-				fn,
+		(a1: I[], memo: O)=>
+			reduce<I, maybe<O, unknown>>(a1, fn,
 				memo == null
-				? _memo && _memo(a1)
+				? _memo && (_memo as _memo_type)(a1)
 				: memo
-			)
+			) as O
 	)
 }
 export const _fn__reduce = _reduce
-export type _memo_type = (a1:any[])=>any
+export type _memo_type<I = unknown, O = unknown> = (a1:I[])=>O

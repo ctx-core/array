@@ -1,5 +1,5 @@
-import type { falsy } from '@ctx-core/function';
+import type { maybe } from '@ctx-core/function';
 /**
- * Reverses the order of items in `a1` by mutating `a1`.
+ * Reverses the order of items in `in_a1` by mutating `in_a1`.
  */
-export declare function reverse(a1: falsy | any[]): undefined | any[];
+export declare function reverse<I = unknown>(in_a1: maybe<I[]>): maybe<I[], undefined>;

@@ -1,12 +1,12 @@
-import type { falsy } from '@ctx-core/function'
+import type { maybe } from '@ctx-core/function'
 /**
  * Removes null values from the array
  */
-export function compact(in_a1:falsy|any[]):undefined|any[] {
+export function compact<I = unknown>(in_a1:maybe<I[]>):maybe<I[], undefined> {
 	if (!in_a1) return
-	const out_a1 = []
-	for (let i = in_a1.length; i >= 0; --i) {
-		const val = in_a1[i]
+	const out_a1 = [] as I[]
+	for (let i = (in_a1 as I[]).length; i >= 0; --i) {
+		const val = (in_a1 as I[])[i]
 		if (val) {
 			out_a1.push(val)
 		}

@@ -1,7 +1,7 @@
 /**
  * splice out any `array` elements matching `selector`
  */
-export function selector_splice(a1:any[], selector:(any, number, a1)=>unknown):any[] {
+export function selector_splice(a1:unknown[], selector:(any, number, a1)=>unknown):unknown[] {
 	const index = a1.findIndex(selector)
 	if (index > -1) {
 		a1.splice(index, 1)

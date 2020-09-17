@@ -1,9 +1,9 @@
 /**
  * Returns true if every `predicate(value)` is truthy
  */
-export function every(
-	a1:any[],
-	predicate:(item:any, number, a1)=>unknown
+export function every<I = unknown>(
+	a1:I[],
+	predicate:(item:I, number, a1: I[])=>boolean
 ):boolean {
 	if (!a1) return
 	let idx = -1

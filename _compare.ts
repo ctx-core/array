@@ -2,7 +2,7 @@ import type { compare_type } from './compare_type'
 /**
  * Returns a basic ascending or descending `compare` function to be used for sorting.
  */
-export function _compare(asc = true):compare_type {
+export function _compare<I = unknown>(asc = true):compare_type<I> {
 	return (a, b)=>{
 		if (a < b) return asc ? -1 : 1
 		if (a > b) return asc ? 1 : -1

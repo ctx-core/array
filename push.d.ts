@@ -1,5 +1,5 @@
-import type { falsy } from '@ctx-core/function';
+import type { maybe } from '@ctx-core/function';
 /**
- * Calls push on a1
+ * Calls push on in_a1
  */
-export declare function push(a1: falsy | any[], ...arg_a1: any): undefined | any[];
+export declare function push<I = unknown>(in_a1: maybe<I[]>, ...arg_a1: I[]): maybe<I[], undefined>;

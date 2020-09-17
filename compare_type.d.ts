@@ -1,1 +1,1 @@
-export declare type compare_type = (a: any, b: any) => number;
+export declare type compare_type<I = unknown> = (a: I, b: I) => number;
