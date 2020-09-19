@@ -6,13 +6,13 @@ import type { maybe } from '@ctx-core/function'
 /**
  * Returns a [sort_idx_ctx_type](#sort_idx_ctx_type).
  */
-export function _sort_idx_ctx<I = unknown>(
-	in_a1:maybe<I[]>,
-	compare:compare_type = _compare<I>()
+export function _sort_idx_ctx<I extends unknown[]>(
+	in_a1:maybe<I>,
+	compare:compare_type<I> = _compare<I>()
 ) {
 	const sort_a1 = [] as [I, number][]
-	const sort_val_a1 = []
-	const sort_idx_a1 = []
+	const sort_val_a1 = [] as I[]
+	const sort_idx_a1 = [] as number[]
 	if (in_a1) {
 		const a1 = in_a1 as I[]
 		for (let i = 0; i < a1.length; i++) {

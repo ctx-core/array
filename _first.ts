@@ -1,7 +1,10 @@
-import type { maybe } from '@ctx-core/function'
+import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
- * Returns the first item in `a1_maybe`.
+ * Returns the first item in `a1`.
  */
-export function _first<I = unknown>(a1_maybe:maybe<I[]>):undefined|I {
-	return a1_maybe ? (a1_maybe[0] as I) : void 0
+export function _first<I>(a1:I[]):maybe_undefined<I> {
+	return a1[0]
+}
+export function _maybe_first<I>(maybe_a1:maybe<I[]>):maybe_undefined<I> {
+	return maybe_a1 ? _first(maybe_a1 as I[]) : void 0
 }

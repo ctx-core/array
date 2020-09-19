@@ -3,8 +3,10 @@ import { _idx_sort_a1 } from './_idx_sort_a1'
 /**
  * Returns [sort_idx_ctx_type](#sort_idx_ctx_type) derived from `val_a1` sorted by `sort_idx_a1`.
  */
-export function _idx_sort_a1_sort_idx_ctx(val_a1:unknown[], sort_idx_a1:number[]):sort_idx_ctx_type {
-	const sort_val_a1 = _idx_sort_a1(val_a1, sort_idx_a1)
+export function _idx_sort_a1_sort_idx_ctx<I extends unknown[]>(
+	val_a1:I, sort_idx_a1:number[]
+):sort_idx_ctx_type<I> {
+	const sort_val_a1 = _idx_sort_a1<I>(val_a1, sort_idx_a1)
 	return {
 		sort_val_a1,
 		sort_idx_a1,

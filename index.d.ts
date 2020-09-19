@@ -82,6 +82,7 @@ export * from './every';
 export * from './filter';
 export * from './find';
 export * from './flatten';
+export * from './a1_item_type';
 export * from './idx_filter';
 export * from './idx_reject';
 export * from './indexOf';

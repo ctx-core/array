@@ -1,7 +1,13 @@
 import type { maybe } from '@ctx-core/function'
 /**
- * Calls push on in_a1
+ * Calls push on a1
  */
-export function push<I = unknown>(in_a1:maybe<I[]>, ...arg_a1:I[]):maybe<I[], undefined> {
-	return in_a1 ? (in_a1 as I[]).push.apply(in_a1, arg_a1) : void 0
+export function push<I>(a1:I[], ...arg_a1:I[]):number {
+	return a1.push.apply(a1, arg_a1)
+}
+export function maybe_push<I>(
+	maybe_a1:maybe<I[]>,
+	...arg_a1:I[]
+):maybe<number, undefined> {
+	return maybe_a1 ? push<I>(maybe_a1 as I[], ...arg_a1) : void 0
 }

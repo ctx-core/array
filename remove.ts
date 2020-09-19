@@ -1,13 +1,12 @@
 import { remove_idx } from './remove_idx'
-import type { maybe } from '@ctx-core/function'
+import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
  * Remove each `...item_a1` from `a1`.
  */
-export function remove<I = unknown>(
-	in_a1:maybe<I[]>,
+export function remove<I>(
+	in_a1:I[],
 	...item_a1:I[]
-):maybe<I[], undefined> {
-	if (!in_a1) return
+):I[] {
 	const a1 = in_a1 as I[]
 	for (let i = 0; i < item_a1.length; i++) {
 		const key = item_a1[i]
@@ -19,3 +18,10 @@ export function remove<I = unknown>(
 	return a1
 }
 export const remove__a1 = remove
+export function maybe_remove<I>(
+	maybe_a1:maybe<I[]>,
+	...item_a1:I[]
+):maybe_undefined<I[]> {
+	if (!maybe_a1) return
+	return remove<I>(maybe_a1 as I[], ...item_a1)
+}

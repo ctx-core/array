@@ -1,7 +1,7 @@
 /**
  * Is a_a1 `===` b_a1? Checks first level equality.
  */
-export function _eql_a1<I = unknown>(a_a1:I[], b_a1:I[]):boolean {
+export function _eql_a1<I>(a_a1:I[], b_a1:I[]):boolean {
 	if (a_a1 === b_a1) return true
 	if (a_a1 == null || b_a1 == null) return false
 	if (a_a1.length != b_a1.length) return false

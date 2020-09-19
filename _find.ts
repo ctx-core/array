@@ -4,6 +4,6 @@ import type { maybe } from '@ctx-core/function'
 /**
  * Returns function that returns value from [find](#find) with `fn` argument.
  */
-export function _find<I = unknown>(fn:_is_match_type<I>) {
-	return (a1_maybe:maybe<I[]>)=>find<I>(a1_maybe, fn) as I
+export function _find<I>(fn:_is_match_type<I>) {
+	return (maybe_a1:I[])=>find<I>(maybe_a1, fn) as maybe<I>
 }

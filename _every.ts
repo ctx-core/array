@@ -2,7 +2,7 @@ import { every } from './every'
 /**
  * Returns a function that returns from [every](#every) with the given `predicate` function.
  */
-export function _every<I = unknown>(predicate:(item: I, number, a1: I[])=>boolean) {
+export function _every<I>(predicate:(item: I, number, a1: I[])=>boolean) {
 	return (a1: I[])=>every(a1, predicate)
 }
 export const _every_fn = _every

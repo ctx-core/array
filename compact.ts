@@ -1,12 +1,11 @@
-import type { maybe } from '@ctx-core/function'
+import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
  * Removes null values from the array
  */
-export function compact<I = unknown>(in_a1:maybe<I[]>):maybe<I[], undefined> {
-	if (!in_a1) return
+export function compact<I>(a1:I[]):I[] {
 	const out_a1 = [] as I[]
-	for (let i = (in_a1 as I[]).length; i >= 0; --i) {
-		const val = (in_a1 as I[])[i]
+	for (let i = a1.length; i >= 0; --i) {
+		const val = a1[i]
 		if (val) {
 			out_a1.push(val)
 		}
@@ -15,3 +14,7 @@ export function compact<I = unknown>(in_a1:maybe<I[]>):maybe<I[], undefined> {
 }
 export const compact_a1 = compact
 export const compact__a1 = compact
+export function maybe_compact<I>(maybe_a1:maybe<I[]>):maybe_undefined<I[]> {
+	if (!maybe_a1) return
+	return compact<I>(maybe_a1 as I[])
+}
