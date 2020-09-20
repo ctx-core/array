@@ -1,42 +1,41 @@
 {
-  "name": "@ctx-core/array",
-  "version": "19.0.1",
-  "description": "ctx-core array",
-  "keywords": [
-    "ctx-core",
-    "array"
-  ],
-  "homepage": "https://github.com/ctx-core/array#readme",
-  "bugs": {
-    "url": "https://github.com/ctx-core/array/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ctx-core/array.git"
-  },
-  "license": "Apache-2.0",
-  "author": "Brian Takita",
-  "main": "./index.js",
-  "module": "./index.js",
-  "types": "./index.ts",
-  "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -f tsconfig.tsbuildinfo",
-    "compile": "./node_modules/.bin/tsc -b",
-    "exec": "$@",
-    "prepublishOnly": "npm run compile"
-  },
-  "dependencies": {
-    "@ctx-core/combinators": "workspace:*",
-    "@ctx-core/function": "workspace:*",
-    "@ctx-core/object": "workspace:*",
-    "@ctx-core/set": "workspace:*"
-  },
-  "devDependencies": {
-    "typescript": "^4.0.3"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "6974369acdaae7b301db08e6401946459ff08112"
+	"name": "@ctx-core/array",
+	"version": "19.0.1",
+	"description": "ctx-core array",
+	"keywords": [
+		"ctx-core",
+		"array"
+	],
+	"homepage": "https://github.com/ctx-core/array#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/array/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/array.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"main": "./index.js",
+	"module": "./index.js",
+	"types": "./index.ts",
+	"scripts": {
+		"build": "npm run clean && npm run compile",
+		"clean": "rm -f tsconfig.tsbuildinfo",
+		"compile": "./node_modules/.bin/tsc -b",
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
+	},
+	"dependencies": {
+		"@ctx-core/combinators": "workspace:*",
+		"@ctx-core/function": "workspace:*",
+		"@ctx-core/object": "workspace:*",
+		"@ctx-core/set": "workspace:*"
+	},
+	"devDependencies": {
+		"typescript": "^4.0.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
