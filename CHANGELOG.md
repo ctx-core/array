@@ -1,5 +1,12 @@
 # @ctx-core/array
 
+## 19.0.3
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@5.0.2
+
 ## 19.0.2
 
 ### Patch Changes
