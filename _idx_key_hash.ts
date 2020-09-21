@@ -1,7 +1,6 @@
 import { I__ } from '@ctx-core/combinators'
 import type { _item_key_idx_val_type } from './_item_key_idx_val_type'
-import type { maybe } from '@ctx-core/function'
-import type { a1_item_type } from './a1_item_type'
+import type { a1_item_type, maybe } from '@ctx-core/function'
 /**
  * Returns a Hash where each key is `a1[idx][key]` & value is `idx`.
  */

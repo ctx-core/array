@@ -3,7 +3,7 @@ import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
  * Returns Array of indices `idx` not rejected by `fn`.
  */
-export function idx_reject<I>(a1:I[], fn:_is_match_type<I>): number[] {
+export function idx_reject<I extends unknown>(a1:I[], fn:_is_match_type<I>): number[] {
 	const out_a1 = [] as number[]
 	for (let idx = 0; idx < a1.length; idx++) {
 		const value = a1[idx]
@@ -14,7 +14,7 @@ export function idx_reject<I>(a1:I[], fn:_is_match_type<I>): number[] {
 	return out_a1
 }
 export const reject__idx = idx_reject
-export function maybe_idx_reject<I>(
+export function maybe_idx_reject<I extends unknown>(
 	maybe_a1:maybe<I[]>,
 	fn:_is_match_type<I>
 ): maybe_undefined<number[]> {

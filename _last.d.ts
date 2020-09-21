@@ -1,6 +1,7 @@
-import type { maybe } from '@ctx-core/function';
+import type { maybe, maybe_undefined } from '@ctx-core/function';
 /**
  * Returns the _last item in the in_a1
  */
-export declare function _last<I>(in_a1: I[]): maybe<I, undefined>;
+export declare function _last<I extends unknown>(a1: I[]): maybe_undefined<I>;
 export declare const _last__a1: typeof _last;
+export declare function _maybe_last<I extends unknown>(maybe_a1: maybe<I[]>): maybe<I, undefined>;

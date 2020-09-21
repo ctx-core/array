@@ -1,11 +1,12 @@
-import type { a1_nowrap_type } from '@ctx-core/function'
+import type { wrap_a1_type } from '@ctx-core/function'
 import { _wrap_a1 } from '@ctx-core/function'
 /**
- * Apply the spread operator on `a1` into `fn`; `fn(...a1)`
+ * Apply the spread operator on `a1_unwrap` into `fn`; `fn(...a1_unwrap)`
  */
-export function spread<I, O = unknown>(
-	fn:(...a1:I[])=>unknown,
-	a1:a1_nowrap_type<I>
+export function spread<I extends unknown, O extends unknown>(
+	fn:(...a1:wrap_a1_type<I>)=>O,
+	a1_unwrap:I
 ):O {
-	return fn(..._wrap_a1<I>(a1)) as O
+	const wrap_a1 = _wrap_a1<I>(a1_unwrap)
+	return fn(...wrap_a1) as O
 }

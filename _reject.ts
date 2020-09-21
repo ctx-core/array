@@ -4,13 +4,13 @@ import { maybe_reject, reject } from './reject'
 /**
  * Returns function that returns value from [reject](#reject) with `fn` argument.
  */
-export function _reject<I>(
+export function _reject<I extends unknown>(
 	_is_match:_is_match_type<I>
 ):(a1:I[])=>I[] {
 	return a1=>reject<I>(a1, _is_match)
 }
 export const _fn__reject = _reject
-export function _maybe_reject<I>(
+export function _maybe_reject<I extends unknown[]>(
 	_is_match:_is_match_type<I>
 ):(a1:maybe<I[]>)=>maybe<I[], undefined> {
 	return a1=>maybe_reject<I>(a1, _is_match)

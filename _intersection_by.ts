@@ -1,11 +1,14 @@
-import { _wrap_a2 } from './_wrap_a2'
-import type { a2_nowrap_type } from '@ctx-core/function'
-export function _intersection_by<I, O = unknown>(a2_nowrap:a2_nowrap_type<I>, _by = (v:I)=>v as unknown as O) {
-	const a2 = _wrap_a2(a2_nowrap)
-	const intersection_map = new Map() as Map<O, I>
-	const current_map = new Map() as Map<O, I>
+import type { wrap_a2_item_type } from '@ctx-core/function'
+import { _wrap_a2 } from '@ctx-core/function'
+export function _intersection_by<I extends unknown, O extends unknown>(
+	a2_nowrap:I,
+	_by = (v:wrap_a2_item_type<I>)=>v as unknown as O
+) {
+	const a2 = _wrap_a2<I>(a2_nowrap)
+	const intersection_map = new Map() as Map<O, wrap_a2_item_type<I>>
+	const current_map = new Map() as Map<O, wrap_a2_item_type<I>>
 	for (let i = 0; i < a2.length; i++) {
-		const a1 = a2[i]
+		const a1 = a2[i] as wrap_a2_item_type<I>[]
 		if (!i) {
 			for (let j = 0; j < a1.length; j++) {
 				const item = a1[j]

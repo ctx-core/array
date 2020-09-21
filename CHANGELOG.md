@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 19.0.5
+
+### Patch Changes
+
+- stricter type checking of generics
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/function@16.1.0
+  - @ctx-core/object@12.0.3
+  - @ctx-core/set@8.0.2
+
 ## 19.0.4
 
 ### Patch Changes

@@ -1,10 +1,9 @@
-import { _wrap_a2 } from './_wrap_a2'
-import type { a2_nowrap_type } from '@ctx-core/function'
-export function _difference_by<I, O = unknown>(
-	a2_nowrap:a2_nowrap_type<I>,
+import { _wrap_a2 } from '@ctx-core/function'
+export function _difference_by<I extends unknown, O extends unknown>(
+	a2_nowrap:I,
 	_by = (item:I)=>item as unknown as O
 ) {
-	const a2 = _wrap_a2(a2_nowrap)
+	const a2 = _wrap_a2<I>(a2_nowrap)
 	const set = new Set()
 	const difference = [] as I[]
 	const { length } = a2

@@ -1,8 +1,7 @@
 import { andand_name_type, maybe } from '@ctx-core/function';
-import type { a1_item_type } from './a1_item_type';
 /**
  * Returns Array of mapped `a1` with `_andand(...name_a1)`.
  */
-export declare function map_andand<I extends unknown[], O extends unknown[]>(a1: I, ...name_a1: andand_name_type<a1_item_type<I>, a1_item_type<O>>[]): (a1_item_type<I> | a1_item_type<O>)[];
+export declare function map_andand<I extends unknown, O extends unknown>(a1: I[], ...name_a1: andand_name_type<I, O>[]): (I | O)[];
 export declare const map__andand: typeof map_andand;
-export declare function maybe_map_andand<I extends unknown[], O extends unknown[]>(a1: maybe<I[]>, ...name_a1: andand_name_type<a1_item_type<I>, a1_item_type<O>>[]): maybe<O, undefined>;
+export declare function maybe_map_andand<I extends unknown, O extends unknown>(a1: maybe<I[]>, ...name_a1: andand_name_type<I, O>[]): maybe<O[], undefined>;

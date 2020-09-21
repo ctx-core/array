@@ -4,7 +4,9 @@ import type { thold_a1_compact_ctx_fn_type } from './thold_a1_compact_ctx_fn_typ
 /**
  * Returns a function that returns a [compact_a1_ctx_type](#compact_a1_ctx_type)
  */
-export function _entry_thold_a1_compact_ctx_fn<I>(_eq = (eq as eq_type<I>)) {
+export function _entry_thold_a1_compact_ctx_fn<I extends unknown>(
+	_eq = (eq as eq_type<I[]>)
+) {
 	return (
 		(in_val_a1:maybe<I[]>)=>{
 			const idx_a1 = [] as number[]
