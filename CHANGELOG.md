@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 19.0.7
+
+### Patch Changes
+
+- fix: export type reference to @ctx-core/function to fix --isolatedModules
+
 ## 19.0.6
 
 ### Patch Changes
