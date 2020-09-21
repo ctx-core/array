@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 19.0.6
+
+### Patch Changes
+
+- version bump to sync with npm
+
 ## 19.0.5
 
 ### Patch Changes
