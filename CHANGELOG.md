@@ -1,5 +1,12 @@
 # @ctx-core/array
 
+## 19.0.10
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/set@8.0.3
+
 ## 19.0.9
 
 ### Patch Changes
