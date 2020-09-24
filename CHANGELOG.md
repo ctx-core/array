@@ -1,5 +1,14 @@
 # @ctx-core/array
 
+## 19.0.14
+
+### Patch Changes
+
+- explicitly setting B types when \_b is invoked
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/object@12.0.9
+
 ## 19.0.13
 
 ### Patch Changes
