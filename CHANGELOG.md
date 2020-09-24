@@ -1,5 +1,12 @@
 # @ctx-core/array
 
+## 19.0.15
+
+### Patch Changes
+
+- fix: explicit typing: \_idx_item_hash, \_hash**item**idx, \_maybe_find
+- fix: \_maybe_find: implementation
+
 ## 19.0.14
 
 ### Patch Changes
