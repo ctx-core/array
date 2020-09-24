@@ -2,7 +2,7 @@ import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
  * Returns true if every `predicate(value)` is truthy
  */
-export function every<I extends unknown>(
+export function every<I extends unknown = unknown>(
 	a1:I[],
 	predicate:(item:I, number, a1: I[])=>boolean
 ):boolean {
@@ -17,7 +17,7 @@ export function every<I extends unknown>(
 }
 export const every_a1 = every
 export const every__a1 = every
-export function maybe_every<I extends unknown>(
+export function maybe_every<I extends unknown = unknown>(
 	maybe_a1:maybe<I[]>,
 	predicate:(item:I, number, a1: I[])=>boolean
 ):maybe_undefined<boolean> {

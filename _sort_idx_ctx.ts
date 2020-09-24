@@ -6,7 +6,7 @@ import type { maybe } from '@ctx-core/function'
 /**
  * Returns a [sort_idx_ctx_type](#sort_idx_ctx_type).
  */
-export function _sort_idx_ctx<I extends unknown>(
+export function _sort_idx_ctx<I extends unknown = unknown>(
 	maybe_a1:maybe<I[]>,
 	compare:compare_type<I> = _compare<I>()
 ) {

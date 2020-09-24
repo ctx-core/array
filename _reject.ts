@@ -4,7 +4,7 @@ import { maybe_reject, reject } from './reject'
 /**
  * Returns function that returns value from [reject](#reject) with `fn` argument.
  */
-export function _reject<I extends unknown>(
+export function _reject<I extends unknown = unknown>(
 	_is_match:_is_match_type<I>
 ):(a1:I[])=>I[] {
 	return a1=>reject<I>(a1, _is_match)

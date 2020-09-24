@@ -1,5 +1,15 @@
 # @ctx-core/array
 
+## 19.0.13
+
+### Patch Changes
+
+- default generic types
+- Updated dependencies [undefined]
+  - @ctx-core/function@16.1.1
+  - @ctx-core/object@12.0.8
+  - @ctx-core/set@8.0.4
+
 ## 19.0.12
 
 ### Patch Changes

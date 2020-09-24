@@ -4,7 +4,7 @@ import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
  * Returns Array of items not rejected by `fn`.
  */
-export function reject<I extends unknown>(
+export function reject<I extends unknown = unknown>(
 	a1:I[],
 	_is_match:_is_match_type<I>
 ):I[] {
@@ -13,7 +13,7 @@ export function reject<I extends unknown>(
 		(value:I, idx:number)=>!_is_match(value, idx)
 	)
 }
-export function maybe_reject<I extends unknown>(
+export function maybe_reject<I extends unknown = unknown>(
 	maybe_a1:maybe<I[]>,
 	_is_match:_is_match_type<I>
 ):maybe_undefined<I[]> {

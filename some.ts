@@ -1,7 +1,7 @@
 /**
  * Returns true if some `predicate(value)` is truthy
  */
-export function some<I extends unknown>(
+export function some<I extends unknown = unknown>(
 	a1:I[], predicate:(val:I, index:number, a1:I[])=>unknown
 ):boolean {
 	let index = -1

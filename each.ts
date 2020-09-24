@@ -2,7 +2,7 @@ import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
  * Iterate over each item in `a1` with `fn(a1[i], i)`.
  */
-export function each<I extends unknown>(
+export function each<I extends unknown = unknown>(
 	a1:I[],
 	fn:each_fn_type<I>
 ):I[] {
@@ -11,7 +11,7 @@ export function each<I extends unknown>(
 	}
 	return a1
 }
-export function maybe_each<I extends unknown>(
+export function maybe_each<I extends unknown = unknown>(
 	maybe_a1:maybe<I[]>,
 	fn:each_fn_type<I>
 ):maybe_undefined<I[]> {

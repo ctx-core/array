@@ -5,7 +5,7 @@ import { isArray } from '@ctx-core/object'
 /**
  * Flattens the a1 & it's children into an a1 without chunks
  */
-export function flatten<I extends unknown>(a1:wrap_a_type<I>):I[] {
+export function flatten<I extends unknown = unknown>(a1:wrap_a_type<I>):I[] {
 	return (a1 as I[]).reduce<I[]>(
 		(previousValue: I[], currentValue:I)=>
 			wrap_concat<I>(
@@ -20,7 +20,7 @@ export function flatten<I extends unknown>(a1:wrap_a_type<I>):I[] {
 	) as I[]
 }
 export const flatten__a1 = flatten
-export function maybe_flatten<I extends unknown>(in_a1:wrap_a_type<I>):maybe_undefined<I[]> {
+export function maybe_flatten<I extends unknown = unknown>(in_a1:wrap_a_type<I>):maybe_undefined<I[]> {
 	if (!in_a1) return
 	return flatten<I>(in_a1)
 }

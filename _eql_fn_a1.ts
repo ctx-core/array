@@ -2,7 +2,7 @@ import type { a1_item_type } from '@ctx-core/function'
 /**
  * Is a_a1 `===` to b_a1 based on `fn(a, b, i)`? Checks first level equality.
  */
-export function _eql_fn_a1<I extends unknown>(
+export function _eql_fn_a1<I extends unknown = unknown>(
 	a_a1:I[],
 	b_a1:I[],
 	fn:(a:a1_item_type<I>, b:a1_item_type<I>, number)=>boolean
