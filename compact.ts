@@ -4,8 +4,7 @@ import type { maybe, maybe_undefined } from '@ctx-core/function'
  */
 export function compact<I extends unknown = unknown>(a1:I[]):I[] {
 	const out_a1 = [] as I[]
-	for (let i = a1.length; i >= 0; --i) {
-		const val = a1[i]
+	for (const val of a1) {
 		if (val) {
 			out_a1.push(val)
 		}

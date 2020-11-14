@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 19.0.22
+
+### Patch Changes
+
+- fix: compact: forward direction instead of reverse direction
+
 ## 19.0.21
 
 ### Patch Changes
