@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 19.1.0
+
+### Minor Changes
+
+- interface instead of type
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@13.1.0
+
 ## 19.0.24
 
 ### Patch Changes
