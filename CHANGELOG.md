@@ -1,5 +1,18 @@
 # @ctx-core/array
 
+## 19.1.6
+
+### Patch Changes
+
+- using export as instead of export const
+- interface instead of type: idx_item_hash_fn_type,idx_item_hash_type,idx_key_hash_type,idx_key_hash_type
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/object@15.0.4
+  - @ctx-core/function@16.1.5
+  - @ctx-core/set@8.0.8
+
 ## 19.1.5
 
 ### Patch Changes
