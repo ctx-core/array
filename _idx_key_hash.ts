@@ -20,8 +20,8 @@ export function _idx_key_hash<I extends object[]>(
 	}
 	return idx_key_hash
 }
-export const _hash__key__idx = _idx_key_hash
-export type idx_key_hash_type = Record<string, number>
+export { _idx_key_hash as _hash__key__idx }
+export interface idx_key_hash_type extends Record<string, number> {}
 export function _maybe_idx_key_hash<I extends object[]>(
 	maybe_a1:maybe<I>,
 	key:string|number,

@@ -17,6 +17,6 @@ export function _idx_item_hash_fn(
 		return idx_item_hash
 	}
 }
-export const _fn__idx_item_hash = _idx_item_hash_fn
-export type idx_item_hash_type = Record<string, number>
+export interface idx_item_hash_type extends Record<string, number> {}
 export type idx_item_hash_fn_type = (a1:maybe<string[]>)=>idx_item_hash_type
+export { _idx_item_hash_fn as _fn__idx_item_hash}
