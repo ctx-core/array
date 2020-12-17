@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 19.1.8
+
+### Patch Changes
+
+- using export as instead of export const
+
 ## 19.1.7
 
 ### Patch Changes
