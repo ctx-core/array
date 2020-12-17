@@ -14,5 +14,7 @@ export function _key_h_a1<I extends object = object>(ctx_a1_nowrap:I) {
 	}
 	return a1_key_hash
 }
-export const _a1_key_hash = _key_h_a1
-export const _hash__key__a1 = _key_h_a1
+export {
+	_key_h_a1 as _a1_key_hash,
+	_key_h_a1 as _hash__key__a1,
+}

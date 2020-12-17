@@ -4,4 +4,6 @@
 export function _random_idx(a1:unknown[]):number {
 	return Math.floor(Math.random() * a1.length)
 }
-export const idx__random = _random_idx
+export {
+	_random_idx as idx__random,
+}

@@ -9,4 +9,6 @@ export function _sparse_a1<I extends unknown = unknown>(idx_a1:number[], val_a1:
 	}
 	return sparse_a1
 }
-export const _a1__sparse = _sparse_a1
+export {
+	_sparse_a1 as _a1__sparse,
+}

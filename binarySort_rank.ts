@@ -21,5 +21,7 @@ export function binarySort_rank(a1:unknown[], compare_1:compare_1_type):number {
 	}
 	return -1
 }
-export const rank__binarySort = binarySort_rank
-export const rank__binarySort__a1 = rank__binarySort
+export {
+	binarySort_rank as rank__binarySort,
+	binarySort_rank as rank__binarySort__a1,
+}

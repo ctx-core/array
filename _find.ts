@@ -1,6 +1,6 @@
+import type { maybe } from '@ctx-core/function'
 import { find, maybe_find } from './find'
 import type { _is_match_type } from './_is_match_type'
-import type { maybe } from '@ctx-core/function'
 /**
  * Returns function that returns value from [find](#find) with `fn` argument.
  */

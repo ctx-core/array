@@ -1,5 +1,5 @@
-import type { compare_type } from './compare_type';
 import type { maybe, maybe_undefined } from '@ctx-core/function';
+import type { compare_type } from './compare_type';
 /**
  * Sort items in `a1` by the `compare` function
  */

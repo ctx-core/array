@@ -20,7 +20,6 @@ export function _idx_key_hash<I extends object[]>(
 	}
 	return idx_key_hash
 }
-export { _idx_key_hash as _hash__key__idx }
 export interface idx_key_hash_type extends Record<string, number> {}
 export function _maybe_idx_key_hash<I extends object[]>(
 	maybe_a1:maybe<I>,
@@ -29,3 +28,4 @@ export function _maybe_idx_key_hash<I extends object[]>(
 ) {
 	return _idx_key_hash<I>(maybe_a1 as I, key, _val)
 }
+export { _idx_key_hash as _hash__key__idx }

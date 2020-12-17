@@ -11,9 +11,11 @@ export function compact<I extends unknown = unknown>(a1:I[]):I[] {
 	}
 	return out_a1
 }
-export const compact_a1 = compact
-export const compact__a1 = compact
 export function maybe_compact<I extends unknown = unknown>(maybe_a1:maybe<I[]>):maybe_undefined<I[]> {
 	if (!maybe_a1) return
 	return compact<I>(maybe_a1 as I[])
+}
+export {
+	compact as compact_a1,
+	compact as compact__a1,
 }

@@ -11,5 +11,7 @@ export function concat_truthy_a1<I extends unknown = unknown>(
 	}
 	return out_a1
 }
-export const concat__default__a1 = concat_truthy_a1
-export const concat__truthy = concat_truthy_a1
+export {
+	concat_truthy_a1 as concat__default__a1,
+	concat_truthy_a1 as concat__truthy,
+}

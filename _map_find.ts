@@ -5,4 +5,6 @@ import { map_find } from './map_find'
 export function _map_find(fn) {
 	return array=>map_find(array, fn)
 }
-export const _find__map = _map_find
+export {
+	_map_find as _find__map
+}

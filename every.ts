@@ -15,12 +15,14 @@ export function every<I extends unknown = unknown>(
 	}
 	return true
 }
-export const every_a1 = every
-export const every__a1 = every
 export function maybe_every<I extends unknown = unknown>(
 	maybe_a1:maybe<I[]>,
 	predicate:(item:I, number, a1: I[])=>boolean
 ):maybe_undefined<boolean> {
 	if (!maybe_a1) return
 	return every<I>(maybe_a1 as I[], predicate)
+}
+export {
+	every as every_a1,
+	every as every__a1,
 }

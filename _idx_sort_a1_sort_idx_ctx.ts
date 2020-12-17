@@ -12,4 +12,6 @@ export function _idx_sort_a1_sort_idx_ctx<I extends unknown = unknown>(
 		sort_idx_a1,
 	}
 }
-export const _ctx__idx__sort__a1__sort__idx = _idx_sort_a1_sort_idx_ctx
+export {
+	_idx_sort_a1_sort_idx_ctx as _ctx__idx__sort__a1__sort__idx,
+}

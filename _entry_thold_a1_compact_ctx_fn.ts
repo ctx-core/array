@@ -29,4 +29,6 @@ export function _entry_thold_a1_compact_ctx_fn<I extends unknown = unknown>(
 		}
 	) as thold_a1_compact_ctx_fn_type<I>
 }
-export const _fn__ctx__compact__a1__thold__entry = _entry_thold_a1_compact_ctx_fn
+export {
+	_entry_thold_a1_compact_ctx_fn as _fn__ctx__compact__a1__thold__entry,
+}

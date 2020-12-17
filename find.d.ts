@@ -1,5 +1,5 @@
-import type { _is_match_type } from './_is_match_type';
 import type { maybe, maybe_undefined } from '@ctx-core/function';
+import type { _is_match_type } from './_is_match_type';
 /**
  * Returns first item in `a1` where `fn(a1[idx], idx)` is truthy.
  */

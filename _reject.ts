@@ -9,9 +9,11 @@ export function _reject<I extends unknown = unknown>(
 ):(a1:I[])=>I[] {
 	return a1=>reject<I>(a1, _is_match)
 }
-export const _fn__reject = _reject
 export function _maybe_reject<I extends unknown[]>(
 	_is_match:_is_match_type<I>
 ):(a1:maybe<I[]>)=>maybe<I[], undefined> {
 	return a1=>maybe_reject<I>(a1, _is_match)
+}
+export {
+	_reject as _fn__reject,
 }

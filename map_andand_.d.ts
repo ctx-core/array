@@ -2,5 +2,4 @@
  * Returns Array of mapped `a1` with `_andand_(...a1__attr)`
  */
 export declare function map_andand_(a1: any, ...a1__attr: any[]): unknown[];
-export declare const map__andand_: typeof map_andand_;
-export declare const map__andand__fn: typeof map_andand_;
+export { map_andand_ as map__andand_, map_andand_ as map__andand__fn, };

@@ -16,7 +16,6 @@ export function _reduce<I, O = unknown>(
 			) as O
 	)
 }
-export { _reduce as _fn__reduce }
 export type _memo_type<I, O = unknown> = (a1:I[])=>O
 export function _maybe_reduce<I, O = unknown>(
 	fn:reduce_fn_type<I, maybe<O>>,
@@ -31,3 +30,4 @@ export function _maybe_reduce<I, O = unknown>(
 			) as O
 	)
 }
+export { _reduce as _fn__reduce }

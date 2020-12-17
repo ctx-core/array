@@ -13,9 +13,11 @@ export function _key_hash<I extends object[]>(a1:I, key:string|number) {
 	}
 	return key_hash
 }
-export const _hash__key = _key_hash
 export function _maybe_key_hash<I extends object[]>(
 	maybe_a1:maybe<I>, key:string|number
 ) {
 	return _key_hash<I>(maybe_a1 as I, key)
+}
+export {
+	_key_hash as _hash__key,
 }

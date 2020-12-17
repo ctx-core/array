@@ -5,5 +5,7 @@ import { _a1_length } from './_a1_length'
 export function _has_multiple(a1:unknown[]):boolean {
 	return _a1_length(a1) > 1
 }
-export const _has__multiple = _has_multiple
-export const _has__multiple__a1 = _has_multiple
+export {
+	_has_multiple as _has__multiple,
+	_has_multiple as _has__multiple__a1,
+}

@@ -1,5 +1,5 @@
-import type { _is_match_type } from './_is_match_type';
 import type { maybe } from '@ctx-core/function';
+import type { _is_match_type } from './_is_match_type';
 /**
  * Returns function that returns value from [find](#find) with `fn` argument.
  */

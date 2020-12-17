@@ -12,4 +12,6 @@ export function _invert_idx_a1(in_idx_a1:maybe<number[]>):maybe<number[], undefi
 	}
 	return invert_idx_a1
 }
-export const _a1__idx__invert = _invert_idx_a1
+export {
+	_invert_idx_a1 as _a1__idx__invert,
+}

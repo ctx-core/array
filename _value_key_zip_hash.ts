@@ -14,4 +14,6 @@ export function _value_key_zip_hash<K extends (string|number|symbol), V extends 
 	)
 	return value_key_zip_hash
 }
-export const _hash__zip__key__value = _value_key_zip_hash
+export {
+	_value_key_zip_hash as _hash__zip__key__value,
+}

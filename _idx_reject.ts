@@ -5,5 +5,7 @@ import { idx_reject } from './idx_reject'
 export function _idx_reject(fn) {
 	return a1=>idx_reject(a1, fn)
 }
-export const _reject__idx = _idx_reject
-export const _fn__reject__idx = _reject__idx
+export {
+	_idx_reject as _reject__idx,
+	_idx_reject as _fn__reject__idx,
+}

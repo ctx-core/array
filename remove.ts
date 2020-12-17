@@ -1,5 +1,5 @@
-import { remove_idx } from './remove_idx'
 import type { maybe, maybe_undefined } from '@ctx-core/function'
+import { remove_idx } from './remove_idx'
 /**
  * Remove each `...item_a1` from `a1`.
  */
@@ -16,11 +16,13 @@ export function remove<I extends unknown = unknown>(
 	}
 	return a1
 }
-export const remove__a1 = remove
 export function maybe_remove<I extends unknown = unknown>(
 	maybe_a1:maybe<I[]>,
 	...item_a1:I[]
 ):maybe_undefined<I[]> {
 	if (!maybe_a1) return
 	return remove<I>(maybe_a1 as I[], ...item_a1)
+}
+export {
+	remove as remove__a1,
 }

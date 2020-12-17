@@ -11,4 +11,6 @@ export function rank(a1:unknown[], compare_1:compare_1_type):number {
 	}
 	return i_rank
 }
-export const rank__a1 = rank
+export {
+	rank as rank__a1,
+}

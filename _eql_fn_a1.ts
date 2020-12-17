@@ -15,4 +15,6 @@ export function _eql_fn_a1<I extends unknown = unknown>(
 	}
 	return true
 }
-export const _eql__a1__fn = _eql_fn_a1
+export {
+	_eql_fn_a1 as _eql__a1__fn,
+}

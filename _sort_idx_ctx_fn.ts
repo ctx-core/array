@@ -9,4 +9,6 @@ export function _sort_idx_ctx_fn<I extends unknown = unknown>(
 ):sort_idx_ctx_a1_fn_type<I> {
 	return (a1)=>_sort_idx_ctx<I>(a1, compare)
 }
-export const _fn__sort_idx_ctx = _sort_idx_ctx_fn
+export {
+	_sort_idx_ctx as _fn__sort_idx_ctx,
+}

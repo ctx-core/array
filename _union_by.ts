@@ -1,5 +1,4 @@
-import type { wrap_a2_item_type } from '@ctx-core/function'
-import { _wrap_a2 } from '@ctx-core/function'
+import { _wrap_a2, wrap_a2_item_type } from '@ctx-core/function'
 export function _union_by<I extends unknown, O extends unknown>(
 	a2_nowrap:I,
 	_by = (v:wrap_a2_item_type<I>)=>v as unknown as O
@@ -20,4 +19,6 @@ export function _union_by<I extends unknown, O extends unknown>(
 	}
 	return union
 }
-export const _union__by = _union_by
+export {
+	_union_by as _union__by,
+}

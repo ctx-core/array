@@ -9,16 +9,18 @@ export function _compare<I extends unknown = unknown>(asc = true):compare_type<I
 		return 0
 	}
 }
-export const _fn__compare = _compare
 /**
  * Compare function to sort by ascending order.
  */
 export const asc_compare = _compare(true)
-export const compare__asc = asc_compare
-export const fn__compare__asc = asc_compare
 /**
  * Compare function to sort by descending order.
  */
 export const desc_compare = _compare(false)
-export const compare__desc = desc_compare
-export const fn__compare__desc = desc_compare
+export {
+	_compare as _fn__compare,
+	asc_compare as compare__asc,
+	asc_compare as fn__compare__asc,
+	desc_compare as compare__desc,
+	desc_compare as fn__compare__desc,
+}

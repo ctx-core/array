@@ -9,4 +9,6 @@ export function _chunk_a2<I extends unknown = unknown>(a1:I[], chunk_length:numb
 	}
 	return chunk_a2
 }
-export const _a2__chunk = _chunk_a2
+export {
+	_chunk_a2 as _a2__chunk,
+}

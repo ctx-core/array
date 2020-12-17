@@ -4,4 +4,4 @@ import type { thold_a1_compact_ctx_fn_type } from './thold_a1_compact_ctx_fn_typ
  * Returns a function that returns a [compact_a1_ctx_type](#compact_a1_ctx_type)
  */
 export declare function _exit_thold_a1_compact_ctx_fn<I extends unknown = unknown>(_eq?: eq_type<I[]>): thold_a1_compact_ctx_fn_type<I>;
-export declare const _fn__ctx__compact__a1__thold__exit: typeof _exit_thold_a1_compact_ctx_fn;
+export { _exit_thold_a1_compact_ctx_fn as _fn__ctx__compact__a1__thold__exit, };

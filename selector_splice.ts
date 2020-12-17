@@ -8,5 +8,7 @@ export function selector_splice(a1:unknown[], selector:(any, number, a1)=>unknow
 	}
 	return a1
 }
-export const splice__selector = selector_splice
-export const splice__selector__a1 = splice__selector
+export {
+	selector_splice as splice__selector,
+	selector_splice as splice__selector__a1,
+}

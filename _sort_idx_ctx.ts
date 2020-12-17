@@ -1,8 +1,8 @@
+import type { maybe } from '@ctx-core/function'
 import type { compare_type } from './compare_type'
 import { _compare } from './_compare'
 import type { sort_idx_ctx_type } from './sort_idx_ctx_type'
 import { sort } from './sort'
-import type { maybe } from '@ctx-core/function'
 /**
  * Returns a [sort_idx_ctx_type](#sort_idx_ctx_type).
  */
@@ -29,4 +29,6 @@ export function _sort_idx_ctx<I extends unknown = unknown>(
 		sort_val_a1,
 	} as sort_idx_ctx_type<I>
 }
-export const _ctx__idx__sort = _sort_idx_ctx
+export {
+	_sort_idx_ctx as _ctx__idx__sort,
+}

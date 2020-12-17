@@ -6,4 +6,6 @@ import { map } from './map'
 export function map_andand_or(a1, attr_a1, or_fn) {
 	return map(a1, _andand_or(attr_a1, or_fn))
 }
-export const map__andand__or = map_andand_or
+export {
+	map_andand_or as map__andand__or,
+}

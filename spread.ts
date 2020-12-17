@@ -1,5 +1,4 @@
-import type { wrap_a1_type } from '@ctx-core/function'
-import { _wrap_a1 } from '@ctx-core/function'
+import { _wrap_a1, wrap_a1_type } from '@ctx-core/function'
 /**
  * Apply the spread operator on `a1_unwrap` into `fn`; `fn(...a1_unwrap)`
  */

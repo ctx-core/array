@@ -1,5 +1,5 @@
-import { zipWith } from './zipWith'
 import type { maybe, maybe_undefined } from '@ctx-core/function'
+import { zipWith } from './zipWith'
 /**
  * Returns 2d Array of each item being the index value for each Array in `...a2`.
  */

@@ -13,5 +13,7 @@ export function some<I extends unknown = unknown>(
 	}
 	return false
 }
-export const some_a1 = some
-export const some__a1 = some
+export {
+	some as some_a1,
+	some as some__a1,
+}

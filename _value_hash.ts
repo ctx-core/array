@@ -16,4 +16,6 @@ export function _value_hash<O = unknown>(
 	}
 	return value_hash
 }
-export const _hash__value = _value_hash
+export {
+	_value_hash as _hash__value,
+}

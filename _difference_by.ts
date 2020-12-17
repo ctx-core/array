@@ -22,4 +22,6 @@ export function _difference_by<I extends unknown, O extends unknown>(
 	}
 	return difference
 }
-export const _difference__by = _difference_by
+export {
+	_difference_by as _difference__by,
+}

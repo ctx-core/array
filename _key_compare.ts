@@ -8,6 +8,8 @@ export function _key_compare(key:any, asc = true):(a:any, b:any)=>number {
 		return 0
 	}
 }
-export const _compare__key = _key_compare
-export const _sort__key = _key_compare
-export const _sort__key__a1 = _key_compare
+export {
+	_key_compare as _compare__key,
+	_key_compare as _sort__key,
+	_key_compare as _sort__key__a1,
+}

@@ -12,11 +12,13 @@ export function map_find<I, O = I>(
 		if (map_value) return map_value as O
 	}
 }
-export const find__map = map_find
 export function maybe_map_find<I, O = I>(
 	maybe_a1:maybe<I[]>,
 	fn:(I, number)=>maybe<O>
 ):maybe<O, undefined> {
 	if (!maybe_a1) return
 	return map_find<I, O>(maybe_a1 as I[], fn)
+}
+export {
+	map_find as find__map,
 }

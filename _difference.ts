@@ -11,4 +11,6 @@ export function _difference<I extends unknown = unknown>(a2_nowrap:a_nowrap_type
 		_difference__set<wrap_a2_type<I>>(a2)
 	) as wrap_a2_item_type<I>[]
 }
-export const _difference__a1 = _difference
+export {
+	_difference as _difference__a1,
+}

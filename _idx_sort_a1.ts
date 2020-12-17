@@ -14,11 +14,13 @@ export function _idx_sort_a1<I extends unknown = unknown>(
 	}
 	return idx_sort_a1
 }
-export const _a1__sort__idx = _idx_sort_a1
 export function _maybe_idx_sort_a1<I extends unknown = unknown>(
 	in_val_a1:maybe<I[]>,
 	in_sort_idx_a1:maybe<number[]>
 ):maybe<I[], undefined> {
 	if (!in_sort_idx_a1 || !in_val_a1) return
 	return _idx_sort_a1<I>(in_val_a1 as I[], in_sort_idx_a1)
+}
+export {
+	_idx_sort_a1 as _a1__sort__idx,
 }

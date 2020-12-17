@@ -12,10 +12,12 @@ export function map_andand<I extends unknown, O extends unknown>(
 			item, ...name_a1
 		))
 }
-export const map__andand = map_andand
 export function maybe_map_andand<I extends unknown, O extends unknown>(
 	a1:maybe<I[]>,
 	...name_a1:andand_name_type<I, O>[]
 ) {
 	return maybe_map<I, O>(a1 as I[], _andand<I, O>(...name_a1))
+}
+export {
+	map_andand as map__andand,
 }

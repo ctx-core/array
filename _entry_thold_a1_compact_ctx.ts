@@ -7,4 +7,6 @@ import type { thold_a1_compact_ctx_fn_type } from './thold_a1_compact_ctx_fn_typ
  */
 export const _entry_thold_a1_compact_ctx =
 	_entry_thold_a1_compact_ctx_fn() as thold_a1_compact_ctx_fn_type
-export const _ctx__compact__a1__thold__entry = _entry_thold_a1_compact_ctx
+export {
+	_entry_thold_a1_compact_ctx as _ctx__compact__a1__thold__entry,
+}

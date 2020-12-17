@@ -1,3 +1,2 @@
 import { concat } from '@ctx-core/function';
-export declare const a1_concat: typeof concat;
-export declare const concat__a1: typeof concat;
+export { concat as a1_concat, concat as concat__a1, };

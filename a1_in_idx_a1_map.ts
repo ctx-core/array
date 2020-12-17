@@ -7,4 +7,6 @@ export function a1_in_idx_a1_map<I extends (string|number)>(
 ) {
 	return map<I, I>(idx_a1, idx=>a1[idx as string|number])
 }
-export const map__a1__idx__in__a1 = a1_in_idx_a1_map
+export {
+	a1_in_idx_a1_map as map__a1__idx__in__a1,
+}

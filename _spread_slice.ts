@@ -5,5 +5,7 @@ import { slice } from './slice'
 export function _spread_slice(...arg_a1:any):(...a1:any)=>undefined|unknown[] {
 	return (...a1)=>slice(a1, ...arg_a1)
 }
-export const _slice__spread = _spread_slice
-export const _fn__slice__spread = _slice__spread
+export {
+	_spread_slice as _slice__spread,
+	_spread_slice as _fn__slice__spread,
+}

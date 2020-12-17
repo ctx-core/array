@@ -1,5 +1,4 @@
-import type { wrap_a2_item_type } from '@ctx-core/function'
-import { _wrap_a2 } from '@ctx-core/function'
+import { _wrap_a2, wrap_a2_item_type } from '@ctx-core/function'
 export function _intersection_by<I extends unknown, O extends unknown>(
 	a2_nowrap:I,
 	_by = (v:wrap_a2_item_type<I>)=>v as unknown as O
@@ -37,4 +36,6 @@ export function _intersection_by<I extends unknown, O extends unknown>(
 	})
 	return intersection
 }
-export const _intersection__by = _intersection_by
+export {
+	_intersection_by as _intersection__by,
+}

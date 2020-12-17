@@ -10,4 +10,6 @@ export function _eql_a1<I extends unknown = unknown>(a_a1:I[], b_a1:I[]):boolean
 	}
 	return true
 }
-export const _eql__a1 = _eql_a1
+export {
+	_eql_a1 as _eql__a1,
+}

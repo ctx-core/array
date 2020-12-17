@@ -8,4 +8,6 @@ export function _idx_a1(count:number, start = 0) {
 	}
 	return idx_a1
 }
-export const _a1__idx = _idx_a1
+export {
+	_idx_a1 as _a1__idx,
+}

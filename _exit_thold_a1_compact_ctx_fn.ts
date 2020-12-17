@@ -36,4 +36,6 @@ export function _exit_thold_a1_compact_ctx_fn<I extends unknown = unknown>(
 		} as compact_a1_ctx_type<I>
 	}) as thold_a1_compact_ctx_fn_type<I>
 }
-export const _fn__ctx__compact__a1__thold__exit = _exit_thold_a1_compact_ctx_fn
+export {
+	_exit_thold_a1_compact_ctx_fn as _fn__ctx__compact__a1__thold__exit,
+}

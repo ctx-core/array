@@ -5,5 +5,7 @@ import { some } from './some'
 export function _some(predicate:(any, number, a1)=>unknown):(a1:unknown[])=>boolean {
 	return a1=>some(a1, predicate)
 }
-export const _some_fn = _some
-export const _fn__some = _some
+export {
+	_some as _some_fn,
+	_some as _fn__some,
+}

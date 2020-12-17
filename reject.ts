@@ -1,6 +1,6 @@
+import type { maybe, maybe_undefined } from '@ctx-core/function'
 import type { _is_match_type } from './_is_match_type'
 import { filter, maybe_filter } from './filter'
-import type { maybe, maybe_undefined } from '@ctx-core/function'
 /**
  * Returns Array of items not rejected by `fn`.
  */
