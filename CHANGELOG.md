@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 19.1.7
+
+### Patch Changes
+
+- fix: export alias type with "isolatedModules": true
+- Updated dependencies [undefined]
+  - @ctx-core/object@15.0.5
+
 ## 19.1.6
 
 ### Patch Changes
