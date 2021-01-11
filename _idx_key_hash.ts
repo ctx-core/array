@@ -4,9 +4,9 @@ import type { a1_item_type, maybe } from '@ctx-core/function'
 /**
  * Returns a Hash where each key is `a1[idx][key]` & value is `idx`.
  */
-export function _idx_key_hash<I extends object[]>(
-	a1:I,
-	key:string|number,
+export function _idx_key_hash<I extends object[] = object[]>(
+	a1: I,
+	key: string|number,
 	_val = I__ as _item_key_idx_val_type<a1_item_type<I>>
 ) {
 	let idx_key_hash = {} as idx_key_hash_type
@@ -21,9 +21,9 @@ export function _idx_key_hash<I extends object[]>(
 	return idx_key_hash
 }
 export interface idx_key_hash_type extends Record<string, number> {}
-export function _maybe_idx_key_hash<I extends object[]>(
-	maybe_a1:maybe<I>,
-	key:string|number,
+export function _maybe_idx_key_hash<I extends object[] = object[]>(
+	maybe_a1: maybe<I>,
+	key: string|number,
 	_val = I__ as _item_key_idx_val_type<a1_item_type<I>>
 ) {
 	return _idx_key_hash<I>(maybe_a1 as I, key, _val)

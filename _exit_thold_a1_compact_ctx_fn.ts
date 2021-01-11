@@ -7,7 +7,7 @@ import type { thold_a1_compact_ctx_fn_type } from './thold_a1_compact_ctx_fn_typ
 export function _exit_thold_a1_compact_ctx_fn<I extends unknown = unknown>(
 	_eq = (eq as eq_type<I[]>)
 ) {
-	return ((in_val_a1:maybe<I>)=>{
+	return ((in_val_a1: maybe<I>) => {
 		const idx_a1 = [] as number[]
 		const val_a1 = [] as I[]
 		if (in_val_a1) {

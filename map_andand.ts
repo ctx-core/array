@@ -3,7 +3,7 @@ import { map, maybe_map } from './map'
 /**
  * Returns Array of mapped `a1` with `_andand(...name_a1)`.
  */
-export function map_andand<I extends unknown, O extends unknown>(
+export function map_andand<I extends unknown = unknown, O extends unknown = unknown>(
 	a1:I[],
 	...name_a1:andand_name_type<I, O>[]
 ) {

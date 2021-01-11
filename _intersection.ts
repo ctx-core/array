@@ -5,7 +5,7 @@ import { _intersection__set } from '@ctx-core/set'
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
 export function _intersection<I extends unknown = unknown>(
-	a2_nowrap:a_nowrap_type<I>
+	a2_nowrap: a_nowrap_type<I>
 ) {
 	const a2 = _wrap_a2<I>(a2_nowrap)
 	return Array.from(

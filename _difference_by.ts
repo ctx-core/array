@@ -1,7 +1,10 @@
 import { _wrap_a2 } from '@ctx-core/function'
-export function _difference_by<I extends unknown, O extends unknown>(
-	a2_nowrap:I,
-	_by = (item:I)=>item as unknown as O
+export function _difference_by</*@formatter:off*/
+	I extends unknown = unknown,
+	O extends unknown = unknown
+>/*@formatter:on*/(
+	a2_nowrap: I,
+	_by = (item: I) => item as unknown as O
 ) {
 	const a2 = _wrap_a2<I>(a2_nowrap)
 	const set = new Set()

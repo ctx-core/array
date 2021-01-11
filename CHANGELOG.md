@@ -1,5 +1,18 @@
 # @ctx-core/array
 
+## 19.2.0
+
+### Minor Changes
+
+- typescript types
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@16.9.0
+  - @ctx-core/object@16.0.3
+  - @ctx-core/set@8.0.20
+
 ## 19.1.22
 
 ### Patch Changes

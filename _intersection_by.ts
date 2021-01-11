@@ -1,7 +1,10 @@
 import { _wrap_a2, wrap_a2_item_type } from '@ctx-core/function'
-export function _intersection_by<I extends unknown, O extends unknown>(
-	a2_nowrap:I,
-	_by = (v:wrap_a2_item_type<I>)=>v as unknown as O
+export function _intersection_by</*@formatter:off*/
+	I extends unknown = unknown,
+	O extends unknown = unknown
+>/*@formatter:on*/(
+	a2_nowrap: I,
+	_by = (v: wrap_a2_item_type<I>) => v as unknown as O
 ) {
 	const a2 = _wrap_a2<I>(a2_nowrap)
 	const intersection_map = new Map() as Map<O, wrap_a2_item_type<I>>
@@ -23,7 +26,7 @@ export function _intersection_by<I extends unknown, O extends unknown>(
 				const by = _by(item)
 				current_map.set(by, item)
 			}
-			intersection_map.forEach((_val, by)=>{
+			intersection_map.forEach((_val, by) => {
 				if (!current_map.has(by)) {
 					intersection_map.delete(by)
 				}
@@ -31,7 +34,7 @@ export function _intersection_by<I extends unknown, O extends unknown>(
 		}
 	}
 	const intersection = [] as O[]
-	intersection_map.forEach((_by, item)=>{
+	intersection_map.forEach((_by, item) => {
 		intersection.push(item)
 	})
 	return intersection

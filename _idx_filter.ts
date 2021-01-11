@@ -7,13 +7,13 @@ import { idx_filter, maybe_idx_filter } from './idx_filter'
  */
 export function _idx_filter(
 	_is_match = I__ as _is_match_type<number>
-):(a1:number[])=>number[] {
-	return a1=>idx_filter(a1, _is_match)
+): (a1: number[]) => number[] {
+	return a1 => idx_filter(a1, _is_match)
 }
 export function _maybe_idx_filter(
 	_is_match = I__ as _is_match_type<number>
-):(a1:maybe<number[]>)=>maybe_undefined<number[]> {
-	return a1=>maybe_idx_filter(a1, _is_match)
+): (a1: maybe<number[]>) => maybe_undefined<number[]> {
+	return a1 => maybe_idx_filter(a1, _is_match)
 }
 export {
 	_idx_filter as _filter__idx,
