@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 19.2.1
+
+### Patch Changes
+
+- fix: export type ctx**idx**sort = sort_idx_ctx_type,export type fn**a1**ctx**idx**sort = sort_idx_ctx_a1_fn_type
+
 ## 19.2.0
 
 ### Minor Changes
