@@ -27,10 +27,10 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/combinators": "workspace:^5.0.6",
-		"@ctx-core/function": "workspace:^16.9.1",
-		"@ctx-core/object": "workspace:^16.1.0",
-		"@ctx-core/set": "workspace:^8.0.21"
+		"@ctx-core/combinators": "^5.0.6",
+		"@ctx-core/function": "^16.9.1",
+		"@ctx-core/object": "^16.1.0",
+		"@ctx-core/set": "^8.0.21"
 	},
 	"devDependencies": {
 		"typescript": "^4.1.3"
