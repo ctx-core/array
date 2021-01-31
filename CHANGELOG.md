@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 19.2.4
+
+### Patch Changes
+
+- fix: \_exit_thold_a1_compact_ctx
+
 ## 19.2.3
 
 ### Patch Changes
