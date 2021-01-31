@@ -6,7 +6,7 @@ import { map_andand_ } from './map_andand_'
 export function _map_andand_<I extends unknown, O extends unknown>(
 	...attr_a1: andand_name_fn_type<I, O>[]
 ) {
-	return a1 => map_andand_(a1, ...attr_a1)
+	return a1 => map_andand_<I, O>(a1, ...attr_a1)
 }
 export {
 	_map_andand_ as _map__andand_,

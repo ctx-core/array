@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.0.1
+
+### Patch Changes
+
+- map*andand*,_map_andand,\_map_find: type generics_
+
 ## 20.0.0
 
 ### Major Changes

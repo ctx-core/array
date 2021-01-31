@@ -6,8 +6,8 @@ import { map } from './map'
 export function map_andand_</*@formatter:off*/
 	I extends unknown = unknown,
 	O extends unknown = unknown
->(a1: I[], ...attr_a1: andand_name_fn_type<I, O>[]) {/*@formatter:on*/
-	return map(a1, _andand_<I, O>(...attr_a1))
+>(a1:I[], ...attr_a1:andand_name_fn_type<I, O>[]) {/*@formatter:on*/
+	return map<I, I|O>(a1, _andand_<I, O>(...attr_a1))
 }
 export {
 	map_andand_ as map__andand_,
