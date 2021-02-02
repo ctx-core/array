@@ -2,7 +2,8 @@ import { isArray } from '@ctx-core/object'
 import {
 	concat, _wrap_a1, _wrap_a2, wrap_a1_type, wrap_a2_item_type, a_nowrap_type
 } from '@ctx-core/function'
-export { isArray, concat, _wrap_a1, _wrap_a2, wrap_a1_type, wrap_a2_item_type, a_nowrap_type }
+export { isArray, concat, _wrap_a1, _wrap_a2 }
+export type { wrap_a1_type, wrap_a2_item_type, a_nowrap_type }
 export * from './_key_h_a1'
 export * from './_a1_length'
 export * from './_a1_present'

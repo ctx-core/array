@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.1.2
+
+### Patch Changes
+
+- fix: export type { wrap_a1_type, wrap_a2_item_type, a_nowrap_type }
+
 ## 20.1.1
 
 ### Patch Changes
