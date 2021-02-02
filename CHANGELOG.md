@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.1.0
+
+### Minor Changes
+
+- fix: error: contains conflicting star exports for name '\_wrap_a1': remove \_wrap_a1,\_wrap_a2
+
 ## 20.0.2
 
 ### Patch Changes

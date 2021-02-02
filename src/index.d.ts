@@ -1,5 +1,3 @@
-export { _wrap_a1, _wrap_a2 } from '@ctx-core/function';
-export type { a1_item_type, wrap_a1_type, wrap_a2_item_type } from '@ctx-core/function';
 export * from './_key_h_a1';
 export * from './_a1_length';
 export * from './_a1_present';
