@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.1.1
+
+### Patch Changes
+
+- fix: readded \_wrap_a2, wrap_a1_type, wrap_a2_item_type, a_nowrap_type alias to @ctx-core/function
+
 ## 20.1.0
 
 ### Minor Changes
