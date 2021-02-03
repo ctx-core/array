@@ -7,10 +7,10 @@ export function map_andand<I extends unknown = unknown, O extends unknown = unkn
 	a1:I[],
 	...name_a1:andand_name_type<I, O>[]
 ) {
-	return map<I, (I|O)>(a1,
+	return map<I, O>(a1,
 		item=>andand<I, O>(
 			item, ...name_a1
-		))
+		) as O)
 }
 export function maybe_map_andand<I extends unknown, O extends unknown>(
 	a1:maybe<I[]>,

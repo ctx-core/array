@@ -9,7 +9,7 @@ export function map_andand_or</*@formatter:off*/
 >(/*@formatter:on*/
 	a1: I[], attr_a1: string[], or_fn: andand_or_fn_type<I, O>
 ) {
-	return map<I, I|O>(a1, _andand_or<I, O>(attr_a1, or_fn))
+	return map<I, O>(a1, _andand_or<I, O>(attr_a1, or_fn))
 }
 export {
 	map_andand_or as map__andand__or,
