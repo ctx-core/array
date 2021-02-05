@@ -12,7 +12,7 @@ export function zipWith</*@formatter:off*/
 	if (!fn) fn = _default_zipWith_fn<I>()
 	const a1 = a2[0]
 	const rest_a2 = a2.slice(1)
-	const zipWith_a2 = [] as I[][]
+	const zipWith_a1 = [] as I[]
 	for (let i = 0; i < a1.length; i++) {
 		const arg_a1 = [a1[i]] as I[]
 		for (let j = 0; j < rest_a2.length; j++) {
@@ -20,11 +20,11 @@ export function zipWith</*@formatter:off*/
 				rest_a2[j][i]
 			)
 		}
-		zipWith_a2.push(
-			fn.call(zipWith_a2, arg_a1, i)
+		zipWith_a1.push(
+			fn.call(zipWith_a1, arg_a1, i)
 		)
 	}
-	return zipWith_a2 as O
+	return zipWith_a1 as O
 }
 export function maybe_zipWith</*@formatter:off*/
 	I extends unknown = unknown,
@@ -43,6 +43,6 @@ export function _default_zipWith_fn</*@formatter:off*/
 	return ((a1: I[], _i: number) => a1 as O) as zipWidth_fn_type<I>
 }
 export type zipWidth_fn_type<I extends unknown = unknown> =
-	(a1: I[], i: number) => I[]
+	(a1: I[], i: number) => I
 export type zipWith_fn_type<I> =
 	(arg_a1: wrap_a2_item_type<I>[], i: number) => wrap_a2_item_type<I>

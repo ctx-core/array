@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.1.4
+
+### Patch Changes
+
+- fix: zipWith: zipWidth_fn_type returns I instead of I[]
+
 ## 20.1.3
 
 ### Patch Changes
