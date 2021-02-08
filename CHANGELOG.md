@@ -1,5 +1,14 @@
 # @ctx-core/array
 
+## 20.1.6
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.3.0
+  - @ctx-core/object@17.0.4
+  - @ctx-core/set@9.0.4
+
 ## 20.1.5
 
 ### Patch Changes
