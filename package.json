@@ -28,9 +28,9 @@
 	},
 	"dependencies": {
 		"@ctx-core/combinators": "workspace:^6.0.3",
-		"@ctx-core/function": "workspace:^17.3.4",
-		"@ctx-core/object": "workspace:^17.0.9",
-		"@ctx-core/set": "workspace:^9.0.8"
+		"@ctx-core/function": "workspace:^17.3.5",
+		"@ctx-core/object": "workspace:^17.0.10",
+		"@ctx-core/set": "workspace:^9.0.9"
 	},
 	"devDependencies": {
 		"typescript": "^4.2.2"
