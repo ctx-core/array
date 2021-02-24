@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 20.1.12
+
+### Patch Changes
+
+- version bump
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.0.4
+  - @ctx-core/function@17.3.6
+  - @ctx-core/object@17.0.11
+  - @ctx-core/set@9.0.10
+
 ## 20.1.11
 
 ### Patch Changes
