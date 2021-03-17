@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.2.0
+
+### Minor Changes
+
+- feat: \_tuple
+
 ## 20.1.20
 
 ### Patch Changes
