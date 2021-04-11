@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "20.2.7",
+	"version": "20.2.8",
 	"description": "ctx-core array",
 	"keywords": [
 		"ctx-core",
@@ -29,7 +29,7 @@
 	"dependencies": {
 		"@ctx-core/combinators": "workspace:^6.0.10",
 		"@ctx-core/function": "workspace:^17.4.6",
-		"@ctx-core/object": "workspace:^17.5.5",
+		"@ctx-core/object": "workspace:^17.5.6",
 		"@ctx-core/set": "workspace:^9.0.17"
 	},
 	"devDependencies": {
