@@ -1,5 +1,19 @@
 # @ctx-core/array
 
+## 20.2.17
+
+### Patch Changes
+
+- update dependencies
+
+## 20.2.16
+
+### Patch Changes
+
+- fix: \_map_find: strict type issue
+- Updated dependencies [undefined]
+  - @ctx-core/object@17.5.14
+
 ## 20.2.15
 
 ### Patch Changes
