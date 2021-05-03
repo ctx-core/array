@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.2.19
+
+### Patch Changes
+
+- update dependencies
+
 ## 20.2.18
 
 ### Patch Changes
