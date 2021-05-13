@@ -10,7 +10,7 @@ export function _key_hash<Val extends { [key:string]:any }, Key extends keyof Va
 		for (let i = 0; i < a1.length; i++) {
 			const item = a1[i]
 			if (!item) continue
-			key_hash[item[key] as string] = item
+			key_hash[item[key] as Key] = item
 		}
 	}
 	return key_hash

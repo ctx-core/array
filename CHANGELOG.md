@@ -1,5 +1,14 @@
 # @ctx-core/array
 
+## 20.2.29
+
+### Patch Changes
+
+- fix types
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.0.12
+  - @ctx-core/function@17.8.4
+
 ## 20.2.28
 
 ### Patch Changes

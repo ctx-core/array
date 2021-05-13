@@ -3,7 +3,7 @@ import { map, maybe_map } from './map'
 /**
  * Returns Array of `obj[key_a1[]]`.
  */
-export function _key_a1_from_val_a1<Val extends unknown = unknown>(
+export function _key_a1_from_val_a1<Val extends object = object>(
 	obj:Val,
 	key_a1:string[]
 ):Val[keyof Val][] {
@@ -11,7 +11,7 @@ export function _key_a1_from_val_a1<Val extends unknown = unknown>(
 		key_a1, key=>obj[key]
 	)
 }
-export function _maybe_key_a1_from_val_a1<Val extends unknown = unknown>(
+export function _maybe_key_a1_from_val_a1<Val extends object = object>(
 	obj:Val|falsy,
 	key_a1:string[]
 ):Val[keyof Val][]|undefined {

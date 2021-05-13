@@ -2,8 +2,10 @@ import { _wrap_a1, concat } from '@ctx-core/function'
 /**
  * Returns a hash of arrays grouped by each key in each `ctx` in `ctx_a1`.
  */
-export function _key_h_a1<Val extends object = object>(ctx_a1_nowrap:Val) {
-	const ctx_a1 = _wrap_a1<Val>(ctx_a1_nowrap)
+export function _key_h_a1<Val extends object = object>(
+	ctx_a1_nowrap:(Record<string, Val>|Record<string, Val>[])
+) {
+	const ctx_a1:Record<string, Val>[] = _wrap_a1<Record<string, Val>>(ctx_a1_nowrap)
 	const a1_key_hash:Record<string, Val[]> = {}
 	for (let i = 0; i < ctx_a1.length; i++) {
 		const ctx = ctx_a1[i]

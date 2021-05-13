@@ -11,6 +11,7 @@ export function map_find<Val extends unknown = unknown, Out extends unknown = Va
 		const map_value = fn(val, idx)
 		if (map_value) return map_value as Out
 	}
+	return
 }
 export function maybe_map_find<Val extends unknown = unknown, Out extends unknown = Val>(
 	maybe_a1:Val[]|falsy,
