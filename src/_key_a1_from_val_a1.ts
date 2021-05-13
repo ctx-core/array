@@ -4,26 +4,24 @@ import { map, maybe_map } from './map'
  * Returns Array of `obj[key_a1[]]`.
  */
 export function _key_a1_from_val_a1</*@formatter:off*/
-	Val extends object = object,
-	Out = Val[keyof Val]
+	Val extends unknown = unknown
 /*@formatter:on*/>(
-	obj:Val,
+	obj:Record<string, Val>,
 	key_a1:string[]
-):Out[] {
-	return map<string, Out>(
-		key_a1, key=>obj[key]
+):Val[] {
+	return map<string, Val>(
+		key_a1, key=>obj[key] as Val
 	)
 }
 export function _maybe_key_a1_from_val_a1</*@formatter:off*/
-	Val extends object = object,
-	Out = Val[keyof Val]
+	Val extends unknown = unknown
 /*@formatter:on*/>(
-	obj:Val|falsy,
+	obj:Record<string, Val>|falsy,
 	key_a1:string[]
-):Out[]|undefined {
+):Val[]|undefined {
 	if (!obj) return
-	return maybe_map<string, Out>(
-		key_a1, key=>(obj as Val)[key]
+	return maybe_map<string, Val>(
+		key_a1, key=>(obj as Record<string, Val>)[key] as Val
 	)
 }
 export {

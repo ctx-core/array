@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.2.32
+
+### Patch Changes
+
+- fix: \_key_a1_from_val_a1,\_maybe_key_a1_from_val_a1: type issue
+
 ## 20.2.31
 
 ### Patch Changes
