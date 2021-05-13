@@ -3,7 +3,7 @@ import type { falsy } from '@ctx-core/function'
  * Returns a Hash with a key for each item in `value_a1` & value set to the return of `_value`.
  */
 export function _value_hash<Out extends unknown = unknown>(
-	in_value_a1:string[]|falsy, _value:(string, number)=>Out
+	in_value_a1:string[]|falsy, _value:(value:string, i:number)=>Out
 ) {
 	const value_hash = {} as Record<string, Out>
 	if (in_value_a1) {

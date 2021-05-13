@@ -1,5 +1,14 @@
 # @ctx-core/array
 
+## 20.2.30
+
+### Patch Changes
+
+- type issues
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.8.5
+  - @ctx-core/object@17.5.27
+
 ## 20.2.29
 
 ### Patch Changes
