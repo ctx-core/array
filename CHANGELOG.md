@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.2.31
+
+### Patch Changes
+
+- fix: type issues
+
 ## 20.2.30
 
 ### Patch Changes
