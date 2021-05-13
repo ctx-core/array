@@ -1,1 +1,1 @@
-export type compare_1_type = (any, number?)=>number
+export type compare_1_type<Val extends unknown = unknown> = (val:Val, idx?:number)=>number

@@ -1,1 +1,1 @@
-export declare type _is_match_type<I extends unknown = unknown> = (in_value: I, number?: any) => boolean;
+export declare type _is_match_type<Val extends unknown = unknown> = (in_value: Val, idx: number) => boolean;

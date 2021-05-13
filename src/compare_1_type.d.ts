@@ -1,1 +1,1 @@
-export declare type compare_1_type = (any: any, number?: any) => number;
+export declare type compare_1_type<Val extends unknown = unknown> = (val: Val, idx?: number) => number;

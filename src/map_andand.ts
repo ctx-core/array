@@ -3,20 +3,20 @@ import { map, maybe_map } from './map'
 /**
  * Returns Array of mapped `a1` with `_andand(...name_a1)`.
  */
-export function map_andand<I extends unknown = unknown, O extends unknown = unknown>(
-	a1:I[],
-	...name_a1:andand_name_type<I, O>[]
+export function map_andand<Val extends unknown = unknown, Out extends unknown = unknown>(
+	a1:Val[],
+	...name_a1:andand_name_type<Val, Out>[]
 ) {
-	return map<I, O>(a1,
-		item=>andand<I, O>(
+	return map<Val, Out>(a1,
+		item=>andand<Val, Out>(
 			item, ...name_a1
-		) as O)
+		) as Out)
 }
-export function maybe_map_andand<I extends unknown, O extends unknown>(
-	a1:maybe<I[]>,
-	...name_a1:andand_name_type<I, O>[]
+export function maybe_map_andand<Val extends unknown, Out extends unknown>(
+	a1:maybe<Val[]>,
+	...name_a1:andand_name_type<Val, Out>[]
 ) {
-	return maybe_map<I, O>(a1 as I[], _andand<I, O>(...name_a1))
+	return maybe_map<Val, Out>(a1 as Val[], _andand<Val, Out>(...name_a1))
 }
 export {
 	map_andand as map__andand,

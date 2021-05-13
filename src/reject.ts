@@ -5,26 +5,26 @@ import { filter, maybe_filter } from './filter'
  * Returns Array of items not rejected by `fn`.
  */
 export function reject</*@formatter:off*/
-	I extends unknown = unknown,
-	O extends unknown = I[]
+	Val extends unknown = unknown,
+	Out extends unknown = Val[]
 >/*@formatter:on*/(
-	a1:I[],
-	_is_match:_is_match_type<I>
-):O {
-	return filter<I>(
+	a1:Val[],
+	_is_match:_is_match_type<Val>
+):Out {
+	return filter<Val>(
 		a1,
-		(value:I, idx:number)=>!_is_match(value, idx)
-	) as O
+		(value:Val, idx:number)=>!_is_match(value, idx)
+	) as Out
 }
 export function maybe_reject</*@formatter:off*/
-	I extends unknown = unknown,
-	O extends unknown = I[]
+	Val extends unknown = unknown,
+	Out extends unknown = Val[]
 >/*@formatter:on*/(
-	maybe_a1:maybe<I[]>,
-	_is_match:_is_match_type<I>
-):maybe_undefined<O> {
-	return maybe_filter<I>(
+	maybe_a1:maybe<Val[]>,
+	_is_match:_is_match_type<Val>
+):maybe_undefined<Out> {
+	return maybe_filter<Val>(
 		maybe_a1,
 		(value, idx:number)=>!_is_match(value, idx)
-	) as O
+	) as Out
 }

@@ -1,9 +1,9 @@
-import type { maybe, maybe_undefined } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 import type { _is_match_type } from './_is_match_type'
 /**
  * Returns Array of indices `idx` not rejected by `fn`.
  */
-export function idx_reject<I extends unknown = unknown>(a1:I[], fn:_is_match_type<I>): number[] {
+export function idx_reject<Val extends unknown = unknown>(a1:Val[], fn:_is_match_type<Val>):number[] {
 	const out_a1 = [] as number[]
 	for (let idx = 0; idx < a1.length; idx++) {
 		const value = a1[idx]
@@ -13,12 +13,12 @@ export function idx_reject<I extends unknown = unknown>(a1:I[], fn:_is_match_typ
 	}
 	return out_a1
 }
-export function maybe_idx_reject<I extends unknown = unknown>(
-	maybe_a1:maybe<I[]>,
-	fn:_is_match_type<I>
-): maybe_undefined<number[]> {
+export function maybe_idx_reject<Val extends unknown = unknown>(
+	maybe_a1:Val[]|falsy,
+	fn:_is_match_type<Val>
+):number[]|undefined {
 	if (!maybe_a1) return
-	return idx_reject<I>(maybe_a1 as I[], fn)
+	return idx_reject<Val>(maybe_a1 as Val[], fn)
 }
 export {
 	idx_reject as reject__idx,

@@ -1,12 +1,11 @@
-import type { maybe } from '@ctx-core/function'
+import type { falsy } from '@ctx-core/function'
 /**
  * Returns a Hash with a key for each item in `value_a1` & value set to the return of `_value`.
  */
-export function _value_hash<O = unknown>(
-	in_value_a1:maybe<string[]>
-	, _value:(string, number)=>O
+export function _value_hash<Out extends unknown = unknown>(
+	in_value_a1:string[]|falsy, _value:(string, number)=>Out
 ) {
-	const value_hash = {} as Record<string, O>
+	const value_hash = {} as Record<string, Out>
 	if (in_value_a1) {
 		const value_a1 = in_value_a1 as string[]
 		for (let i = 0; i < value_a1.length; i++) {
