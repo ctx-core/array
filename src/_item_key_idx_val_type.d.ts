@@ -1,1 +1,1 @@
-export declare type _item_key_idx_val_type<I extends object = object> = (val: I[keyof I], item: I, key: string | number, idx: number) => I[keyof I];
+export declare type _item_key_idx_val_type</*@formatter:off*/ Val extends unknown = unknown, Obj extends Record<string, Val> = Record<string, Val>> = (val: Val, item: Obj, key: string | number, idx: number) => string;

@@ -1,5 +1,19 @@
 # @ctx-core/array
 
+## 20.3.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.1.0
+  - @ctx-core/function@17.9.0
+  - @ctx-core/object@17.6.0
+  - @ctx-core/set@9.1.0
+
 ## 20.2.32
 
 ### Patch Changes

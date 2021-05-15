@@ -1,4 +1,4 @@
-import type { maybe, maybe_undefined } from '@ctx-core/function'
+import type { falsy, maybe_undefined } from '@ctx-core/function'
 /**
  * Iterate over each item in `a1` with `fn(a1[i], i)`.
  */
@@ -12,7 +12,7 @@ export function each<I extends unknown = unknown>(
 	return a1
 }
 export function maybe_each<I extends unknown = unknown>(
-	maybe_a1:maybe<I[]>,
+	maybe_a1:I[]|falsy,
 	fn:each_fn_type<I>
 ):maybe_undefined<I[]> {
 	if (!maybe_a1) return
