@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 20.3.1
+
+### Patch Changes
+
+- fix: target: 2018: nodejs compatability
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.1.1
+  - @ctx-core/function@17.9.1
+  - @ctx-core/object@17.6.1
+  - @ctx-core/set@9.1.1
+
 ## 20.3.0
 
 ### Minor Changes
