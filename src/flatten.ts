@@ -17,7 +17,9 @@ export function flatten<I extends unknown = unknown>(a1:wrap_a_type<I>):I[] {
 		[] as I[]
 	) as I[]
 }
-export function maybe_flatten<I extends unknown = unknown>(in_a1:wrap_a_type<I>):I[]|undefined {
+export function maybe_flatten<I extends unknown = unknown>(
+	in_a1:wrap_a_type<I>
+):I[]|undefined {
 	if (!in_a1) return
 	return flatten<I>(in_a1)
 }

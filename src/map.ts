@@ -4,7 +4,7 @@ import type { falsy } from '@ctx-core/function'
  */
 export function map<Val extends unknown = unknown, Out extends unknown = unknown>(
 	a1:Val[],
-	fn:map_fn_type<Val, Out>
+	fn:map_fn_T<Val, Out>
 ):Out[] {
 	const out_a1 = [] as Out[]
 	for (let i = 0; i < a1.length; i++) {
@@ -14,10 +14,10 @@ export function map<Val extends unknown = unknown, Out extends unknown = unknown
 }
 export function maybe_map<Val extends unknown, Out extends unknown>(
 	maybe_a1:Val[]|falsy,
-	fn:map_fn_type<Val, Out>
+	fn:map_fn_T<Val, Out>
 ):Out[]|undefined {
 	if (!maybe_a1) return
 	return map<Val, Out>(maybe_a1 as Val[], fn)
 }
-export type map_fn_type<Val extends unknown, Out extends unknown> =
+export type map_fn_T<Val extends unknown, Out extends unknown> =
 	(val:Val, idx:number)=>Out
