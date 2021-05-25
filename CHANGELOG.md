@@ -1,5 +1,19 @@
 # @ctx-core/array
 
+## 20.5.0
+
+### Minor Changes
+
+- fix tsc build directory issues
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.3.0
+  - @ctx-core/function@17.11.0
+  - @ctx-core/object@18.2.0
+  - @ctx-core/set@9.3.0
+
 ## 20.4.2
 
 ### Patch Changes
