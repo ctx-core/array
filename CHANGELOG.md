@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.4.2
+
+### Patch Changes
+
+- fix: @ctx-core/set dependency
+
 ## 20.4.1
 
 ### Patch Changes
