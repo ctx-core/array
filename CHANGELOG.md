@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.5.1
+
+### Patch Changes
+
+- \_key_hash,\_maybe_key_hash: Obj[Key] is validated to be a string
+
 ## 20.5.0
 
 ### Minor Changes
