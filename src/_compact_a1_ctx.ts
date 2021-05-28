@@ -1,6 +1,6 @@
-import type { compact_a1_ctx_type } from './compact_a1_ctx_type'
+import type { compact_a1_ctx_I } from './compact_a1_ctx_I'
 /**
- * Returns a [compact_a1_ctx_type](#compact_a1_ctx_type)
+ * Returns a [compact_a1_ctx_I](#compact_a1_ctx_I)
  */
 export function _compact_a1_ctx<I extends unknown = unknown>(sparse_a1: I[]) {
 	const idx_a1 = [] as number[]
@@ -15,5 +15,5 @@ export function _compact_a1_ctx<I extends unknown = unknown>(sparse_a1: I[]) {
 	return {
 		idx_a1,
 		val_a1,
-	} as compact_a1_ctx_type<I>
+	} as compact_a1_ctx_I<I>
 }

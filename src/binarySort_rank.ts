@@ -1,8 +1,8 @@
-import type { compare_1_type } from './compare_1_type'
+import type { compare_1_T } from './compare_1_T'
 /**
  * Returns the rank of the item where the compare function === 0, using binarySort
  */
-export function binarySort_rank(a1:unknown[], compare_1:compare_1_type):number {
+export function binarySort_rank(a1:unknown[], compare_1:compare_1_T):number {
 	let min_index = 0
 	let max_index = a1.length - 1
 	let current_index

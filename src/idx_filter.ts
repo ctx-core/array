@@ -1,12 +1,12 @@
 import type { a1_item_type, maybe, maybe_undefined } from '@ctx-core/function'
 import { I__ } from '@ctx-core/combinators'
-import type { _is_match_type } from './_is_match_type'
+import type { _is_match_T } from './_is_match_T'
 /**
  * Returns Array of `idx` indices filtered by `fn`.
  */
 export function idx_filter<I extends number[]>(
 	in_a1:I,
-	_is_match = I__ as _is_match_type<a1_item_type<I>>
+	_is_match = I__ as _is_match_T<a1_item_type<I>>
 ):I {
 	const a1 = in_a1 as I
 	const idx_a1 = [] as number[]
@@ -20,7 +20,7 @@ export function idx_filter<I extends number[]>(
 }
 export function maybe_idx_filter<I extends number[]>(
 	maybe_a1:maybe<I>,
-	_is_match = I__ as _is_match_type<a1_item_type<I>>
+	_is_match = I__ as _is_match_T<a1_item_type<I>>
 ):maybe_undefined<I> {
 	if (!maybe_a1) return
 	return idx_filter<I>(maybe_a1 as I, _is_match)

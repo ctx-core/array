@@ -1,10 +1,10 @@
-import type { compare_type } from './compare_type'
+import type { compare_T } from './compare_T'
 /**
  * Returns a basic ascending or descending `compare` function to be used for sorting.
  */
 export function _compare<I extends unknown = unknown>(
 	asc = true
-): compare_type<I> {
+): compare_T<I> {
 	return (a, b) => {
 		if (a < b) return asc ? -1 : 1
 		if (a > b) return asc ? 1 : -1

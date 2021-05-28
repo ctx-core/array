@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 20.5.2
+
+### Patch Changes
+
+- \_entry_thold_a1_compact_ctx,\_exit_thold_a1_compact_ctx: + I generic
+
 ## 20.5.1
 
 ### Patch Changes
@@ -644,7 +650,7 @@
 
 ### Patch Changes
 
-- fix: export type ctx**idx**sort = sort_idx_ctx_type,export type fn**a1**ctx**idx**sort = sort_idx_ctx_a1_fn_type
+- fix: export type ctx**idx**sort = sort_idx_ctx_T,export type fn**a1**ctx**idx**sort = sort_idx_ctx_a1_fn_type
 
 ## 19.2.0
 

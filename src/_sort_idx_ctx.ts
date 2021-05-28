@@ -1,14 +1,14 @@
 import type { maybe } from '@ctx-core/function'
-import type { compare_type } from './compare_type'
+import type { compare_T } from './compare_T'
 import { _compare } from './_compare'
-import type { sort_idx_ctx_type } from './sort_idx_ctx_type'
+import type { sort_idx_ctx_T } from './sort_idx_ctx_T'
 import { sort } from './sort'
 /**
- * Returns a [sort_idx_ctx_type](#sort_idx_ctx_type).
+ * Returns a [sort_idx_ctx_T](#sort_idx_ctx_T).
  */
 export function _sort_idx_ctx<I extends unknown = unknown>(
 	maybe_a1:maybe<I[]>,
-	compare:compare_type<I> = _compare<I>()
+	compare:compare_T<I> = _compare<I>()
 ) {
 	const sort_a1 = [] as [I, number][]
 	const sort_val_a1 = [] as I[]
@@ -27,7 +27,7 @@ export function _sort_idx_ctx<I extends unknown = unknown>(
 	return {
 		sort_idx_a1,
 		sort_val_a1,
-	} as sort_idx_ctx_type<I>
+	} as sort_idx_ctx_T<I>
 }
 export {
 	_sort_idx_ctx as _ctx__idx__sort,

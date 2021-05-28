@@ -1,13 +1,13 @@
-import { eq, eq_type, maybe } from '@ctx-core/function'
-import type { compact_a1_ctx_type } from './compact_a1_ctx_type'
-import type { thold_a1_compact_ctx_fn_type } from './thold_a1_compact_ctx_fn_type'
+import { eq, eq_type } from '@ctx-core/function'
+import type { compact_a1_ctx_I } from './compact_a1_ctx_I'
+import type { thold_a1_compact_ctx_fn_T } from './thold_a1_compact_ctx_fn_T'
 /**
- * Returns a function that returns a [compact_a1_ctx_type](#compact_a1_ctx_type)
+ * Returns a function that returns a [compact_a1_ctx_I](#compact_a1_ctx_I)
  */
 export function _exit_thold_a1_compact_ctx_fn<I extends unknown = unknown>(
 	_eq = (eq as eq_type<I[]>)
 ) {
-	return ((in_val_a1: maybe<I>) => {
+	return ((in_val_a1?:I[])=>{
 		const idx_a1 = [] as number[]
 		const val_a1 = [] as I[]
 		if (in_val_a1) {
@@ -33,8 +33,8 @@ export function _exit_thold_a1_compact_ctx_fn<I extends unknown = unknown>(
 		return {
 			idx_a1,
 			val_a1,
-		} as compact_a1_ctx_type<I>
-	}) as thold_a1_compact_ctx_fn_type<I>
+		} as compact_a1_ctx_I<I>
+	}) as thold_a1_compact_ctx_fn_T<I>
 }
 export {
 	_exit_thold_a1_compact_ctx_fn as _fn__ctx__compact__a1__thold__exit,
