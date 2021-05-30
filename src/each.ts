@@ -1,21 +1,20 @@
-import type { falsy, maybe_undefined } from '@ctx-core/function'
 /**
- * Iterate over each item in `a1` with `fn(a1[i], i)`.
+ * Iterate over each item in `a` with `fn(a[i], i)`.
  */
 export function each<I extends unknown = unknown>(
-	a1:I[],
-	fn:each_fn_type<I>
+	a:I[],
+	fn:each_fn_T<I>
 ):I[] {
-	for (let i = 0; i < a1.length; i++) {
-		fn(a1[i], i)
+	for (let i = 0; i < a.length; i++) {
+		fn(a[i], i)
 	}
-	return a1
+	return a
 }
 export function maybe_each<I extends unknown = unknown>(
-	maybe_a1:I[]|falsy,
-	fn:each_fn_type<I>
-):maybe_undefined<I[]> {
-	if (!maybe_a1) return
-	return each<I>(maybe_a1 as I[], fn)
+	maybe_a:I[]|undefined,
+	fn:each_fn_T<I>
+):I[]|undefined {
+	if (!maybe_a) return
+	return each<I>(maybe_a as I[], fn)
 }
-export type each_fn_type<I> = (val:I, idx:number)=>void
+export type each_fn_T<I> = (val:I, idx:number)=>void

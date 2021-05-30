@@ -1,6 +1,6 @@
 /**
- * Insert `...item_a1` into `a1` at position `idx`.
+ * Insert `...item_a` into `a` at position `idx`.
  */
-export function insert(a1:unknown[], idx:number, ...item_a1:any):unknown[] {
-	return a1.splice(idx, 0, ...item_a1)
+export function insert(a:unknown[], idx:number, ...item_a:any):unknown[] {
+	return a.splice(idx, 0, ...item_a)
 }

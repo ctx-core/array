@@ -1,27 +1,27 @@
-import { wrap_a_type, wrap_concat } from '@ctx-core/function'
+import { wrap_a_T2, wrap_concat } from '@ctx-core/function'
 import { isArray } from '@ctx-core/object'
 /**
- * Flattens the a1 & it's children into an a1 without chunks
+ * Flattens the a & it's children into an a without chunks
  */
-export function flatten<I extends unknown = unknown>(a1:wrap_a_type<I>):I[] {
-	return (a1 as I[]).reduce<I[]>(
-		(previousValue:I[], currentValue:I)=>
+export function flatten<I extends unknown = unknown>(a:wrap_a_T2<I>):I[] {
+	return (a as I[]).reduce<I[]>(
+		(previous_val:I[], current_val:I)=>
 			wrap_concat<I>(
-				previousValue,
+				previous_val,
 				...(
-					isArray<I|I[]>(currentValue)
-					? flatten<I>(currentValue as I[])
-					: [currentValue] as I[]
+					isArray<I|I[]>(current_val)
+					? flatten<I>(current_val as I[])
+					: [current_val] as I[]
 				) as I[]
 			) as I[],
 		[] as I[]
 	) as I[]
 }
 export function maybe_flatten<I extends unknown = unknown>(
-	in_a1:wrap_a_type<I>
+	in_a:wrap_a_T2<I>
 ):I[]|undefined {
-	if (!in_a1) return
-	return flatten<I>(in_a1)
+	if (!in_a) return
+	return flatten<I>(in_a)
 }
 export {
 	flatten as flatten__a1,

@@ -1,5 +1,26 @@
 # @ctx-core/array
 
+## 21.0.0
+
+### Major Changes
+
+- \$ suffix for stores
+- \_ suffix for factory functions
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/function@18.0.0
+  - @ctx-core/object@19.0.0
+  - @ctx-core/set@10.0.0
+
+## 20.5.3
+
+### Patch Changes
+
+- - \_tup,tuple_fn,tup_fn
+
 ## 20.5.2
 
 ### Patch Changes
@@ -573,19 +594,19 @@
 
 ### Patch Changes
 
-- fix: export type { wrap_a1_type, wrap_a2_item_type, a_nowrap_type }
+- fix: export type { wrap_a1_type, wrap_a2_item_type, a_nowrap_T }
 
 ## 20.1.1
 
 ### Patch Changes
 
-- fix: readded \_wrap_a2, wrap_a1_type, wrap_a2_item_type, a_nowrap_type alias to @ctx-core/function
+- fix: readded \_wrap_a2, wrap_a1_type, wrap_a2_item_type, a_nowrap_T alias to @ctx-core/function
 
 ## 20.1.0
 
 ### Minor Changes
 
-- fix: error: contains conflicting star exports for name '\_wrap_a1': remove \_wrap_a1,\_wrap_a2
+- fix: error: contains conflicting star exports for name '\wrap*a*': remove \wrap*a*,\_wrap_a2
 
 ## 20.0.2
 

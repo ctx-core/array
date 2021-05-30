@@ -1,10 +1,10 @@
 import { slice } from './slice'
-import { _key_compare } from './_key_compare'
+import { key_compare_ } from './key_compare_'
 /**
  * Returns an array sorted by `item.name`
  */
-export function name_sort(a1: unknown[]): unknown[] {
-	return (slice(a1, 0) || []).sort(_key_compare('name'))
+export function name_sort(a: unknown[]): unknown[] {
+	return (slice(a, 0) || []).sort(key_compare_('name'))
 }
 export {
 	name_sort as sort__name,

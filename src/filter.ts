@@ -1,25 +1,42 @@
-import type { falsy } from '@ctx-core/function'
-import type { _is_match_T } from './_is_match_T'
+import type { is_match_fn_T } from './is_match_fn_T'
 /**
- * Returns Array where items in `a1` are filtered by `fn`.
+ * Returns Array where items in `a` are filtered by `fn`.
  */
 export function filter<Val extends unknown = unknown>(
-	a1:Val[],
-	_is_match:_is_match_T<Val>
+	a:Val[],
+	is_match_fn:is_match_fn_T<Val>
 ) {
-	const out_a1 = [] as Val[]
-	for (let i = 0; i < a1.length; i++) {
-		const value = a1[i]
-		if (_is_match(value, i)) {
-			out_a1.push(value)
+	const out_a = [] as Val[]
+	for (let i = 0; i < a.length; i++) {
+		const value = a[i]
+		if (is_match_fn(value, i)) {
+			out_a.push(value)
 		}
 	}
-	return out_a1
+	return out_a
 }
 export function maybe_filter<Val extends unknown = unknown>(
-	maybe_a1:Val[]|falsy,
-	_is_match:_is_match_T<Val>
+	maybe_a:Val[]|undefined,
+	is_match_fn:is_match_fn_T<Val>
 ):Val[]|undefined {
-	if (!maybe_a1) return
-	return filter<Val>(maybe_a1 as Val[], _is_match)
+	if (!maybe_a) return
+	return filter<Val>(maybe_a as Val[], is_match_fn)
+}
+/**
+ * Returns function that returns value from [filter](#filter) with `fn` argument.
+ */
+export function filter_<I extends unknown = unknown>(
+	is_match_fn:is_match_fn_T<I>
+) {
+	return (a:I[])=>filter<I>(a, is_match_fn)
+}
+export function maybe_filter_<I extends unknown = unknown>(
+	is_match_fn:is_match_fn_T<I>
+) {
+	return (maybe_a:I[]|undefined)=>filter<I>(maybe_a as I[], is_match_fn)
+}
+export {
+	filter_ as _filter,
+	filter_ as _fn__filter,
+	maybe_filter_ as _maybe_filter,
 }
