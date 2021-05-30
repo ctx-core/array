@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.0.1
+
+### Patch Changes
+
+- idx*key_hash_T->idx_key_h_T,idx_key_hash_2->idx_key_h_2,key_hash*->key*h*,key_hash_2->key_h_2
+
 ## 21.0.0
 
 ### Major Changes

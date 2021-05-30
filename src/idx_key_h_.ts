@@ -8,18 +8,18 @@ export function idx_key_h_<Obj extends Record<string, string> = Record<string, s
 	key:string|number,
 	item_key_idx_val_:item_key_idx_val_fn_T<string, Obj> = I__ as item_key_idx_val_fn_T<string, Obj>
 ) {
-	let idx_key_hash = {} as idx_key_hash_T
+	let idx_key_h = {} as idx_key_h_T
 	if (a) {
 		for (let idx = 0; idx < a.length; idx++) {
 			const obj = a[idx]
 			const val = item_key_idx_val_ ? item_key_idx_val_(obj && obj[key], obj, key, idx) : (obj && obj[key])
 			if (!val) continue
-			idx_key_hash[val] = idx
+			idx_key_h[val] = idx
 		}
 	}
-	return idx_key_hash
+	return idx_key_h
 }
-export interface idx_key_hash_T extends Record<string, number> {}
+export interface idx_key_h_T extends Record<string, number> {}
 export function maybe_idx_key_h_<Obj extends Record<string, string> = Record<string, string>>(
 	maybe_a:Obj[]|undefined,
 	key:string|number,

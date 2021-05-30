@@ -6,15 +6,15 @@ export function key_h_a_<Val extends object = object>(
 	ctx_a_nowrap:(Record<string, Val>|Record<string, Val>[])
 ) {
 	const ctx_a:Record<string, Val>[] = wrap_a_<Record<string, Val>>(ctx_a_nowrap)
-	const a_key_hash:Record<string, Val[]> = {}
+	const a_key_h_a:Record<string, Val[]> = {}
 	for (let i = 0; i < ctx_a.length; i++) {
 		const ctx = ctx_a[i]
 		for (let key in ctx) {
 			const value:Val = ctx[key]
-			a_key_hash[key] = concat(a_key_hash[key] || [], value) as Val[]
+			a_key_h_a[key] = concat(a_key_h_a[key] || [], value) as Val[]
 		}
 	}
-	return a_key_hash
+	return a_key_h_a
 }
 export {
 	key_h_a_ as key_h_a1_fn,
