@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 21.0.4
+
+### Patch Changes
+
+- _b->be_
+- Updated dependencies [undefined]
+  - @ctx-core/object@19.0.2
+
 ## 21.0.3
 
 ### Patch Changes
@@ -993,7 +1001,7 @@
 
 ### Patch Changes
 
-- explicitly setting B types when \_b is invoked
+- explicitly setting B types when \be\_ is invoked
 - Updated dependencies [undefined]
 - Updated dependencies [undefined]
   - @ctx-core/object@12.0.9
