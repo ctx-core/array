@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.0.3
+
+### Patch Changes
+
+- - idx*item_h*,idx_item_h_2
+
 ## 21.0.2
 
 ### Patch Changes
