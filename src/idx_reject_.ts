@@ -5,7 +5,7 @@ import type { is_match_fn_T } from './is_match_fn_T'
  */
 export function idx_reject_<Val extends unknown = unknown>(
 	is_match_:is_match_fn_T<Val>
-) {
+):(a:Val[])=>number[] {
 	return (a:Val[])=>idx_reject<Val>(a, is_match_)
 }
 export {

@@ -2,7 +2,7 @@ import { slice } from './slice'
 /**
  * Returns a function that slices the spread argument array with `arg_a`
  */
-export function spread_slice_(...arg_a:any):spread_slice_fn_arg_T {
+export function spread_slice_(...arg_a:any):spread_slice__arg_T {
 	return (...a)=>slice(a, ...arg_a)
 }
 export {
@@ -10,4 +10,4 @@ export {
 	spread_slice_ as _slice__spread,
 	spread_slice_ as _fn__slice__spread,
 }
-export type spread_slice_fn_arg_T = (...arg_a:any)=>undefined|unknown[]
+export type spread_slice__arg_T = (...arg_a:any)=>undefined|unknown[]

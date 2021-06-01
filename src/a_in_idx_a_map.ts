@@ -4,7 +4,7 @@ import { map } from './map'
  */
 export function a_in_idx_a_map(
 	idx_a:number[], a:number[]
-) {
+):number[] {
 	return map<number, number>(idx_a, idx=>a[idx])
 }
 export {

@@ -4,7 +4,7 @@ import { every } from './every'
  */
 export function every_<I extends unknown = unknown>(
 	predicate:(item:I, idx:number, a:I[])=>boolean
-) {
+):(a:I[])=>boolean {
 	return (a:I[])=>every<I>(a, predicate)
 }
 export {

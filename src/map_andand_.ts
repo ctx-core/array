@@ -5,7 +5,7 @@ import { map_andand } from './map_andand'
  */
 export function map_andand_<In extends unknown, Out extends unknown>(
 	...attr_a:andand_key_fn_T<In>[]
-) {
+):(a:In[])=>Out[] {
 	return (a:In[])=>map_andand<In, Out>(a, ...attr_a)
 }
 export {

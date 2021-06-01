@@ -1,8 +1,11 @@
 import { exit_thold_a_compact_ctx_2 } from './exit_thold_a_compact_ctx_2'
+import type { compact_a_ctx_I } from './compact_a_ctx_I'
 /**
  * Returns a [compact_a_ctx_I](#compact_a_ctx_I) of presumably sorted items in `val_a` at each index of the old item for each changed item.
  */
-export function exit_thold_a_compact_ctx_<I extends unknown = unknown>(in_val_a?:I[]) {
+export function exit_thold_a_compact_ctx_<I extends unknown = unknown>(
+	in_val_a?:I[]
+):compact_a_ctx_I<I> {
 	return exit_thold_a_compact_ctx_2<I>()(in_val_a)
 }
 export {

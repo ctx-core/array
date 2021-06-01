@@ -5,8 +5,8 @@ import { map_find } from './map_find'
  */
 export function map_find_<In extends unknown = unknown, Out extends unknown = In>(
 	fn:(val:In, idx:number)=>Out
-) {
-	return (a:wrap_a_T2<In>)=>map_find(a, fn)
+):(a:wrap_a_T2<In>)=>Out|undefined {
+	return (a:wrap_a_T2<In>)=>map_find<In, Out>(a, fn)
 }
 export {
 	map_find_ as _map_find,

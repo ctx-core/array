@@ -1,7 +1,7 @@
 /**
  * Returns a random index in `a`.
  */
-export function random_idx_(a: unknown[]): number {
+export function random_idx_(a:unknown[]):number {
 	return Math.floor(Math.random() * a.length)
 }
 export {

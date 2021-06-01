@@ -4,7 +4,7 @@
 export function reverse</*@formatter:off*/
 	I extends unknown = unknown,
 	O extends unknown = I[]
->/*@formatter:on*/(in_a:I[]) {
+>/*@formatter:on*/(in_a:I[]):O {
 	return in_a.reverse() as O
 }
 export function maybe_reverse</*@formatter:off*/

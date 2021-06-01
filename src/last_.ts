@@ -1,7 +1,9 @@
 /**
  * Returns the _last item in the in_a
  */
-export function last_<I extends unknown = unknown>(a:I[]):I|undefined {
+export function last_<I extends unknown = unknown>(
+	a:I[]
+):I|undefined {
 	return a[a.length - 1] as I
 }
 export function maybe_last_<I extends unknown = unknown>(

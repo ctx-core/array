@@ -5,7 +5,9 @@ import { wrap_a2_ } from '@ctx-core/function'
  * Returns the _difference of n arrays
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
-export function difference_<I extends unknown = unknown>(a2_nowrap: a_nowrap_T<I>) {
+export function difference_<I extends unknown = unknown>(
+	a2_nowrap:a_nowrap_T<I>
+):wrap_a2_item_T<I>[] {
 	const a2 = wrap_a2_<I>(a2_nowrap)
 	return Array.from(
 		_difference__set<wrap_a2_T<I>>(a2)

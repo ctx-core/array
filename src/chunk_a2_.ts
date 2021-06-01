@@ -3,8 +3,8 @@ import { slice } from './slice'
  * Splits array into chunks
  */
 export function chunk_a2_<I extends unknown = unknown>(
-	a: I[], chunk_length: number
-): I[][] {
+	a:I[], chunk_length:number
+):I[][] {
 	let chunk_a2 = [] as I[][]
 	for (let i = 0; i < a.length; i += chunk_length) {
 		chunk_a2.push(slice<I>(a, i, i + chunk_length))

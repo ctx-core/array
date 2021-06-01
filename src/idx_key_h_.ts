@@ -7,7 +7,7 @@ export function idx_key_h_<Obj extends Record<string, string> = Record<string, s
 	a:Obj[],
 	key:string|number,
 	item_key_idx_val_:item_key_idx_val_fn_T<string, Obj> = I__ as item_key_idx_val_fn_T<string, Obj>
-) {
+):idx_key_h_T {
 	let idx_key_h = {} as idx_key_h_T
 	if (a) {
 		for (let idx = 0; idx < a.length; idx++) {
@@ -24,7 +24,7 @@ export function maybe_idx_key_h_<Obj extends Record<string, string> = Record<str
 	maybe_a:Obj[]|undefined,
 	key:string|number,
 	item_key_idx_val_:item_key_idx_val_fn_T<string, Obj> = I__ as item_key_idx_val_fn_T<string, Obj>
-) {
+):idx_key_h_T {
 	return idx_key_h_<Obj>(maybe_a as Obj[], key, item_key_idx_val_)
 }
 export {

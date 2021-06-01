@@ -8,7 +8,7 @@ export function map_andand_or</*@formatter:off*/
 	Out extends unknown = unknown
 >(/*@formatter:on*/
 	a:In[], attr_a:andand_key_T<In>[], or_fn:andand_or_T<In, Out>
-) {
+):Out[] {
 	return map<In, Out>(a, one_andand_or_<In, Out>(attr_a, or_fn) as map_fn_T<In, Out>)
 }
 export {

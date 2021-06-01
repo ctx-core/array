@@ -3,9 +3,9 @@ import { value_h_ } from './value_h_'
  * Returns a Function that returns from [_value_hash](#_value_hash).
  */
 export function value_h_2<Out extends unknown = unknown>(
-	_value:(key:string, idx:number)=>Out
-) {
-	return (value_a:string[])=>value_h_<Out>(value_a, _value)
+	value_:(key:string, idx:number)=>Out
+):(value_a:string[])=>Record<string, Out> {
+	return (value_a:string[])=>value_h_<Out>(value_a, value_)
 }
 export {
 	value_h_2 as value_hash_fn2,

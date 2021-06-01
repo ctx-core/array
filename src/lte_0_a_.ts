@@ -1,7 +1,7 @@
 /**
  * Returns Array of values `<= 0` in `val_a`.
  */
-export function lte_0_a_(val_a: number[]) {
+export function lte_0_a_(val_a: number[]):number[] {
 	const lte_0_a = [] as number[]
 	for (let i = 0; i < val_a.length; i++) {
 		const val = val_a[i]

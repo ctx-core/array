@@ -4,8 +4,8 @@ import type { compare_T } from './compare_T'
  */
 export function compare_<I extends unknown = unknown>(
 	asc = true
-): compare_T<I> {
-	return (a, b) => {
+):compare_T<I> {
+	return (a, b)=>{
 		if (a < b) return asc ? -1 : 1
 		if (a > b) return asc ? 1 : -1
 		return 0

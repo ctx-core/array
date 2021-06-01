@@ -4,7 +4,7 @@ import type { wrap_a_T2 } from '@ctx-core/function'
  */
 export function find<In extends unknown = unknown>(
 	a:wrap_a_T2<In>, fn:(val:In, idx:number)=>any
-) {
+):In|undefined {
 	for (let idx = 0; idx < a.length; idx++) {
 		const val = a[idx] as In
 		const map_val = fn(val, idx)

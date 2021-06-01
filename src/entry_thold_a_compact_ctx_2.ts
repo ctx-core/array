@@ -1,12 +1,12 @@
 import { eq, eq_T } from '@ctx-core/function'
 import type { compact_a_ctx_I } from './compact_a_ctx_I'
-import type { thold_a_compact_ctx_fn_T } from './thold_a_compact_ctx_fn_T'
+import type { thold_a_compact_ctx__T } from './thold_a_compact_ctx__T'
 /**
  * Returns a function that returns a [compact_a_ctx_I](#compact_a_ctx_I)
  */
 export function entry_thold_a_compact_ctx_2<I extends unknown = unknown>(
-	_eq = (eq as eq_T<I[]>)
-) {
+	eq_ = (eq as eq_T<I[]>)
+):thold_a_compact_ctx__T<I> {
 	return (
 		(in_val_a?:I[])=>{
 			const idx_a = [] as number[]
@@ -16,7 +16,7 @@ export function entry_thold_a_compact_ctx_2<I extends unknown = unknown>(
 				for (let i = 0; i < val_a.length; i++) {
 					const val = val_a[i]
 					const prev_val = val_a[i - 1]
-					if (!i || (_eq ? !_eq([val, prev_val]) : (val !== prev_val))) {
+					if (!i || (eq_ ? !eq_([val, prev_val]) : (val !== prev_val))) {
 						idx_a.push(i)
 						val_a.push(val)
 					}
@@ -27,7 +27,7 @@ export function entry_thold_a_compact_ctx_2<I extends unknown = unknown>(
 				val_a,
 			} as compact_a_ctx_I<I>
 		}
-	) as thold_a_compact_ctx_fn_T<I>
+	) as thold_a_compact_ctx__T<I>
 }
 export {
 	entry_thold_a_compact_ctx_2 as entry_thold_a1_compact_ctx_fn2,

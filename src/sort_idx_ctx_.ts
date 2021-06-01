@@ -8,7 +8,7 @@ import { sort } from './sort'
 export function sort_idx_ctx_<I extends unknown = unknown>(
 	maybe_a:I[]|undefined,
 	compare:compare_T<I> = compare_<I>()
-) {
+):sort_idx_ctx_T<I> {
 	const sort_a = [] as [I, number][]
 	const sort_val_a = [] as I[]
 	const sort_idx_a = [] as number[]

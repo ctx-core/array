@@ -3,8 +3,8 @@
  * @example `invert_idx_a_fn([2, 1, 3, 0]) -> [3, 1, 0, 2]`
  */
 export function invert_idx_a_(
-	in_idx_a: number[]|undefined
-): number[]|undefined {
+	in_idx_a:number[]|undefined
+):number[]|undefined {
 	if (!in_idx_a) return
 	const idx_a = in_idx_a as number[]
 	const invert_idx_a = [] as number[]

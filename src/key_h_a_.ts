@@ -4,7 +4,7 @@ import { wrap_a_, concat } from '@ctx-core/function'
  */
 export function key_h_a_<Val extends object = object>(
 	ctx_a_nowrap:(Record<string, Val>|Record<string, Val>[])
-) {
+):Record<string, Val[]> {
 	const ctx_a:Record<string, Val>[] = wrap_a_<Record<string, Val>>(ctx_a_nowrap)
 	const a_key_h_a:Record<string, Val[]> = {}
 	for (let i = 0; i < ctx_a.length; i++) {

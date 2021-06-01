@@ -4,7 +4,7 @@ import type { compare_1_T } from './compare_1_T'
  */
 export function rank</*@formatter:off*/
 	I extends unknown = unknown
->(a: I[], compare_1: compare_1_T): number {/*@formatter:on*/
+>/*@formatter:on*/(a:I[], compare_1:compare_1_T):number {
 	let i_rank = 1
 	for (let i = 0; i < a.length; i++) {
 		if (compare_1(a[i]) > 0) {

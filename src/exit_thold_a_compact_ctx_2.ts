@@ -1,12 +1,12 @@
 import { eq, eq_T } from '@ctx-core/function'
 import type { compact_a_ctx_I } from './compact_a_ctx_I'
-import type { thold_a_compact_ctx_fn_T } from './thold_a_compact_ctx_fn_T'
+import type { thold_a_compact_ctx__T } from './thold_a_compact_ctx__T'
 /**
  * Returns a function that returns a [compact_a_ctx_I](#compact_a_ctx_I)
  */
 export function exit_thold_a_compact_ctx_2<I extends unknown = unknown>(
 	_eq = (eq as eq_T<I[]>)
-) {
+):thold_a_compact_ctx__T<I> {
 	return ((in_val_a?:I[])=>{
 		const idx_a = [] as number[]
 		const val_a = [] as I[]
@@ -34,7 +34,7 @@ export function exit_thold_a_compact_ctx_2<I extends unknown = unknown>(
 			idx_a,
 			val_a,
 		} as compact_a_ctx_I<I>
-	}) as thold_a_compact_ctx_fn_T<I>
+	}) as thold_a_compact_ctx__T<I>
 }
 export {
 	exit_thold_a_compact_ctx_2 as exit_thold_a1_compact_ctx_fn2,

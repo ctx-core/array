@@ -1,8 +1,8 @@
 /**
  * Returns an Array of incrementing index (`idx`) values with `start=0`.
  */
-const idx_a = [] as number[]
-export function idx_a_(count: number, start = 0) {
+export function idx_a_(count:number, start = 0):number[] {
+	const idx_a = [] as number[]
 	for (let i = 0; i < count; i++) {
 		idx_a.push(start + i)
 	}

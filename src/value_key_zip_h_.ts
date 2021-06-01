@@ -5,7 +5,7 @@ import { each } from './each'
  */
 export function value_key_zip_h_<K extends (string|number|symbol), V extends unknown>(
 	[a_i0, a_i1]:[K[], V[]]
-) {
+):Record<K, V> {
 	const value_key_zip_h = {} as Record<K, V>
 	const value_key_a2 = zip<K|V>([a_i0, a_i1])
 	each<[K, V]>(

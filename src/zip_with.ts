@@ -9,7 +9,7 @@ export function zip_with</*@formatter:off*/
 	a2:I[][],
 	fn?:zip_width_fn_T<I>
 ):O {
-	if (!fn) fn = _default_zipWith_fn<I>()
+	if (!fn) fn = default_zip_with_2<I>()
 	const a = a2[0]
 	const rest_a2 = a2.slice(1)
 	const zip_with_a = [] as I[]
@@ -36,11 +36,8 @@ export function maybe_zip_with</*@formatter:off*/
 	if (!a2) return
 	return zip_with<I>(a2, fn) as O
 }
-export function _default_zipWith_fn</*@formatter:off*/
-	I extends unknown = unknown,
-	O extends unknown = I[]
->/*@formatter:on*/() {
-	return ((a:I[], _i:number)=>a as O) as zip_width_fn_T<I>
+export function default_zip_with_2<I extends unknown = unknown>():zip_width_fn_T<I> {
+	return ((a:I[], _i:number)=>a as I)
 }
 export type zip_width_fn_T<I extends unknown = unknown> =
 	(a:I[], i:number)=>I

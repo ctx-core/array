@@ -5,7 +5,7 @@ import type { is_match_fn_T } from './is_match_fn_T'
 export function filter<Val extends unknown = unknown>(
 	a:Val[],
 	is_match_fn:is_match_fn_T<Val>
-) {
+):Val[] {
 	const out_a = [] as Val[]
 	for (let i = 0; i < a.length; i++) {
 		const value = a[i]

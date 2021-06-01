@@ -4,9 +4,7 @@
 export function remove_idx</*@formatter:off*/
 	I extends unknown = unknown,
 	O extends unknown = I[]
->/*@formatter:on*/(
-	a: I[], idx: number, count = 1
-): O {
+>/*@formatter:on*/(a:I[], idx:number, count = 1):O {
 	return a.splice(idx, count) as O
 }
 export {

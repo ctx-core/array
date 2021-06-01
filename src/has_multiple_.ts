@@ -2,7 +2,7 @@ import { a_length_ } from './a_length_'
 /**
  * Returns true if argument is an array with more than one item
  */
-export function has_multiple_(a: unknown[]): boolean {
+export function has_multiple_(a:unknown[]):boolean {
 	return a_length_(a) > 1
 }
 export {

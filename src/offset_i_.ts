@@ -1,7 +1,7 @@
 /**
  * Returns offset index, i * offset
  */
-export function offset_i_(i: number, offset = 1): number {
+export function offset_i_(i:number, offset = 1):number {
 	return i * offset
 }
 export {

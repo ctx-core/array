@@ -4,8 +4,8 @@ export function intersection_by_</*@formatter:off*/
 	O extends unknown = unknown
 >/*@formatter:on*/(
 	a2_nowrap: I,
-	_by = (v: wrap_a2_item_T<I>) => v as unknown as O
-) {
+	by_ = (v: wrap_a2_item_T<I>) => v as unknown as O
+):O[] {
 	const a2 = wrap_a2_<I>(a2_nowrap)
 	const intersection_map = new Map() as Map<O, wrap_a2_item_T<I>>
 	const current_map = new Map() as Map<O, wrap_a2_item_T<I>>
@@ -14,7 +14,7 @@ export function intersection_by_</*@formatter:off*/
 		if (!i) {
 			for (let j = 0; j < a.length; j++) {
 				const item = a[j]
-				const by = _by(item)
+				const by = by_(item)
 				if (!intersection_map.has(by)) {
 					intersection_map.set(by, item)
 				}
@@ -23,7 +23,7 @@ export function intersection_by_</*@formatter:off*/
 			current_map.clear()
 			for (let j = 0; j < a.length; j++) {
 				const item = a[j]
-				const by = _by(item)
+				const by = by_(item)
 				current_map.set(by, item)
 			}
 			intersection_map.forEach((_val, by) => {

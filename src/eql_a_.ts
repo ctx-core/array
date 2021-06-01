@@ -1,7 +1,7 @@
 /**
  * Is e0_a `===` e1_a? Checks first level equality.
  */
-export function eql_a_<I extends unknown = unknown>(e0_a: I[], e1_a: I[]): boolean {
+export function eql_a_<I extends unknown = unknown>(e0_a:I[], e1_a:I[]):boolean {
 	if (e0_a === e1_a) return true
 	if (e0_a == null || e1_a == null) return false
 	if (e0_a.length != e1_a.length) return false

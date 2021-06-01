@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 21.1.0
+
+### Minor Changes
+
+- explicit return value type on all functions
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@18.1.0
+
 ## 21.0.5
 
 ### Patch Changes
