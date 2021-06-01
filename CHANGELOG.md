@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.0.5
+
+### Patch Changes
+
+- fix: idx_filter,maybe_idx_filter: returns number[]
+
 ## 21.0.4
 
 ### Patch Changes
