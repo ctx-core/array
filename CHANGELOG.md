@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.1.1
+
+### Patch Changes
+
+- fix: warning: Conflicting namespaces
+
 ## 21.1.0
 
 ### Minor Changes
