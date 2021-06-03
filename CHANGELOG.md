@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.1.2
+
+### Patch Changes
+
+- fix: concat warning: Conflicting namespaces
+
 ## 21.1.1
 
 ### Patch Changes
