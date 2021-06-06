@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.2.0
+
+### Minor Changes
+
+- - tup,tuple instead of tuple\_. tuple\_ is still supported as an alias
+
 ## 21.1.3
 
 ### Patch Changes
