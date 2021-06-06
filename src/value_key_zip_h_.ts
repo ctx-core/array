@@ -7,9 +7,9 @@ export function value_key_zip_h_<K extends (string|number|symbol), V extends unk
 	[a_i0, a_i1]:[K[], V[]]
 ):Record<K, V> {
 	const value_key_zip_h = {} as Record<K, V>
-	const value_key_a2 = zip<K|V>([a_i0, a_i1])
-	each<[K, V]>(
-		value_key_a2 as [K, V][],
+	const value_key_a2 = zip<(K[]|V[])[], [K, V][]>([a_i0, a_i1])
+	each(
+		value_key_a2,
 		(kv=>value_key_zip_h[kv[0]] = kv[1])
 	)
 	return value_key_zip_h

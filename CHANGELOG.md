@@ -1,5 +1,17 @@
 # @ctx-core/array
 
+## 21.2.5
+
+### Patch Changes
+
+- fix: zip,maybe*zip,zip_with,maybe_zip_with,zip_with*,value*key_zip_h*: return type signature
+
+## 21.2.4
+
+### Patch Changes
+
+- fix: zip,maybe_zip,zip_with,maybe_zip_with: returns O=I[][]
+
 ## 21.2.3
 
 ### Patch Changes
