@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.2.3
+
+### Patch Changes
+
+- map*andandfn* instead of map_andand_2
+
 ## 21.2.2
 
 ### Patch Changes
