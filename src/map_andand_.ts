@@ -1,10 +1,10 @@
-import type { andand_key_fn_T } from '@ctx-core/function'
+import type { andand_key_T } from '@ctx-core/function'
 import { map_andand } from './map_andand'
 /**
  * Returns function that returns value from [map_andand](#map_andand) with `...attr_a`.
  */
 export function map_andand_<In extends unknown, Out extends unknown>(
-	...attr_a:andand_key_fn_T<In>[]
+	...attr_a:andand_key_T<In>[]
 ):(a:In[])=>Out[] {
 	return (a:In[])=>map_andand<In, Out>(a, ...attr_a)
 }

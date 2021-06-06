@@ -1,4 +1,4 @@
-import { andandfn_, andand_key_fn_T } from '@ctx-core/function'
+import { andandfn_, andand_key_T } from '@ctx-core/function'
 import { map } from './map'
 /**
  * Returns Array of mapped `a` with `andandfn_(...attr_a)`
@@ -6,7 +6,7 @@ import { map } from './map'
 export function map_andandfn</*@formatter:off*/
 	In extends unknown = unknown,
 	Out extends unknown = unknown
->(a:In[], ...attr_a:andand_key_fn_T<In>[]) {/*@formatter:on*/
+>(a:In[], ...attr_a:andand_key_T<In>[]) {/*@formatter:on*/
 	return map<In, Out>(a, andandfn_<In, Out>(...attr_a))
 }
 export {

@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 21.2.2
+
+### Patch Changes
+
+- fix: map*andand*,map_andand_2,map_andandfn: ...attr_a:andand_key_T<In>[]
+- Updated dependencies [undefined]
+  - @ctx-core/function@18.1.1
+
 ## 21.2.1
 
 ### Patch Changes
