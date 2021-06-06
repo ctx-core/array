@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 21.2.6
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@6.3.2
+  - @ctx-core/function@18.1.2
+  - @ctx-core/object@19.1.2
+  - @ctx-core/set@10.0.4
+
 ## 21.2.5
 
 ### Patch Changes
