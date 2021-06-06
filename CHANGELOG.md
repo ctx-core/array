@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.2.1
+
+### Patch Changes
+
+- update dependencies
+
 ## 21.2.0
 
 ### Minor Changes
