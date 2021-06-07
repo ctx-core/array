@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.2.8
+
+### Patch Changes
+
+- fix: a_in_idx_a_map: <Val extends unknown = unknown>: a: Val[]: returns Val[]
+
 ## 21.2.7
 
 ### Patch Changes
