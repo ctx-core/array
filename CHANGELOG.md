@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.2.10
+
+### Patch Changes
+
+- map_andandfn: explicit return type: Out[]
+
 ## 21.2.9
 
 ### Patch Changes
