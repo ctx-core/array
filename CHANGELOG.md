@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.3.0
+
+### Minor Changes
+
+- feat: idx*sort_h_a*
+
 ## 21.2.10
 
 ### Patch Changes
