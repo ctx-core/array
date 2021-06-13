@@ -2,11 +2,11 @@ import type { is_match_fn_T } from './is_match_fn_T'
 /**
  * Returns idx of first match in `a` with `compare`.
  */
-export function idx_(
-	in_a:number[]|undefined, compare:unknown|is_match_fn_T<number>
+export function idx_<Val extends unknown = unknown>(
+	in_a:Val[]|undefined, compare:is_match_fn_T<Val>
 ):number {
 	if (in_a) {
-		const a = in_a as number[]
+		const a = in_a
 		for (let idx = 0; idx < a.length; idx++) {
 			const value = a[idx]
 			if (

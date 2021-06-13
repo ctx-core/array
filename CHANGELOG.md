@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 21.3.3
+
+### Patch Changes
+
+- fix: idx\_\_: in_a argument is unknown type: <Val extends unknown = unknown>
+
 ## 21.3.2
 
 ### Patch Changes
