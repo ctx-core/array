@@ -1,0 +1,7 @@
+import type { is_match_fn_T } from './is_match_fn_T';
+/**
+ * Returns Array of indices `idx` not rejected by `is_match_`.
+ */
+export declare function idx_reject<Val extends unknown = unknown>(a: Val[], is_match_: is_match_fn_T<Val>): number[];
+export declare function maybe_idx_reject<Val extends unknown = unknown>(maybe_a: Val[] | undefined, is_match_: is_match_fn_T<Val>): number[] | undefined;
+export { idx_reject as reject__idx, };

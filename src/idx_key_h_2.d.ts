@@ -1,0 +1,8 @@
+import type { item_key_idx_val_fn_T } from './item_key_idx_val_fn_T';
+import { idx_key_h_T } from './idx_key_h_';
+/**
+ * Returns function that returns from [_idx_key_hash](#_idx_key_hash) with `item_key_idx_val_` function argument.
+ */
+export declare function idx_key_h_2<Obj extends Record<string, string> = Record<string, string>>(item_key_idx_val_?: item_key_idx_val_fn_T<string, Obj>): (a: Obj[], key: string | number) => idx_key_h_T;
+export declare function maybe_idx_key_h_2<Obj extends Record<string, string> = Record<string, string>>(item_key_idx_val_?: item_key_idx_val_fn_T<string, Obj>): (maybe_a: Obj[] | undefined, key: string) => idx_key_h_T;
+export { idx_key_h_2 as _idx_key_hash_fn, idx_key_h_2 as _fn__idx_key_hash, maybe_idx_key_h_2 as _maybe_idx_key_hash_fn, };

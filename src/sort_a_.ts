@@ -12,7 +12,7 @@ export function sort_a_<I extends unknown = unknown>(
 		slice<I>(a, 0), compare
 	) as I[]
 }
-export function maybe_sort_a1_<I extends unknown = unknown>(
+export function maybe_sort_a_<I extends unknown = unknown>(
 	maybe_a:I[]|undefined,
 	compare?:compare_T<I>
 ):I[]|undefined {
@@ -24,5 +24,6 @@ export {
 	sort_a_ as sort_a1_,
 	sort_a_ as _sort_a1,
 	sort_a_ as _a1__sort,
-	maybe_sort_a1_ as _maybe_sort_a1,
+	maybe_sort_a_ as maybe_sort_a1_,
+	maybe_sort_a_ as _maybe_sort_a1,
 }
