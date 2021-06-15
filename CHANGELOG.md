@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 22.0.1
+
+### Patch Changes
+
+- fix: export type compact_a1_ctx_I<I> = compact_a_ctx_I<I>
+
 ## 22.0.0
 
 ### Major Changes
