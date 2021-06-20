@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 22.0.7
+
+### Patch Changes
+
+- "prepare": "npm run clean && npm run compile"
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@7.0.5
+  - @ctx-core/function@19.1.5
+  - @ctx-core/object@20.0.6
+  - @ctx-core/set@11.0.6
+
 ## 22.0.6
 
 ### Patch Changes
