@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 22.0.11
+
+### Patch Changes
+
+- tsconfig.json: "lib": ["dom", "ESNext"]
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@7.0.8
+  - @ctx-core/function@19.1.8
+  - @ctx-core/object@20.1.1
+  - @ctx-core/set@11.0.9
+
 ## 22.0.10
 
 ### Patch Changes
