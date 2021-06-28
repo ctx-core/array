@@ -13,7 +13,7 @@ export function intersection_<I extends unknown = unknown>(
 	) as intersection_T<I>
 }
 export type intersection_T<I extends unknown = unknown> =
-	wrap_a2_T<I> extends (infer O)[][] ? O : never
+	wrap_a2_T<I> extends (infer O)[][] ? O[] : never
 export {
 	intersection_ as _intersection,
 	intersection_ as _intersection__a1,

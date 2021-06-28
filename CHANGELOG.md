@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 22.1.0
+
+### Minor Changes
+
+- - idx*item_r*,idx*item_r_2,idx_key_r*,idx*key_r_2,idx_sort_r_a*,key*r*,key*r_2,key_r_a*,value*r*,value_r_2
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/set@11.0.12
+
 ## 22.0.16
 
 ### Patch Changes

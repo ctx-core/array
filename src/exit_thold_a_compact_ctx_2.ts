@@ -5,7 +5,7 @@ import type { thold_a_compact_ctx__T } from './thold_a_compact_ctx__T'
  * Returns a function that returns a [compact_a_ctx_I](#compact_a_ctx_I)
  */
 export function exit_thold_a_compact_ctx_2<I extends unknown = unknown>(
-	_eq = (eq as eq_T<I[]>)
+	eq_ = (eq as eq_T<I[]>)
 ):thold_a_compact_ctx__T<I> {
 	return ((in_val_a?:I[])=>{
 		const idx_a = [] as number[]
@@ -20,8 +20,8 @@ export function exit_thold_a_compact_ctx_2<I extends unknown = unknown>(
 				if (
 					next_idx === val_a_length
 					|| (
-						_eq
-						? !_eq([val, next_val])
+						eq_
+						? !eq_([val, next_val])
 						: val !== next_val
 					)
 				) {
