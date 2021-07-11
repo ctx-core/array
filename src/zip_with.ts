@@ -1,5 +1,5 @@
 /**
- * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `wrap_a2_T`.
+ * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `wrap_aa_T`.
  */
 export function zip_with</*@formatter:off*/
 	I extends unknown[][] = unknown[][],

@@ -1,7 +1,7 @@
 import { isArray } from '@ctx-core/object'
-import { wrap_a_, wrap_a2_, wrap_a_T, wrap_a2_item_T, a_nowrap_T } from '@ctx-core/function'
-export { isArray, wrap_a_, wrap_a2_ }
-export type { wrap_a_T, wrap_a2_item_T, a_nowrap_T }
+import { wrap_a_, wrap_aa_, wrap_a_T, wrap_aa_item_T, a_nowrap_T } from '@ctx-core/function'
+export { isArray, wrap_a_, wrap_aa_ }
+export type { wrap_a_T, wrap_aa_item_T, a_nowrap_T }
 export * from './a_in_idx_a_map'
 export * from './a_length_'
 export * from './a_present_'

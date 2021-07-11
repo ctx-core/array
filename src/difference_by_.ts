@@ -1,4 +1,4 @@
-import { wrap_a2_ } from '@ctx-core/function'
+import { wrap_aa_ } from '@ctx-core/function'
 export function difference_by_</*@formatter:off*/
 	I extends unknown = unknown,
 	O extends unknown = unknown
@@ -6,7 +6,7 @@ export function difference_by_</*@formatter:off*/
 	a2_nowrap:I,
 	_by = (item:I)=>item as unknown as O
 ):I[] {
-	const a2 = wrap_a2_<I>(a2_nowrap)
+	const a2 = wrap_aa_<I>(a2_nowrap)
 	const set = new Set()
 	const difference = [] as I[]
 	const { length } = a2

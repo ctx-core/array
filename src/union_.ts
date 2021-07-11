@@ -1,4 +1,4 @@
-import { wrap_a2_, a_nowrap_T, wrap_a2_item_T, wrap_a2_T } from '@ctx-core/function'
+import { wrap_aa_, a_nowrap_T, wrap_aa_item_T, wrap_aa_T } from '@ctx-core/function'
 import { set_union_fn } from '@ctx-core/set'
 /**
  * Returns the _union of n arrays
@@ -6,11 +6,11 @@ import { set_union_fn } from '@ctx-core/set'
  */
 export function union_<I extends unknown = unknown>(
 	a2_nowrap:a_nowrap_T<I>
-):wrap_a2_item_T<I>[] {
-	const a2 = wrap_a2_<I>(a2_nowrap)
+):wrap_aa_item_T<I>[] {
+	const a2 = wrap_aa_<I>(a2_nowrap)
 	return Array.from(
-		set_union_fn<wrap_a2_T<I>>(a2)
-	) as wrap_a2_item_T<I>[]
+		set_union_fn<wrap_aa_T<I>>(a2)
+	) as wrap_aa_item_T<I>[]
 }
 export {
 	union_ as _union,
