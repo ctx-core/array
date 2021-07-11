@@ -5,6 +5,7 @@ export type { wrap_a_T, wrap_aa_item_T, a_nowrap_T }
 export * from './a_in_idx_a_map'
 export * from './a_length_'
 export * from './a_present_'
+export * from './a_T'
 export * from './binary_sort_rank'
 export * from './chunk_a2_'
 export * from './circular_idx_'

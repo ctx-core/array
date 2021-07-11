@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 22.2.0
+
+### Minor Changes
+
+- - a**T,a**\_T
+
 ## 22.1.6
 
 ### Patch Changes
