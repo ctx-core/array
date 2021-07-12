@@ -3,10 +3,10 @@ export function intersection_by_</*@formatter:off*/
 	I extends unknown = unknown,
 	O extends unknown = unknown
 >/*@formatter:on*/(
-	a2_nowrap: I,
+	aa_nowrap: I,
 	by_ = (v: wrap_aa_item_T<I>) => v as unknown as O
 ):O[] {
-	const a2 = wrap_aa_<I>(a2_nowrap)
+	const a2 = wrap_aa_<I>(aa_nowrap)
 	const intersection_map = new Map() as Map<O, wrap_aa_item_T<I>>
 	const current_map = new Map() as Map<O, wrap_aa_item_T<I>>
 	for (let i = 0; i < a2.length; i++) {

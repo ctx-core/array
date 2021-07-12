@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 22.3.0
+
+### Minor Changes
+
+- aa instead of a2,aaa instead of a3
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@20.5.0
+
 ## 22.2.0
 
 ### Minor Changes

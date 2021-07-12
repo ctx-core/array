@@ -1,9 +1,9 @@
 import { wrap_aa_, wrap_aa_item_T } from '@ctx-core/function'
 export function union_by_<I extends unknown, O extends unknown>(
-	a2_nowrap:I,
+	aa_nowrap:I,
 	by_ = (v:wrap_aa_item_T<I>)=>v as unknown as O
 ):wrap_aa_item_T<I>[] {
-	const a2 = wrap_aa_<I>(a2_nowrap)
+	const a2 = wrap_aa_<I>(aa_nowrap)
 	const set = new Set() as Set<O>
 	const union = [] as wrap_aa_item_T<I>[]
 	for (let i = 0; i < a2.length; i++) {

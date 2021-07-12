@@ -3,10 +3,10 @@ export function difference_by_</*@formatter:off*/
 	I extends unknown = unknown,
 	O extends unknown = unknown
 >/*@formatter:on*/(
-	a2_nowrap:I,
+	aa_nowrap:I,
 	_by = (item:I)=>item as unknown as O
 ):I[] {
-	const a2 = wrap_aa_<I>(a2_nowrap)
+	const a2 = wrap_aa_<I>(aa_nowrap)
 	const set = new Set()
 	const difference = [] as I[]
 	const { length } = a2

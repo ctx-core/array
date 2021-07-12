@@ -5,24 +5,24 @@ export function zip_with</*@formatter:off*/
 	I extends unknown[][] = unknown[][],
 	O extends unknown[][] = I[number][number][][]
 >/*@formatter:on*/(
-	a2:I, fn?:zip_with_fn_T<I[number], O[number]>
+	aa:I, fn?:zip_with_fn_T<I[number], O[number]>
 ):O {
 	if (!fn) fn = default_zip_with_2<I[number], O>()
-	const a = a2[0]
-	const rest_a2 = a2.slice(1)
-	const zip_with_a2:O = [] as unknown as O
+	const a = aa[0]
+	const rest_aa = aa.slice(1)
+	const zip_with_aa:O = [] as unknown as O
 	for (let i = 0; i < a.length; i++) {
 		const arg_a = [a[i]] as I[number]
-		for (let j = 0; j < rest_a2.length; j++) {
+		for (let j = 0; j < rest_aa.length; j++) {
 			arg_a.push(
-				rest_a2[j][i]
+				rest_aa[j][i]
 			)
 		}
-		zip_with_a2.push(
-			fn.call(zip_with_a2, arg_a, i)
+		zip_with_aa.push(
+			fn.call(zip_with_aa, arg_a, i)
 		)
 	}
-	return zip_with_a2
+	return zip_with_aa
 }
 export function maybe_zip_with</*@formatter:off*/
 	I extends unknown[][] = unknown[][],

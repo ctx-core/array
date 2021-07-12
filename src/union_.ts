@@ -5,9 +5,9 @@ import { set_union_fn } from '@ctx-core/set'
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
  */
 export function union_<I extends unknown = unknown>(
-	a2_nowrap:a_nowrap_T<I>
+	aa_nowrap:a_nowrap_T<I>
 ):wrap_aa_item_T<I>[] {
-	const a2 = wrap_aa_<I>(a2_nowrap)
+	const a2 = wrap_aa_<I>(aa_nowrap)
 	return Array.from(
 		set_union_fn<wrap_aa_T<I>>(a2)
 	) as wrap_aa_item_T<I>[]
