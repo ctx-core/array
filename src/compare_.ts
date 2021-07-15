@@ -1,4 +1,4 @@
-import type { compare_T } from './compare_T'
+import type { compare_T } from './compare_T.js'
 /**
  * Returns a basic ascending or descending `compare` function to be used for sorting.
  */

@@ -1,4 +1,4 @@
-import { map, maybe_map } from './map'
+import { map, maybe_map } from './map.js'
 /**
  * Returns Function returning [map](#map) with `fn`.
  */

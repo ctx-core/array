@@ -1,4 +1,4 @@
-import { maybe_reduce, reduce, reduce_fn_T } from './reduce'
+import { maybe_reduce, reduce, reduce_fn_T } from './reduce.js'
 /**
  * Return Function that returns from `reduce` with `fn` and factory `memo_(a)`.
  */

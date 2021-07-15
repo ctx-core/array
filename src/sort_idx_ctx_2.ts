@@ -1,6 +1,6 @@
-import type { compare_T } from './compare_T'
-import type { sort_idx_ctx_2_T } from './sort_idx_ctx_2_T'
-import { sort_idx_ctx_ } from './sort_idx_ctx_'
+import type { compare_T } from './compare_T.js'
+import type { sort_idx_ctx_2_T } from './sort_idx_ctx_2_T.js'
+import { sort_idx_ctx_ } from './sort_idx_ctx_.js'
 /**
  * Returns function that returns [_sort_idx_ctx](#_sort_idx_ctx).
  */

@@ -1,4 +1,4 @@
-import { map } from './map'
+import { map } from './map.js'
 /**
  * Returns Array of values from `a` with index in `idx_a`.
  */

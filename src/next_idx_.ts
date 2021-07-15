@@ -1,4 +1,4 @@
-import { circular_idx_ } from './circular_idx_'
+import { circular_idx_ } from './circular_idx_.js'
 /**
  * Returns Index of the next item, circular wrapping to the beginning (`0`).
  */

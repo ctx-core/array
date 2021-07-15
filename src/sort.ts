@@ -1,4 +1,4 @@
-import type { compare_T } from './compare_T'
+import type { compare_T } from './compare_T.js'
 /**
  * Sort items in `a` by the `compare` function
  */

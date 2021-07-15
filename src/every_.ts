@@ -1,4 +1,4 @@
-import { every } from './every'
+import { every } from './every.js'
 /**
  * Returns a function that returns from [every](#every) with the given `predicate` function.
  */

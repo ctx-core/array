@@ -1,5 +1,5 @@
 import { andandfn_, andand_key_T } from '@ctx-core/function'
-import { map } from './map'
+import { map } from './map.js'
 /**
  * Returns Array of mapped `a` with `andandfn_(...attr_a)`
  */

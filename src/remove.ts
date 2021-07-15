@@ -1,4 +1,4 @@
-import { remove_idx } from './remove_idx'
+import { remove_idx } from './remove_idx.js'
 /**
  * Remove each `...item_a` from `a`.
  */

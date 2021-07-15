@@ -1,5 +1,5 @@
 import { one_andand_or_, andand_key_T, andand_or_T } from '@ctx-core/function'
-import { map, map_fn_T } from './map'
+import { map, map_fn_T } from './map.js'
 /**
  * Returns Array of mapped `a` with `_andand(...attr_a)` or the return value of `or_fn`.
  */

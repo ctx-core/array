@@ -1,6 +1,6 @@
-import type { compare_T } from './compare_T'
-import { maybe_sort, sort } from './sort'
-import { maybe_slice, slice } from './slice'
+import type { compare_T } from './compare_T.js'
+import { maybe_sort, sort } from './sort.js'
+import { maybe_slice, slice } from './slice.js'
 /**
  * Sorts a copy of `a` by the `compare` function.
  */

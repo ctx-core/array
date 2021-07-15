@@ -1,5 +1,5 @@
-import { entry_thold_a_compact_ctx_2 } from './entry_thold_a_compact_ctx_2'
-import type { compact_a_ctx_I } from './compact_a_ctx_I'
+import { entry_thold_a_compact_ctx_2 } from './entry_thold_a_compact_ctx_2.js'
+import type { compact_a_ctx_I } from './compact_a_ctx_I.js'
 /**
  * Returns a [compact_a_ctx_I](#compact_a_ctx_I) of presumably sorted items in `val_a` at each index of the new item for each changed item.
  */

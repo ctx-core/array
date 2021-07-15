@@ -1,5 +1,5 @@
-import type { compare_T } from './compare_T'
-import { maybe_sort, sort } from './sort'
+import type { compare_T } from './compare_T.js'
+import { maybe_sort, sort } from './sort.js'
 /**
  * Returns a Function that calls [sort](#sort) with the given `compare` function.
  */

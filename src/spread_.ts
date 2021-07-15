@@ -1,5 +1,5 @@
 import type { wrap_a_T } from '@ctx-core/function'
-import { spread } from './spread'
+import { spread } from './spread.js'
 /**
  * Returns a function taking an array calling [spread](#spread)
  */

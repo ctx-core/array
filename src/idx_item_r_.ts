@@ -1,5 +1,5 @@
 import { I__ } from '@ctx-core/combinators'
-import { idx_item_r_2, idx_item_r_fn_T } from './idx_item_r_2'
+import { idx_item_r_2, idx_item_r_fn_T } from './idx_item_r_2.js'
 /**
  * Returns an Object where each key is `_item(a[idx], idx)` and value is `idx`.
  */

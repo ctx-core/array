@@ -1,4 +1,4 @@
-import { idx_sort_a_ } from './idx_sort_a_'
+import { idx_sort_a_ } from './idx_sort_a_.js'
 export function idx_sort_r_a_<Val extends unknown = unknown>(
   a_r:Record<string, Val[]>,
   idx_a:number[],

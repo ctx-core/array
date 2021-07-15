@@ -1,6 +1,6 @@
 import type { a_item_T } from '@ctx-core/function'
 import { I__ } from '@ctx-core/combinators'
-import type { is_match_fn_T } from './is_match_fn_T'
+import type { is_match_fn_T } from './is_match_fn_T.js'
 /**
  * Returns Array of `idx` indices filtered by `fn`.
  */

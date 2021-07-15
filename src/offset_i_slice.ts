@@ -1,4 +1,4 @@
-import { maybe_slice, slice } from './slice'
+import { maybe_slice, slice } from './slice.js'
 /**
  * Returns an Array from slicing an a from an a's offset from position i
  */

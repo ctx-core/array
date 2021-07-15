@@ -1,4 +1,4 @@
-import { zip_with } from './zip_with'
+import { zip_with } from './zip_with.js'
 /**
  * Returns 2d Array of each item being the index value for each Array in `...a2`.
  */

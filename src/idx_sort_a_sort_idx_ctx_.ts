@@ -1,5 +1,5 @@
-import type { sort_idx_ctx_T } from './sort_idx_ctx_T'
-import { idx_sort_a_ } from './idx_sort_a_'
+import type { sort_idx_ctx_T } from './sort_idx_ctx_T.js'
+import { idx_sort_a_ } from './idx_sort_a_.js'
 /**
  * Returns [sort_idx_ctx_T](#sort_idx_ctx_T) derived from `val_a` sorted by `sort_idx_a`.
  */

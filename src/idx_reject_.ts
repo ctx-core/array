@@ -1,5 +1,5 @@
-import { idx_reject } from './idx_reject'
-import type { is_match_fn_T } from './is_match_fn_T'
+import { idx_reject } from './idx_reject.js'
+import type { is_match_fn_T } from './is_match_fn_T.js'
 /**
  * Returns function that returns value from [idx_reject](#idx_reject) with `is_match_` argument.
  */

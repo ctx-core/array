@@ -1,4 +1,4 @@
-import { zip_with_fn_T, zip_with } from './zip_with'
+import { zip_with_fn_T, zip_with } from './zip_with.js'
 /**
  * Returns a function that returns [zipWith](#zipWith) with `fn` argument.
  */

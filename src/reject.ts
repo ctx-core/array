@@ -1,5 +1,5 @@
-import type { is_match_fn_T } from './is_match_fn_T'
-import { filter, maybe_filter } from './filter'
+import type { is_match_fn_T } from './is_match_fn_T.js'
+import { filter, maybe_filter } from './filter.js'
 /**
  * Returns Array of items not rejected by `fn`.
  */

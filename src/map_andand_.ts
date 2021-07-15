@@ -1,5 +1,5 @@
 import type { andand_key_T } from '@ctx-core/function'
-import { map_andand } from './map_andand'
+import { map_andand } from './map_andand.js'
 /**
  * Returns function that returns value from [map_andand](#map_andand) with `...attr_a`.
  */

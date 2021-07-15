@@ -1,4 +1,4 @@
-import { map, maybe_map } from './map'
+import { map, maybe_map } from './map.js'
 /**
  * Returns Array of `obj[key_a[]]`.
  */

@@ -1,4 +1,4 @@
-import { key_r_, maybe_key_r_ } from './key_r_'
+import { key_r_, maybe_key_r_ } from './key_r_.js'
 /**
  * Returns a Function using argument `key` that returns value from [_key_hash](#_hash__key).
  */

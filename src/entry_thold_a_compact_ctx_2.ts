@@ -1,6 +1,6 @@
 import { eq, eq_T } from '@ctx-core/function'
-import type { compact_a_ctx_I } from './compact_a_ctx_I'
-import type { thold_a_compact_ctx__T } from './thold_a_compact_ctx__T'
+import type { compact_a_ctx_I } from './compact_a_ctx_I.js'
+import type { thold_a_compact_ctx__T } from './thold_a_compact_ctx__T.js'
 /**
  * Returns a function that returns a [compact_a_ctx_I](#compact_a_ctx_I)
  */

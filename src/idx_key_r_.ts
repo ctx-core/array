@@ -1,5 +1,5 @@
 import { I__ } from '@ctx-core/combinators'
-import type { item_key_idx_val_fn_T } from './item_key_idx_val_fn_T'
+import type { item_key_idx_val_fn_T } from './item_key_idx_val_fn_T.js'
 /**
  * Returns a Hash where each key is `a[idx][key]` & value is `idx`.
  */

@@ -1,4 +1,4 @@
-import { value_r_ } from './value_r_'
+import { value_r_ } from './value_r_.js'
 /**
  * Returns a Function that returns from [_value_hash](#_value_hash).
  */

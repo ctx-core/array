@@ -1,4 +1,4 @@
-import { slice } from './slice'
+import { slice } from './slice.js'
 /**
  * Returns a function that slices the spread argument array with `arg_a`
  */

@@ -1,4 +1,4 @@
-import { map } from './map'
+import { map } from './map.js'
 /**
  * Returns Array of inverse values (1/n) of each item in `a`.
  */

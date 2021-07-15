@@ -1,4 +1,4 @@
-import { some } from './some'
+import { some } from './some.js'
 /**
  * Returns a function that returns from [some](#some) with given `predicate` function.
  */

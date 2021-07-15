@@ -1,4 +1,4 @@
-import type { is_match_fn_T } from './is_match_fn_T'
+import type { is_match_fn_T } from './is_match_fn_T.js'
 /**
  * Returns Array where items in `a` are filtered by `fn`.
  */

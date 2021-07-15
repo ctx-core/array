@@ -1,4 +1,4 @@
-import type { compact_a_ctx_I } from './compact_a_ctx_I'
+import type { compact_a_ctx_I } from './compact_a_ctx_I.js'
 /**
  * Returns a [compact_a_ctx_I](#compact_a_ctx_I)
  */

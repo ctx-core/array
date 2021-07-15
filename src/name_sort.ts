@@ -1,5 +1,5 @@
-import { slice } from './slice'
-import { key_compare_ } from './key_compare_'
+import { slice } from './slice.js'
+import { key_compare_ } from './key_compare_.js'
 /**
  * Returns an array sorted by `item.name`
  */

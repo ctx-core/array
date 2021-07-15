@@ -1,4 +1,4 @@
-import { a_length_ } from './a_length_'
+import { a_length_ } from './a_length_.js'
 /**
  * Returns true if `a` is has a length
  */

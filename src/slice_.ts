@@ -1,4 +1,4 @@
-import { maybe_slice, slice } from './slice'
+import { maybe_slice, slice } from './slice.js'
 /**
  * Returns a `slice` function with the given `...arg_a` that takes a Array `a` as it's argument.
  */

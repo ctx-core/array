@@ -1,5 +1,5 @@
 import type { wrap_a_T2 } from '@ctx-core/function'
-import { map_find } from './map_find'
+import { map_find } from './map_find.js'
 /**
  * Returns function that returns value from [map_find](#map_find) with `fn` argument.
  */

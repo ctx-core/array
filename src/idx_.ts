@@ -1,4 +1,4 @@
-import type { is_match_fn_T } from './is_match_fn_T'
+import type { is_match_fn_T } from './is_match_fn_T.js'
 /**
  * Returns idx of first match in `a` with `compare`.
  */

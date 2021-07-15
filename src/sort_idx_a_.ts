@@ -1,4 +1,4 @@
-import type { sort_idx_ctx_T } from './sort_idx_ctx_T'
+import type { sort_idx_ctx_T } from './sort_idx_ctx_T.js'
 /**
  * Returns an Array of sorted indices from [sort_idx_ctx_T](#sort_idx_ctx_T).sort_idx_a
  */
