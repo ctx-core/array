@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.8
+
+### Patch Changes
+
+- "main": "./dist/index.cjs"
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.8
+  - @ctx-core/function@20.0.7
+  - @ctx-core/object@21.0.7
+  - @ctx-core/set@12.0.6
+
 ## 23.0.7
 
 ### Patch Changes
