@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.7
+
+### Patch Changes
+
+- fix: index.cjs: module.exports = require('./index.js')
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.7
+  - @ctx-core/function@20.0.6
+  - @ctx-core/object@21.0.6
+  - @ctx-core/set@12.0.5
+
 ## 23.0.6
 
 ### Patch Changes
