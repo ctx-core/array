@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.3
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.3
+  - @ctx-core/function@20.0.3
+  - @ctx-core/object@21.0.3
+  - @ctx-core/set@12.0.3
+
 ## 23.0.2
 
 ### Patch Changes
