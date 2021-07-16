@@ -1,5 +1,38 @@
 # @ctx-core/array
 
+## 23.0.6
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.6
+  - @ctx-core/function@20.0.5
+  - @ctx-core/object@21.0.5
+  - @ctx-core/set@12.0.4
+
+## 23.0.5
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.5
+  - @ctx-core/function@20.0.4
+  - @ctx-core/object@21.0.4
+  - @ctx-core/set@12.0.4
+
+## 23.0.4
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.4
+  - @ctx-core/function@20.0.4
+  - @ctx-core/object@21.0.4
+  - @ctx-core/set@12.0.4
+
 ## 23.0.3
 
 ### Patch Changes
