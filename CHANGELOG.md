@@ -1,5 +1,27 @@
 # @ctx-core/array
 
+## 23.0.11
+
+### Patch Changes
+
+- fix: sourceMappingURL: "mapRoot": ""
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.11
+  - @ctx-core/function@20.0.10
+  - @ctx-core/object@21.0.10
+  - @ctx-core/set@12.0.9
+
+## 23.0.10
+
+### Patch Changes
+
+- tsconfig.json: "target": "es2019"
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.10
+  - @ctx-core/function@20.0.9
+  - @ctx-core/object@21.0.9
+  - @ctx-core/set@12.0.8
+
 ## 23.0.9
 
 ### Patch Changes
