@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.12
+
+### Patch Changes
+
+- exports: + "package.json": "./package.json"
+- Updated dependencies [undefined]
+  - @ctx-core/combinators@8.0.12
+  - @ctx-core/function@20.0.11
+  - @ctx-core/object@21.0.11
+  - @ctx-core/set@12.0.10
+
 ## 23.0.11
 
 ### Patch Changes
