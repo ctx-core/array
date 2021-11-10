@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.23
+
+### Patch Changes
+
+- compile using swc
+- Updated dependencies
+  - @ctx-core/combinators@8.0.17
+  - @ctx-core/function@20.2.3
+  - @ctx-core/object@21.0.22
+  - @ctx-core/set@12.0.21
+
 ## 23.0.22
 
 ### Patch Changes
