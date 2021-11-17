@@ -1,5 +1,5 @@
-import type { is_match_fn_T } from './is_match_fn_T.js'
 import { maybe_reject, reject } from './reject.js'
+import type { is_match_fn_T } from './is_match_fn_T.js'
 /**
  * Returns function that returns value from [reject](#reject) with `fn` argument.
  */

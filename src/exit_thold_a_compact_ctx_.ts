@@ -1,5 +1,5 @@
-import { exit_thold_a_compact_ctx_2 } from './exit_thold_a_compact_ctx_2.js'
 import type { compact_a_ctx_I } from './compact_a_ctx_I.js'
+import { exit_thold_a_compact_ctx_2 } from './exit_thold_a_compact_ctx_2.js'
 /**
  * Returns a [compact_a_ctx_I](#compact_a_ctx_I) of presumably sorted items in `val_a` at each index of the old item for each changed item.
  */

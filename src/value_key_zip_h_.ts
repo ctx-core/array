@@ -1,5 +1,5 @@
-import { zip } from './zip.js'
 import { each } from './each.js'
+import { zip } from './zip.js'
 /**
  * Returns an Object the key & value are set from the zipped `a_i0` & `a_i1` Array of `[key, value]` pairs.
  */

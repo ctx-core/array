@@ -1,6 +1,6 @@
-import { difference_set_ } from '@ctx-core/set'
 import type { a_nowrap_T, wrap_aa_item_T, wrap_aa_T } from '@ctx-core/function'
 import { wrap_aa_ } from '@ctx-core/function'
+import { difference_set_ } from '@ctx-core/set'
 /**
  * Returns the _difference of n arrays
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}

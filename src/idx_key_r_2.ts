@@ -1,6 +1,6 @@
 import { I__ } from '@ctx-core/combinators'
-import type { item_key_idx_val_fn_T } from './item_key_idx_val_fn_T.js'
 import { idx_key_r_, maybe_idx_key_r_, idx_key_r_T } from './idx_key_r_.js'
+import type { item_key_idx_val_fn_T } from './item_key_idx_val_fn_T.js'
 /**
  * Returns function that returns from [_idx_key_hash](#_idx_key_hash) with `item_key_idx_val_` function argument.
  */
