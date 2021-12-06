@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "23.0.29",
+	"version": "23.0.30",
 	"description": "ctx-core array",
 	"keywords": [
 		"ctx-core",
@@ -35,14 +35,14 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/combinators": "workspace:^8.0.23",
-		"@ctx-core/function": "workspace:^20.2.9",
-		"@ctx-core/object": "workspace:^21.0.28",
-		"@ctx-core/set": "workspace:^12.0.27"
+		"@ctx-core/combinators": "workspace:^8.0.24",
+		"@ctx-core/function": "workspace:^20.2.10",
+		"@ctx-core/object": "workspace:^21.0.29",
+		"@ctx-core/set": "workspace:^12.0.28"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.52",
-		"@swc/core": "^1.2.117",
+		"@swc/core": "^1.2.118",
 		"typescript": "next"
 	},
 	"publishConfig": {
