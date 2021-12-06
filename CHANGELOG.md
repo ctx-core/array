@@ -1,5 +1,14 @@
 # @ctx-core/array
 
+## 23.0.32
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+- Updated dependencies
+  - @ctx-core/combinators@8.0.25
+  - @ctx-core/set@12.0.30
+
 ## 23.0.31
 
 ### Patch Changes
