@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.36
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/combinators@8.0.29
+  - @ctx-core/function@20.2.15
+  - @ctx-core/object@22.0.3
+  - @ctx-core/set@12.0.34
+
 ## 23.0.35
 
 ### Patch Changes
