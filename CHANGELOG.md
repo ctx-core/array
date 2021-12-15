@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.34
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+- Updated dependencies
+  - @ctx-core/combinators@8.0.27
+  - @ctx-core/function@20.2.13
+  - @ctx-core/object@22.0.1
+  - @ctx-core/set@12.0.32
+
 ## 23.0.33
 
 ### Patch Changes
