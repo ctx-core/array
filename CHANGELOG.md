@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.37
+
+### Patch Changes
+
+- \*.d.ts export
+- Updated dependencies
+  - @ctx-core/combinators@8.0.30
+  - @ctx-core/function@20.2.16
+  - @ctx-core/object@22.0.4
+  - @ctx-core/set@12.0.35
+
 ## 23.0.36
 
 ### Patch Changes
