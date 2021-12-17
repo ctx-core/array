@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.41
+
+### Patch Changes
+
+- fix: error TS6059: \* is not under 'rootDir': package.json: types: ./dist/index.d.ts
+- Updated dependencies
+  - @ctx-core/combinators@8.0.34
+  - @ctx-core/function@20.2.20
+  - @ctx-core/object@22.0.8
+  - @ctx-core/set@12.0.39
+
 ## 23.0.40
 
 ### Patch Changes
