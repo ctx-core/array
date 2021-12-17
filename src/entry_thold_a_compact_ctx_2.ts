@@ -1,11 +1,13 @@
-import { eq, eq_T } from '@ctx-core/function'
+import type { eq_T } from '@ctx-core/function'
+import { eq } from '@ctx-core/function'
 import type { compact_a_ctx_I } from './compact_a_ctx_I.js'
 import type { thold_a_compact_ctx__T } from './thold_a_compact_ctx__T.js'
+type _eq_T<I extends unknown = unknown> = eq_T<I>
 /**
  * Returns a function that returns a [compact_a_ctx_I](#compact_a_ctx_I)
  */
 export function entry_thold_a_compact_ctx_2<I extends unknown = unknown>(
-	eq_ = (eq as eq_T<I[]>)
+	eq_ = (eq as _eq_T<I[]>)
 ):thold_a_compact_ctx__T<I> {
 	return (
 		(in_val_a?:I[])=>{

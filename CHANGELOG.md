@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.0.38
+
+### Patch Changes
+
+- fix: build
+- Updated dependencies
+  - @ctx-core/combinators@8.0.31
+  - @ctx-core/function@20.2.17
+  - @ctx-core/object@22.0.5
+  - @ctx-core/set@12.0.36
+
 ## 23.0.37
 
 ### Patch Changes
