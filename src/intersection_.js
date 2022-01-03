@@ -8,4 +8,3 @@ import { intersection_set_ } from '@ctx-core/set'
 	return Array.from(intersection_set_(a2))
 }
 export { intersection_ as _intersection, intersection_ as _intersection__a1, }
-//# sourceMappingURL=intersection_.js.map

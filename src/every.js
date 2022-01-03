@@ -15,4 +15,3 @@ export function maybe_every(maybe_a, predicate) {
 	return every(maybe_a, predicate)
 }
 export { every as every_a1, every as every__a1, }
-//# sourceMappingURL=every.js.map

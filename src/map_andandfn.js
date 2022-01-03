@@ -6,4 +6,3 @@ import { map } from './map.js'
 	return map(a, andandfn_(...attr_a))
 }
 export { map_andandfn as map__andand_, map_andandfn as map__andand__fn, }
-//# sourceMappingURL=map_andandfn.js.map

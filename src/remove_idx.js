@@ -4,4 +4,3 @@
 	return a.splice(idx, count)
 }
 export { remove_idx as remove__idx, remove_idx as remove__index, }
-//# sourceMappingURL=remove_idx.js.map

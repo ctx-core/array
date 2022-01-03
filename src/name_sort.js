@@ -6,4 +6,3 @@ import { slice } from './slice.js'
 	return (slice(a, 0) || []).sort(key_compare_('name'))
 }
 export { name_sort as sort__name, name_sort as sort__name__a1, }
-//# sourceMappingURL=name_sort.js.map

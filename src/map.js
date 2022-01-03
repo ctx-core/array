@@ -11,4 +11,3 @@ export function maybe_map(maybe_a, fn) {
 	if (!maybe_a) return
 	return map(maybe_a, fn)
 }
-//# sourceMappingURL=map.js.map

@@ -6,4 +6,3 @@ import { map } from './map.js'
 	return map(a, one_andand_or_(attr_a, or_fn))
 }
 export { map_andand_or as map__andand__or, }
-//# sourceMappingURL=map_andand_or.js.map

@@ -6,4 +6,3 @@
 export function maybe_reverse(maybe_a) {
 	return maybe_a ? reverse(maybe_a) : void 0
 }
-//# sourceMappingURL=reverse.js.map

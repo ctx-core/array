@@ -6,4 +6,3 @@
 export function maybe_sort(maybe_a, compare) {
 	return maybe_a ? sort(maybe_a, compare) : undefined
 }
-//# sourceMappingURL=sort.js.map

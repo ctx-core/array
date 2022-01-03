@@ -16,4 +16,3 @@ export function maybe_remove(maybe_a, ...item_a) {
 	return remove(maybe_a, ...item_a)
 }
 export { remove as remove__a1, }
-//# sourceMappingURL=remove.js.map

@@ -1,5 +1,15 @@
 # @ctx-core/array
 
+## 23.1.1
+
+### Patch Changes
+
+- fix: remove incorrect sourcemap annotation
+- Updated dependencies
+  - @ctx-core/function@20.2.22
+  - @ctx-core/object@22.0.9
+  - @ctx-core/set@12.0.40
+
 ## 23.1.0
 
 ### Minor Changes

@@ -3,4 +3,3 @@
  */ export function indexOf(a, key) {
 	return a.indexOf(key)
 }
-//# sourceMappingURL=indexOf.js.map

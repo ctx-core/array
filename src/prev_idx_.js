@@ -5,4 +5,3 @@ import { circular_idx_ } from './circular_idx_.js'
 	return circular_idx_(length, index - 1)
 }
 export { prev_idx_ as _prev_idx, prev_idx_ as _idx__prev, }
-//# sourceMappingURL=prev_idx_.js.map

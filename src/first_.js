@@ -7,4 +7,3 @@ export function maybe_first_(maybe_a) {
 	return maybe_a ? first_(maybe_a) : void 0
 }
 export { first_ as _first, maybe_first_ as _maybe_first, }
-//# sourceMappingURL=first_.js.map

@@ -13,4 +13,3 @@ export function maybe_flatten(in_a) {
 	return flatten(in_a)
 }
 export { flatten as flatten__a1, }
-//# sourceMappingURL=flatten.js.map

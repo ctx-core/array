@@ -4,4 +4,3 @@
 	return Math.floor(Math.random() * a.length)
 }
 export { random_idx_ as _random_idx, random_idx_ as idx__random, }
-//# sourceMappingURL=random_idx_.js.map

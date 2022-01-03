@@ -11,4 +11,3 @@
 	return false
 }
 export { some as some_a1, some as some__a1, }
-//# sourceMappingURL=some.js.map

@@ -8,4 +8,3 @@ export function maybe_offset_i_slice(maybe_a, i, offset = 1) {
 	return maybe_slice(maybe_a, i * offset, (i + 1) * offset)
 }
 export { offset_i_slice as slice__i__offset, }
-//# sourceMappingURL=offset_i_slice.js.map

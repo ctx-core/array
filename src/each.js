@@ -10,4 +10,3 @@ export function maybe_each(maybe_a, fn) {
 	if (!maybe_a) return
 	return each(maybe_a, fn)
 }
-//# sourceMappingURL=each.js.map

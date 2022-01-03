@@ -15,4 +15,3 @@ export function maybe_idx_reject(maybe_a, is_match_) {
 	return idx_reject(maybe_a, is_match_)
 }
 export { idx_reject as reject__idx, }
-//# sourceMappingURL=idx_reject.js.map

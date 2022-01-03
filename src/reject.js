@@ -9,4 +9,3 @@ export function maybe_reject(maybe_a, is_match_) {
 	return maybe_filter(maybe_a, (value, idx)=>!is_match_(value, idx)
 	)
 }
-//# sourceMappingURL=reject.js.map

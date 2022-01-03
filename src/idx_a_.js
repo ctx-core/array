@@ -8,4 +8,3 @@
 	return idx_a
 }
 export { idx_a_ as idx_a1_fn, idx_a_ as _idx_a1, idx_a_ as _a1__idx, }
-//# sourceMappingURL=idx_a_.js.map

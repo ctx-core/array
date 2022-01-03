@@ -6,4 +6,3 @@ import { map } from './map.js'
 	)
 }
 export { map_inverse as map__inverse, }
-//# sourceMappingURL=map_inverse.js.map

@@ -10,4 +10,3 @@
 	return i_rank
 }
 export { rank as rank__a1, }
-//# sourceMappingURL=rank.js.map

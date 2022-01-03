@@ -6,4 +6,3 @@ import { some } from './some.js'
 
 }
 export { some_ as _some, some_ as _some_fn, some_ as _fn__some, }
-//# sourceMappingURL=some_.js.map

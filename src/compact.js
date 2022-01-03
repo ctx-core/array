@@ -14,4 +14,3 @@ export function maybe_compact(maybe_a) {
 	return compact(maybe_a)
 }
 export { compact as compact_a1, compact as compact__a1, }
-//# sourceMappingURL=compact.js.map

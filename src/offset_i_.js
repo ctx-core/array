@@ -4,4 +4,3 @@
 	return i * offset
 }
 export { offset_i_ as _offset_i, offset_i_ as _i__offset, }
-//# sourceMappingURL=offset_i_.js.map

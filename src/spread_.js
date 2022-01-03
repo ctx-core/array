@@ -6,4 +6,3 @@ import { spread } from './spread.js'
 
 }
 export { spread_ as spread_fn, spread_ as _spread, }
-//# sourceMappingURL=spread_.js.map

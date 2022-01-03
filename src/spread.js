@@ -5,4 +5,3 @@ import { wrap_a_ } from '@ctx-core/function'
 	const wrap_a = wrap_a_(a_unwrap)
 	return fn(...wrap_a)
 }
-//# sourceMappingURL=spread.js.map
