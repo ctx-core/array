@@ -1,5 +1,17 @@
 # @ctx-core/array
 
+## 23.1.3
+
+### Patch Changes
+
+- uvu: ^0.5.2 -> ^0.5.3
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/combinators@8.0.36
+  - @ctx-core/function@20.2.24
+  - @ctx-core/object@22.0.11
+  - @ctx-core/set@12.0.42
+
 ## 23.1.2
 
 ### Patch Changes
