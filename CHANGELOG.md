@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 23.1.4
+
+### Patch Changes
+
+- sideEffects = false
+- Updated dependencies
+  - @ctx-core/combinators@8.0.37
+  - @ctx-core/function@20.2.25
+  - @ctx-core/object@22.0.12
+  - @ctx-core/set@12.0.43
+
 ## 23.1.3
 
 ### Patch Changes
