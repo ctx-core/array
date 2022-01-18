@@ -1,6 +1,7 @@
 /**
  * Returns a function that returns value of `_idx_item_hash` with `item_` argument.
- */ export function idx_item_r_2(item_) {
+ */
+export function idx_item_r_2(item_) {
 	return (in_a)=>{
 		let idx_item_r = {}
 		if (in_a) {

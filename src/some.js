@@ -1,6 +1,7 @@
 /**
  * Returns true if some `predicate(value)` is truthy
- */ export function some(a, predicate) {
+ */
+export function some(a, predicate) {
 	let index = -1
 	const length = a.length
 	while (++index < length) {

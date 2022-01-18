@@ -1,6 +1,7 @@
 /**
  * Returns 2d Array where `source_a` is destructured into subarray of length `offset`.
- */ export function offset_destructure_aa_(source_a, offset = 1) {
+ */
+export function offset_destructure_aa_(source_a, offset = 1) {
 	const offset_destructure_aa = []
 	for (let i = 0; i < offset; i++) {
 		offset_destructure_aa.push([])

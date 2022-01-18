@@ -1,6 +1,7 @@
 /**
  * Sort `val_a` by an array of indices in `in_sort_idx_a`.
- */ export function idx_sort_a_(val_a, in_sort_idx_a) {
+ */
+export function idx_sort_a_(val_a, in_sort_idx_a) {
 	const sort_idx_a = in_sort_idx_a
 	const idx_sort_a = []
 	for (let i = 0; i < sort_idx_a.length; i++) {

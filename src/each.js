@@ -1,6 +1,7 @@
 /**
  * Iterate over each item in `a` with `fn(a[i], i)`.
- */ export function each(a, fn) {
+ */
+export function each(a, fn) {
 	for (let i = 0; i < a.length; i++) {
 		fn(a[i], i)
 	}

@@ -1,7 +1,8 @@
 import { I__ } from '@ctx-core/combinators'
 /**
  * Returns a Hash where each key is `a[idx][key]` & value is `idx`.
- */ export function idx_key_r_(a, key, item_key_idx_val_ = I__) {
+ */
+export function idx_key_r_(a, key, item_key_idx_val_ = I__) {
 	let idx_key_r = {}
 	if (a) {
 		for (let idx = 0; idx < a.length; idx++) {

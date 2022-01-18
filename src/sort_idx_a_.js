@@ -1,6 +1,7 @@
 /**
  * Returns an Array of sorted indices from [sort_idx_ctx_T](#sort_idx_ctx_T).sort_idx_a
- */ export function sort_idx_a_(in_sort_idx_ctx) {
+ */
+export function sort_idx_a_(in_sort_idx_ctx) {
 	return in_sort_idx_ctx.sort_idx_a
 }
 export function maybe_sort_idx_a_(in_sort_idx_ctx) {

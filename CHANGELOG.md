@@ -1,5 +1,21 @@
 # @ctx-core/array
 
+## 24.0.0
+
+### Major Changes
+
+- idx_item_r_T is a type instead of an interface
+
+### Minor Changes
+
+- feat: immutable array arguments: readonly type
+
+### Patch Changes
+
+- fix: maybe_a_present_fn: maybe_a argument type
+- Updated dependencies
+  - @ctx-core/function@20.3.0
+
 ## 23.1.4
 
 ### Patch Changes

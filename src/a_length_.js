@@ -1,6 +1,7 @@
 /**
  * Returns length of `in_a`
- */ export function a_length_(a) {
+ */
+export function a_length_(a) {
 	return a.length
 }
 export function maybe_a_length$(maybe_a) {

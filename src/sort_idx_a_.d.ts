@@ -2,7 +2,9 @@ import type { sort_idx_ctx_T } from './_types'
 /**
  * Returns an Array of sorted indices from [sort_idx_ctx_T](#sort_idx_ctx_T).sort_idx_a
  */
-export declare function sort_idx_a_<I extends unknown = unknown>(in_sort_idx_ctx:sort_idx_ctx_T<I>):number[];
+export declare function sort_idx_a_<I extends unknown = unknown>(
+	in_sort_idx_ctx:sort_idx_ctx_T<I>
+):number[];
 export declare function maybe_sort_idx_a_<I extends unknown = unknown>(in_sort_idx_ctx:sort_idx_ctx_T<I>|undefined):number[]|undefined;
 export {
 	sort_idx_a_ as sort_idx_a1_fn,

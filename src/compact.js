@@ -1,6 +1,7 @@
 /**
  * Removes null values from the array
- */ export function compact(a) {
+ */
+export function compact(a) {
 	const out_a = []
 	for (const val of a) {
 		if (val) {

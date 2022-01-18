@@ -1,6 +1,7 @@
 /**
  * Returns a basic ascending or descending `compare` function to be used for sorting.
- */ export function compare_(asc = true) {
+ */
+export function compare_(asc = true) {
 	return (a, b)=>{
 		if (a < b) return asc ? -1 : 1
 		if (a > b) return asc ? 1 : -1
@@ -9,10 +10,12 @@
 }
 /**
  * Compare function to sort by ascending order.
- */ export const asc_compare = compare_(true)
+ */
+export const asc_compare = compare_(true)
 /**
  * Compare function to sort by descending order.
- */ export const desc_compare = compare_(false)
+ */
+export const desc_compare = compare_(false)
 export {
 	compare_ as _compare,
 	compare_ as _fn__compare,

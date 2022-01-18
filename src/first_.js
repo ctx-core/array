@@ -1,6 +1,7 @@
 /**
  * Returns the first item in `a`.
- */ export function first_(a) {
+ */
+export function first_(a) {
 	return a[0]
 }
 export function maybe_first_(maybe_a) {

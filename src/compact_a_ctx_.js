@@ -1,6 +1,7 @@
 /**
  * Returns a [compact_a_ctx_I](#compact_a_ctx_I)
- */ export function compact_a_ctx_(sparse_a) {
+ */
+export function compact_a_ctx_(sparse_a) {
 	const idx_a = []
 	const val_a = []
 	for (let i = 0; i < sparse_a.length; i++) {

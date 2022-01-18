@@ -1,7 +1,8 @@
 import { remove_idx } from './remove_idx.js'
 /**
  * Remove each `...item_a` from `a`.
- */ export function remove(a, ...item_a) {
+ */
+export function remove(a, ...item_a) {
 	for (let i = 0; i < item_a.length; i++) {
 		const key = item_a[i]
 		let index

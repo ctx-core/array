@@ -1,12 +1,13 @@
 /**
- * Returns a Hash with a key for each item in `value_a` & value set to the return of `_value`.
- */ export function value_r_(in_key_a, _value) {
+ * Returns a Hash with a key for each item in `value_a` & value set to the return of `value_`.
+ */
+export function value_r_(in_key_a, value_) {
 	const value_r = {}
 	if (in_key_a) {
 		const key_a = in_key_a
 		for (let i = 0; i < key_a.length; i++) {
 			const key = key_a[i]
-			value_r[key] = _value(key, i)
+			value_r[key] = value_(key, i)
 		}
 	}
 	return value_r

@@ -1,7 +1,8 @@
 /**
  * Returns an Array of indices inverted from `idx_a`.
  * @example `invert_idx_a_fn([2, 1, 3, 0]) -> [3, 1, 0, 2]`
- */ export function invert_idx_a_(in_idx_a) {
+ */
+export function invert_idx_a_(in_idx_a) {
 	if (!in_idx_a) return
 	const idx_a = in_idx_a
 	const invert_idx_a = []

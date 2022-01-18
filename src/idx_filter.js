@@ -1,7 +1,8 @@
 import { I__ } from '@ctx-core/combinators'
 /**
  * Returns Array of `idx` indices filtered by `fn`.
- */ export function idx_filter(in_a, is_match_ = I__) {
+ */
+export function idx_filter(in_a, is_match_ = I__) {
 	const a = in_a
 	const idx_a = []
 	for (let idx = 0; idx < a.length; idx++) {
@@ -18,13 +19,12 @@ export function maybe_idx_filter(maybe_a, is_match_ = I__) {
 }
 /**
  * Returns function that returns value from [idx_filter](#idx_filter) with `fn` argument.
- */ export function idx_filter_(is_match_ = I__) {
+ */
+export function idx_filter_(is_match_ = I__) {
 	return (a)=>idx_filter(a, is_match_)
-
 }
 export function maybe_idx_filter_(is_match_ = I__) {
 	return (a)=>maybe_idx_filter(a, is_match_)
-
 }
 export {
 	idx_filter as filter__idx,

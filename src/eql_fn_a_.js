@@ -1,6 +1,7 @@
 /**
  * Is i0_a `===` to i1_a based on `fn(a, b, i)`? Checks first level equality.
- */ export function eql_fn_a_(i0_a, i1_a, fn) {
+ */
+export function eql_fn_a_(i0_a, i1_a, fn) {
 	if (i0_a === i1_a) return true
 	if (i0_a == null || i1_a == null) return false
 	if (i0_a.length != i1_a.length) return false

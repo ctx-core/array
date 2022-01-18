@@ -1,6 +1,7 @@
 /**
  * Returns the _last item in the in_a
- */ export function last_(a) {
+ */
+export function last_(a) {
 	return a[a.length - 1]
 }
 export function maybe_last_(maybe_a) {

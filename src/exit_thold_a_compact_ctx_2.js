@@ -1,7 +1,8 @@
 import { eq } from '@ctx-core/function'
 /**
  * Returns a function that returns a [compact_a_ctx_I](#compact_a_ctx_I)
- */ export function exit_thold_a_compact_ctx_2(eq_ = eq) {
+ */
+export function exit_thold_a_compact_ctx_2(eq_ = eq) {
 	return (in_val_a)=>{
 		const idx_a = []
 		const val_a = []

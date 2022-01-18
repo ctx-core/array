@@ -3,7 +3,8 @@ import { set_union_fn } from '@ctx-core/set'
 /**
  * Returns the _union of n arrays
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
- */ export function union_(aa_nowrap) {
+ */
+export function union_(aa_nowrap) {
 	const a2 = wrap_aa_(aa_nowrap)
 	return Array.from(set_union_fn(a2))
 }

@@ -1,7 +1,8 @@
 import { wrap_a_, concat } from '@ctx-core/function'
 /**
  * Returns a hash of arrays grouped by each key in each `ctx` in `ctx_a`.
- */ export function key_r_a_(ctx_a_nowrap) {
+ */
+export function key_r_a_(ctx_a_nowrap) {
 	const ctx_a = wrap_a_(ctx_a_nowrap)
 	const a_key_r_a = {}
 	for (let i = 0; i < ctx_a.length; i++) {

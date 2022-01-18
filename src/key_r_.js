@@ -1,6 +1,7 @@
 /**
  * Returns an `Object.<key,value>` of the given `key_hash[a[][key]] = a[]`.
- */ export function key_r_(a, key) {
+ */
+export function key_r_(a, key) {
 	const key_r = {}
 	if (a) {
 		for (let i = 0; i < a.length; i++) {

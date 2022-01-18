@@ -1,7 +1,8 @@
 import { slice } from './slice.js'
 /**
  * Splits array into chunks
- */ export function chunk_aa_(a, chunk_length) {
+ */
+export function chunk_aa_(a, chunk_length) {
 	let chunk_aa = []
 	for (let i = 0; i < a.length; i += chunk_length) {
 		chunk_aa.push(slice(a, i, i + chunk_length))

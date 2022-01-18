@@ -3,7 +3,9 @@ import type { item_key_idx_val_fn_T } from './_types'
 /**
  * Returns function that returns from [_idx_key_hash](#_idx_key_hash) with `item_key_idx_val_` function argument.
  */
-export declare function idx_key_r_2<Obj extends Record<string, string> = Record<string, string>>(item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>):(a:Obj[], key:string|number)=>idx_key_r_T;
+export declare function idx_key_r_2<Obj extends Record<string, string> = Record<string, string>>(
+	item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>
+):(a:readonly Obj[], key:string|number)=>idx_key_r_T;
 export declare function maybe_idx_key_r_2<Obj extends Record<string, string> = Record<string, string>>(item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>):(maybe_a:Obj[]|undefined, key:string)=>idx_key_r_T;
 export {
 	idx_key_r_2 as idx_key_h_2,

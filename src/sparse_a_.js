@@ -1,6 +1,7 @@
 /**
  * Returns a sparsely populated Array with `idx_a` indices & `val_a` values
- */ export function sparse_a_(idx_a, val_a) {
+ */
+export function sparse_a_(idx_a, val_a) {
 	const sparse_a = []
 	for (let i = 0; i < idx_a.length; i++) {
 		const idx = idx_a[i]

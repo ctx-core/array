@@ -1,5 +1,5 @@
 import { wrap_aa_ } from '@ctx-core/function'
-export function difference_by_(aa_nowrap, _by = (item)=>item
+export function difference_by_(aa_nowrap, by_ = (item)=>item
 ) {
 	const a2 = wrap_aa_(aa_nowrap)
 	const set = new Set()
@@ -10,7 +10,7 @@ export function difference_by_(aa_nowrap, _by = (item)=>item
 		const a = a2[i]
 		for (let j = 0; j < a.length; j++) {
 			const item = a[j]
-			const by = _by(item)
+			const by = by_(item)
 			if (i) {
 				set.add(by)
 			} else if (!set.has(by)) {

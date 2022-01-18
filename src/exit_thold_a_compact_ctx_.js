@@ -1,7 +1,8 @@
 import { exit_thold_a_compact_ctx_2 } from './exit_thold_a_compact_ctx_2.js'
 /**
  * Returns a [compact_a_ctx_I](#compact_a_ctx_I) of presumably sorted items in `val_a` at each index of the old item for each changed item.
- */ export function exit_thold_a_compact_ctx_(in_val_a) {
+ */
+export function exit_thold_a_compact_ctx_(in_val_a) {
 	return exit_thold_a_compact_ctx_2()(in_val_a)
 }
 export {

@@ -2,7 +2,8 @@ import { maybe_slice, slice } from './slice.js'
 import { maybe_sort, sort } from './sort.js'
 /**
  * Sorts a copy of `a` by the `compare` function.
- */ export function sort_a_(a, compare) {
+ */
+export function sort_a_(a, compare) {
 	return sort(slice(a, 0), compare)
 }
 export function maybe_sort_a_(maybe_a, compare) {

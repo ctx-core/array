@@ -1,6 +1,7 @@
 /**
  * Returns Array of indices `idx` not rejected by `is_match_`.
- */ export function idx_reject(a, is_match_) {
+ */
+export function idx_reject(a, is_match_) {
 	const out_a = []
 	for (let idx = 0; idx < a.length; idx++) {
 		const value = a[idx]

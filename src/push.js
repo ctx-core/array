@@ -1,6 +1,7 @@
 /**
  * Calls push on a
- */ export function push(a, ...arg_a) {
+ */
+export function push(a, ...arg_a) {
 	return a.push.apply(a, arg_a)
 }
 export function maybe_push(maybe_a, ...arg_a) {

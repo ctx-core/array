@@ -1,6 +1,7 @@
 /**
  * Returns an Array of incrementing index (`idx`) values with `start=0`.
- */ export function idx_a_(count, start = 0) {
+ */
+export function idx_a_(count, start = 0) {
 	const idx_a = []
 	for (let i = 0; i < count; i++) {
 		idx_a.push(start + i)

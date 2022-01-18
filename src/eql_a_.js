@@ -1,6 +1,7 @@
 /**
  * Is e0_a `===` e1_a? Checks first level equality.
- */ export function eql_a_(e0_a, e1_a) {
+ */
+export function eql_a_(e0_a, e1_a) {
 	if (e0_a === e1_a) return true
 	if (e0_a == null || e1_a == null) return false
 	if (e0_a.length != e1_a.length) return false

@@ -1,6 +1,7 @@
 /**
  * Returns true if every `predicate(value)` is truthy
- */ export function every(a, predicate) {
+ */
+export function every(a, predicate) {
 	let idx = -1
 	const length = a.length
 	while (++idx < length) {

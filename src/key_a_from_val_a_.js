@@ -1,14 +1,12 @@
-import { map, maybe_map } from './map.js'
 /**
  * Returns Array of `obj[key_a[]]`.
- */ export function key_a_from_val_a_(obj, key_a) {
-	return map(key_a, (key)=>obj[key]
-	)
+ */
+export function key_a_from_val_a_(obj, key_a) {
+	return key_a.map((key)=>obj[key])
 }
 export function maybe_key_a_from_val_a_(obj, key_a) {
-	if (!obj) return
-	return maybe_map(key_a, (key)=>obj[key]
-	)
+	if (!obj) return null
+	return key_a?.map((key)=>obj[key])
 }
 export {
 	key_a_from_val_a_ as key_a1_from_val_a1_fn,
