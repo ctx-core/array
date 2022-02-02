@@ -1,5 +1,12 @@
 # @ctx-core/array
 
+## 24.0.1
+
+### Patch Changes
+
+- fix: exit*thold_a_compact_ctx_2: eq*?:eq\_\_T<readonly I[]>
+- fix: idx*sort_a*: in_sort_idx_a:readonly number[]|undefined
+
 ## 24.0.0
 
 ### Major Changes

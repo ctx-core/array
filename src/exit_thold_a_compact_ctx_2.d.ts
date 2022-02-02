@@ -4,7 +4,9 @@ declare type eq__T<I extends unknown = unknown> = eq_T<I>;
 /**
  * Returns a function that returns a [compact_a_ctx_I](#compact_a_ctx_I)
  */
-export declare function exit_thold_a_compact_ctx_2<I extends unknown = unknown>(eq_?:eq__T<I[]>):thold_a_compact_ctx__T<I>;
+export declare function exit_thold_a_compact_ctx_2<I extends unknown = unknown>(
+	eq_?:eq__T<readonly I[]>
+):thold_a_compact_ctx__T<I>;
 export {
 	exit_thold_a_compact_ctx_2 as exit_thold_a1_compact_ctx_fn2,
 	exit_thold_a_compact_ctx_2 as _exit_thold_a1_compact_ctx_fn,
