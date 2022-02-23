@@ -4,8 +4,8 @@
 export function a_length_(a) {
 	return a.length
 }
-export function maybe_a_length$(maybe_a) {
-	return maybe_a ? a_length_(maybe_a) : undefined
+export function maybe_a_length$(maybe_a, or = false) {
+	return maybe_a ? a_length_(maybe_a) : or
 }
 export {
 	a_length_ as a_length_fn,

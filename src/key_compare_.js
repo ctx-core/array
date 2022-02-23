@@ -1,7 +1,7 @@
 /**
  * Return a compare function to sort on key values.
  */
-	export function key_compare_(key, asc = true) {
+export function key_compare_(key, asc = true) {
 	return (a, b)=>{
 		if (a[key] < b[key]) return asc ? -1 : 1
 		if (a[key] > b[key]) return asc ? 1 : -1

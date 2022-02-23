@@ -10,8 +10,8 @@ export function idx_sort_a_(val_a, in_sort_idx_a) {
 	}
 	return idx_sort_a
 }
-export function maybe_idx_sort_a_(in_val_a, in_sort_idx_a) {
-	if (!in_sort_idx_a || !in_val_a) return
+export function maybe_idx_sort_a_(in_val_a, in_sort_idx_a, or = null) {
+	if (!in_sort_idx_a || !in_val_a) return or
 	return idx_sort_a_(in_val_a, in_sort_idx_a)
 }
 export {

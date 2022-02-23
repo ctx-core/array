@@ -6,7 +6,9 @@ import type { item_key_idx_val_fn_T } from './_types'
 export declare function idx_key_r_2<Obj extends Record<string, string> = Record<string, string>>(
 	item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>
 ):(a:readonly Obj[], key:string|number)=>idx_key_r_T;
-export declare function maybe_idx_key_r_2<Obj extends Record<string, string> = Record<string, string>>(item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>):(maybe_a:Obj[]|undefined, key:string)=>idx_key_r_T;
+export declare function maybe_idx_key_r_2<Obj extends Record<string, string> = Record<string, string>, Or = null>(
+	item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>, or?:Or
+):(maybe_a:Obj[]|undefined, key:string)=>idx_key_r_T|Or;
 export {
 	idx_key_r_2 as idx_key_h_2,
 	idx_key_r_2 as _idx_key_hash_fn,

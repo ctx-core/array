@@ -1,6 +1,5 @@
 import { wrap_aa_ } from '@ctx-core/function'
-export function intersection_by_(aa_nowrap, by_ = (v)=>v
-) {
+export function intersection_by_(aa_nowrap, by_ = (v)=>v) {
 	const a2 = wrap_aa_(aa_nowrap)
 	const intersection_map = new Map()
 	const current_map = new Map()

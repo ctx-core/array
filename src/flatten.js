@@ -8,8 +8,8 @@ export function flatten(a) {
 		current_val
 	]), [])
 }
-export function maybe_flatten(in_a) {
-	if (!in_a) return
+export function maybe_flatten(in_a, or = null) {
+	if (!in_a) return or
 	return flatten(in_a)
 }
 export { flatten as flatten__a1, }

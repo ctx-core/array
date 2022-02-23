@@ -7,8 +7,9 @@ export declare function zip_with</*@formatter:off*/
 /*@formatter:on*/>(aa:I, fn?:zip_with_fn_T<I[number], O[number]>):O;
 export declare function maybe_zip_with</*@formatter:off*/
 	I extends readonly unknown[][] = readonly unknown[][],
-	O extends readonly unknown[][] = readonly I[number][number][][]
-/*@formatter:on*/>(a2:I, fn?:zip_with_fn_T<I[number], O[number]>):O|undefined;
+	O extends readonly unknown[][] = readonly I[number][number][][],
+	Or=unknown
+/*@formatter:on*/>(a2:I, fn?:zip_with_fn_T<I[number], O[number]>, or?:Or):O|Or;
 export declare function default_zip_with_2</*@formatter:off*/
 	I extends readonly unknown[] = readonly unknown[],
 	O extends unknown[] = I[number][]

@@ -5,8 +5,8 @@ import { key_r_, maybe_key_r_ } from './key_r_.js'
 export function key_r_2(key) {
 	return (a)=>key_r_(a, key)
 }
-export function maybe_key_r_2(key) {
-	return (maybe_a)=>maybe_key_r_(maybe_a, key)
+export function maybe_key_r_2(key, or = null) {
+	return (maybe_a)=>maybe_key_r_(maybe_a, key, or)
 }
 export {
 	key_r_2 as key_h_2,

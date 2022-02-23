@@ -12,8 +12,8 @@ export function key_r_(a, key) {
 	}
 	return key_r
 }
-export function maybe_key_r_(maybe_a, key) {
-	return key_r_(maybe_a, key)
+export function maybe_key_r_(maybe_a, key, or = null) {
+	return maybe_a ? key_r_(maybe_a, key) : or
 }
 export {
 	key_r_ as key_h_,

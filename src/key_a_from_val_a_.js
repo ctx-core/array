@@ -4,8 +4,8 @@
 export function key_a_from_val_a_(obj, key_a) {
 	return key_a.map((key)=>obj[key])
 }
-export function maybe_key_a_from_val_a_(obj, key_a) {
-	if (!obj) return null
+export function maybe_key_a_from_val_a_(obj, key_a, or = null) {
+	if (!obj) return or
 	return key_a?.map((key)=>obj[key])
 }
 export {

@@ -4,8 +4,8 @@
 export function sort_idx_a_(in_sort_idx_ctx) {
 	return in_sort_idx_ctx.sort_idx_a
 }
-export function maybe_sort_idx_a_(in_sort_idx_ctx) {
-	return in_sort_idx_ctx ? sort_idx_a_(in_sort_idx_ctx) : undefined
+export function maybe_sort_idx_a_(in_sort_idx_ctx, or = null) {
+	return in_sort_idx_ctx ? sort_idx_a_(in_sort_idx_ctx) : or
 }
 export {
 	sort_idx_a_ as sort_idx_a1_fn,

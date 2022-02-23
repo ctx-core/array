@@ -5,9 +5,9 @@ import type { compare_T } from './_types'
 export declare function sort_a_<I extends unknown = unknown>(
 	a:readonly I[], compare?:compare_T<I>
 ):I[];
-export declare function maybe_sort_a_<I extends unknown = unknown>(
-	maybe_a:readonly I[]|undefined, compare?:compare_T<I>
-):I[]|undefined;
+export declare function maybe_sort_a_<I extends unknown = unknown, Or = null>(
+	maybe_a:readonly I[]|undefined, compare?:compare_T<I>, or?:Or
+):I[]|Or;
 export {
 	sort_a_ as sort_a1_,
 	sort_a_ as _sort_a1,

@@ -6,8 +6,8 @@ import { maybe_sort, sort } from './sort.js'
 export function sort_a_(a, compare) {
 	return sort(slice(a, 0), compare)
 }
-export function maybe_sort_a_(maybe_a, compare) {
-	return maybe_sort(maybe_slice(maybe_a, 0), compare)
+export function maybe_sort_a_(maybe_a, compare, or = null) {
+	return maybe_sort(maybe_slice(maybe_a, 0), compare, or)
 }
 export {
 	sort_a_ as sort_a1_,

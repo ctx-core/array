@@ -4,7 +4,7 @@
 export declare function map<Val extends unknown = unknown, Out extends unknown = unknown>(
 	a:readonly Val[], fn:map_fn_T<Val, Out>
 ):Out[];
-export declare function maybe_map<Val extends unknown, Out extends unknown>(
-	maybe_a:readonly Val[]|undefined, fn:map_fn_T<Val, Out>
-):Out[]|undefined;
+export declare function maybe_map<Val extends unknown, Out extends unknown, Or = null>(
+	maybe_a:readonly Val[]|undefined, fn:map_fn_T<Val, Out>, or?:Or
+):Out[]|Or;
 export declare type map_fn_T<Val extends unknown, Out extends unknown> = (val:Val, idx:number)=>Out;

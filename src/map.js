@@ -8,7 +8,7 @@ export function map(a, fn) {
 	}
 	return out_a
 }
-export function maybe_map(maybe_a, fn) {
-	if (!maybe_a) return
+export function maybe_map(maybe_a, fn, or = null) {
+	if (!maybe_a) return or
 	return maybe_a?.map(fn)
 }

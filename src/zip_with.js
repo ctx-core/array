@@ -17,8 +17,8 @@ export function zip_with(aa, fn) {
 	}
 	return zip_with_aa
 }
-export function maybe_zip_with(a2, fn) {
-	if (!a2) return
+export function maybe_zip_with(a2, fn, or = null) {
+	if (!a2) return or
 	return zip_with(a2, fn)
 }
 export function default_zip_with_2() {

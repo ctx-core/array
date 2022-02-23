@@ -9,8 +9,8 @@ export function map_find(a, fn) {
 	}
 	return
 }
-export function maybe_map_find(maybe_a, fn) {
-	if (!maybe_a) return
+export function maybe_map_find(maybe_a, fn, or = null) {
+	if (!maybe_a) return or
 	return map_find(maybe_a, fn)
 }
 export { map_find as find__map, }

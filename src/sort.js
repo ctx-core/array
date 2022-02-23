@@ -4,6 +4,6 @@
 export function sort(a, compare) {
 	return a.sort(compare)
 }
-export function maybe_sort(maybe_a, compare) {
-	return maybe_a ? sort(maybe_a, compare) : undefined
+export function maybe_sort(maybe_a, compare, or = null) {
+	return maybe_a ? sort(maybe_a, compare) : or
 }

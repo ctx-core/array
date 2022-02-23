@@ -9,8 +9,8 @@ export function find(a, fn) {
 	}
 	return undefined
 }
-export function maybe_find(maybe_a, fn) {
-	if (!maybe_a) return
+export function maybe_find(maybe_a, fn, or = null) {
+	if (!maybe_a) return or
 	return find(maybe_a, fn)
 }
 /**

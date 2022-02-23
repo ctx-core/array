@@ -5,8 +5,8 @@ import { a_length_ } from './a_length_.js'
 export function a_present_(a) {
 	return !!a_length_(a)
 }
-export function maybe_a_present_fn(maybe_a) {
-	return a_present_(maybe_a)
+export function maybe_a_present_fn(maybe_a, or = false) {
+	return maybe_a ? a_present_(maybe_a) : or
 }
 export {
 	a_present_ as a1_present_fn,

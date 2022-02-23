@@ -7,7 +7,7 @@ export function each(a, fn) {
 	}
 	return a
 }
-export function maybe_each(maybe_a, fn) {
-	if (!maybe_a) return
+export function maybe_each(maybe_a, fn, or = null) {
+	if (!maybe_a) return or
 	return each(maybe_a, fn)
 }

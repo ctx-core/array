@@ -6,12 +6,12 @@ export declare function idx_key_r_<Obj extends Record<string, string> = Record<s
 	a:readonly Obj[], key:string|number, item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>
 ):idx_key_r_T;
 export declare type idx_key_r_T = Record<string, number>;
-export declare function maybe_idx_key_r_<Obj extends Record<string, string> =
-	Record<string, string>>(
+export declare function maybe_idx_key_r_<Obj extends Record<string, string> = Record<string, string>, Or = null>(
 	maybe_a:readonly Obj[]|undefined,
 	key:string|number,
-	item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>
-):idx_key_r_T;
+	item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>,
+	or?:Or
+):idx_key_r_T|Or;
 export {
 	idx_key_r_ as idx_key_h_,
 	idx_key_r_ as _idx_key_hash,

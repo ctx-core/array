@@ -11,8 +11,8 @@ export function filter(a, is_match_fn) {
 	}
 	return out_a
 }
-export function maybe_filter(maybe_a, is_match_fn) {
-	if (!maybe_a) return
+export function maybe_filter(maybe_a, is_match_fn, or = null) {
+	if (!maybe_a) return or
 	return filter(maybe_a, is_match_fn)
 }
 /**

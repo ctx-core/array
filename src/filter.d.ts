@@ -5,9 +5,9 @@ import type { is_match_fn_T } from './_types'
 export declare function filter<Val extends unknown = unknown>(
 	a:readonly Val[], is_match_fn:is_match_fn_T<Val>
 ):Val[];
-export declare function maybe_filter<Val extends unknown = unknown>(
-	maybe_a:readonly Val[]|undefined, is_match_fn:is_match_fn_T<Val>
-):Val[]|undefined;
+export declare function maybe_filter<Val extends unknown = unknown, Or = null>(
+	maybe_a:readonly Val[]|undefined, is_match_fn:is_match_fn_T<Val>, or?:Or
+):Val[]|Or;
 /**
  * Returns function that returns value from [filter](#filter) with `fn` argument.
  */
