@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 25.0.0
+
+### Major Changes
+
+- maybe\_\*: accepts or argument which defaults to null
+
 ## 24.0.2
 
 ### Patch Changes
