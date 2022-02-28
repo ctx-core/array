@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 26.0.0
+
+### Major Changes
+
+- a1_T=>l1a_T: for entire numeric series
+
+  a_1_T=>a1_T: for entire numeric series
+
 ## 25.0.0
 
 ### Major Changes
