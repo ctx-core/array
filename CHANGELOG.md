@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 26.0.1
+
+### Patch Changes
+
+- l1a_T:writable;rl1a_T:readonly
+
+  a1_T:writable,ra1_T:readonly
+
 ## 26.0.0
 
 ### Major Changes
