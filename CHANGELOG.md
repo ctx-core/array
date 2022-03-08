@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.0.3
+
+### Patch Changes
+
+- fix: maybe_reduce: infinite recursion
+
 ## 26.0.2
 
 ### Patch Changes
