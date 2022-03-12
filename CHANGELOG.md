@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.1.0
+
+### Minor Changes
+
+- value*key_zip_r* aliases value*key_zip_h*
+
 ## 26.0.3
 
 ### Patch Changes
