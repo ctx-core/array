@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.1.1
+
+### Patch Changes
+
+- entry_thold_a_compact_ctx_2,exit_thold_a_compact_ctx_2: fix: infinite loop
+
 ## 26.1.0
 
 ### Minor Changes
