@@ -7,10 +7,10 @@ export function entry_thold_a_compact_ctx_2(eq_ = eq) {
 		const idx_a = []
 		const val_a = []
 		if (in_val_a) {
-			const val_a = in_val_a
-			for (let i = 0; i < val_a.length; i++) {
-				const val = val_a[i]
-				const prev_val = val_a[i - 1]
+			const val_a = in_val_a.slice()
+			for (let i = 0; i < in_val_a.length; i++) {
+				const val = in_val_a[i]
+				const prev_val = in_val_a[i - 1]
 				if (!i || (eq_ ? !eq_([
 					val,
 					prev_val

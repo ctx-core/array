@@ -7,12 +7,12 @@ export function exit_thold_a_compact_ctx_2(eq_ = eq) {
 		const idx_a = []
 		const val_a = []
 		if (in_val_a) {
-			const val_a = in_val_a
+			const val_a = in_val_a.slice()
 			const val_a_length = val_a.length
-			for (let idx = 0; idx < val_a.length; idx++) {
-				const val = val_a[idx]
+			for (let idx = 0; idx < in_val_a.length; idx++) {
+				const val = in_val_a[idx]
 				const next_idx = idx + 1
-				const next_val = val_a[next_idx]
+				const next_val = in_val_a[next_idx]
 				if (next_idx === val_a_length || (eq_ ? !eq_([
 					val,
 					next_val
