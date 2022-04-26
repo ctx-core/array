@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 26.2.0
+
+### Minor Changes
+
+- r*val_a*,maybe*r_val_a*: key_a: optional argument: returns Object.values(r) if key_a not given
+- maybe*r_val_a* aliased by maybe*key_a_from_val_a*
+- r*val_a* aliased by key*a_from_val_a*
+
 ## 26.1.5
 
 ### Patch Changes
