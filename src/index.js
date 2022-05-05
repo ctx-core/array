@@ -1,6 +1,6 @@
 import { isArray } from '@ctx-core/object'
-import { wrap_a_, wrap_aa_ } from '@ctx-core/function'
-export { isArray, wrap_a_, wrap_aa_ }
+import { eql_a_, wrap_a_, wrap_aa_ } from '@ctx-core/function'
+export { isArray, eql_a_, wrap_a_, wrap_aa_ }
 export * from './a_in_idx_a_map.js'
 export * from './a_length_.js'
 export * from './a_present_.js'
@@ -17,7 +17,6 @@ export * from './difference_by_.js'
 export * from './each.js'
 export * from './entry_thold_a_compact_ctx_.js'
 export * from './entry_thold_a_compact_ctx_2.js'
-export * from './eql_a_.js'
 export * from './eql_fn_a_.js'
 export * from './every.js'
 export * from './every_.js'
