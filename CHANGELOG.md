@@ -1,5 +1,12 @@
 # @ctx-core/array
 
+## 26.3.0
+
+### Minor Changes
+
+- item_r_idx_2 aliased by idx_item_r_2
+- item*r_idx* aliased by idx*item_r*
+
 ## 26.2.4
 
 ### Patch Changes
