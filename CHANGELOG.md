@@ -1,5 +1,14 @@
 # @ctx-core/array
 
+## 26.4.0
+
+### Minor Changes
+
+- sort*val_a\$exit_a_frame_fn* aliased by exit_thold_a1_compact_ctx_fn2
+- sort*val_a\$exit_a_frame* aliased by exit*thold_a_compact_ctx*
+- sort*val_a\$enter_a_frame* aliased by entry*thold_a_compact_ctx*
+- sort*val_a\$enter_a_frame_fn* aliased by entry_thold_a_compact_ctx_2
+
 ## 26.3.0
 
 ### Minor Changes
