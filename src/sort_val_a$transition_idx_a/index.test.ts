@@ -1,3 +1,11 @@
+import { test } from 'uvu'
+import { equal } from 'uvu/assert'
+import {
+	sort_val_a$enter_a_frame_,
+	sort_val_a$enter_a_frame_fn_,
+	sort_val_a$exit_a_frame_,
+	sort_val_a$exit_a_frame_fn_
+} from '../index.js'
 test('sort_val_a$enter_a_frame_', ()=>{
 	equal({
 		idx_a: [0, 3, 5],
@@ -89,11 +97,3 @@ test('sort_val_a$exit_a_frame_fn_', ()=>{
 	}
 })
 test.run()
-import { test } from 'uvu'
-import { equal } from 'uvu/assert'
-import {
-	sort_val_a$enter_a_frame_,
-	sort_val_a$enter_a_frame_fn_,
-	sort_val_a$exit_a_frame_,
-	sort_val_a$exit_a_frame_fn_
-} from '../index.js'

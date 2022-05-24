@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.4.2
+
+### Patch Changes
+
+- fix: import at the top of the file
+
 ## 26.4.1
 
 ### Patch Changes

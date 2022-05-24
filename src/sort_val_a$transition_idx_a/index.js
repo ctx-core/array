@@ -1,3 +1,4 @@
+import { eq } from '@ctx-core/function'
 /**
  * Returns a [sort_val_a$transition_a_frame_T](#sort_val_a$transition_a_frame_T) of presumably sorted items in `val_a` at each index of the new item for each changed item.
  */
@@ -88,4 +89,3 @@ export {
 	sort_val_a$exit_a_frame_fn_ as _exit_thold_a1_compact_ctx_fn,
 	sort_val_a$exit_a_frame_fn_ as _fn__ctx__compact__a1__thold__exit,
 }
-import { eq } from '@ctx-core/function'
