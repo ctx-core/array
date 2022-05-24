@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.4.1
+
+### Patch Changes
+
+- invert*idx_a*: + tests
+
 ## 26.4.0
 
 ### Minor Changes

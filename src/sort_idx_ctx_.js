@@ -15,8 +15,7 @@ export function sort_idx_ctx_(maybe_a, compare = compare_()) {
 				i
 			])
 		}
-		sort(sort_a, (l, r)=>compare(l[0], r[0])
-		)
+		sort(sort_a, (l, r)=>compare(l[0], r[0]))
 		for (let i1 = 0; i1 < a.length; i1++) {
 			sort_idx_a.push(sort_a[i1][1])
 			sort_val_a[i1] = sort_a[i1][0]
