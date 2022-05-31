@@ -1,28 +1,28 @@
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import {
-	sort_val_a$enter_a_frame_,
-	sort_val_a$enter_a_frame_fn_,
-	sort_val_a$exit_a_frame_,
-	sort_val_a$exit_a_frame_fn_
+	sort_val_a__enter_a_frame_,
+	sort_val_a__enter_a_frame_fn_,
+	sort_val_a__exit_a_frame_,
+	sort_val_a__exit_a_frame_fn_
 } from '../index.js'
-test('sort_val_a$enter_a_frame_', ()=>{
+test('sort_val_a__enter_a_frame_', ()=>{
 	equal({
 		idx_a: [0, 3, 5],
 		val_a: ['a', 'b', 'c']
-	}, sort_val_a$enter_a_frame_(['a', 'a', 'a', 'b', 'b', 'c']))
+	}, sort_val_a__enter_a_frame_(['a', 'a', 'a', 'b', 'b', 'c']))
 })
-test('sort_val_a$enter_a_frame_fn_', ()=>{
+test('sort_val_a__enter_a_frame_fn_', ()=>{
 	equal({
 		idx_a: [0, 3, 5],
 		val_a: ['a', 'b', 'c']
-	}, sort_val_a$enter_a_frame_fn_()(['a', 'a', 'a', 'b', 'b', 'c']))
+	}, sort_val_a__enter_a_frame_fn_()(['a', 'a', 'a', 'b', 'b', 'c']))
 	{
 		const iter_a_eq_arg_aa:(readonly string[])[] = []
 		equal({
 			idx_a: [0],
 			val_a: ['a']
-		}, sort_val_a$enter_a_frame_fn_<string>(arg_a=>{
+		}, sort_val_a__enter_a_frame_fn_<string>(arg_a=>{
 			iter_a_eq_arg_aa.push(arg_a)
 			return true
 		})(['a', 'a', 'a', 'b', 'b', 'c']))
@@ -39,7 +39,7 @@ test('sort_val_a$enter_a_frame_fn_', ()=>{
 		equal({
 			idx_a: [0, 1, 2, 3, 4, 5],
 			val_a: ['a', 'a', 'a', 'b', 'b', 'c']
-		}, sort_val_a$enter_a_frame_fn_<string>(arg_a=>{
+		}, sort_val_a__enter_a_frame_fn_<string>(arg_a=>{
 			iter_a_eq_arg_aa.push(arg_a)
 			return false
 		})(['a', 'a', 'a', 'b', 'b', 'c']))
@@ -52,21 +52,21 @@ test('sort_val_a$enter_a_frame_fn_', ()=>{
 		], iter_a_eq_arg_aa)
 	}
 })
-test('sort_val_a$exit_a_frame_', ()=>{
-	equal(sort_val_a$exit_a_frame_(['a', 'a', 'a', 'b', 'b', 'c']), {
+test('sort_val_a__exit_a_frame_', ()=>{
+	equal(sort_val_a__exit_a_frame_(['a', 'a', 'a', 'b', 'b', 'c']), {
 		idx_a: [2, 4, 5],
 		val_a: ['a', 'b', 'c']
 	})
 })
-test('sort_val_a$exit_a_frame_fn_', ()=>{
-	equal(sort_val_a$exit_a_frame_fn_()(['a', 'a', 'a', 'b', 'b', 'c']), {
+test('sort_val_a__exit_a_frame_fn_', ()=>{
+	equal(sort_val_a__exit_a_frame_fn_()(['a', 'a', 'a', 'b', 'b', 'c']), {
 		idx_a: [2, 4, 5],
 		val_a: ['a', 'b', 'c']
 	})
 	{
 		const iter_a_eq_arg_aaa:(readonly string[])[][] = []
 		equal(
-			sort_val_a$exit_a_frame_fn_<string>((...arg_a)=>{
+			sort_val_a__exit_a_frame_fn_<string>((...arg_a)=>{
 				iter_a_eq_arg_aaa.push(arg_a)
 				return true
 			})(['a', 'a', 'a', 'b', 'b', 'c']),
@@ -82,7 +82,7 @@ test('sort_val_a$exit_a_frame_fn_', ()=>{
 	{
 		const iter_a_eq_arg_aaa:(readonly string[])[][] = []
 		equal(
-			sort_val_a$exit_a_frame_fn_<string>((...arg_aa)=>{
+			sort_val_a__exit_a_frame_fn_<string>((...arg_aa)=>{
 				iter_a_eq_arg_aaa.push(arg_aa)
 				return false
 			})(['a', 'a', 'a', 'b', 'b', 'c']),

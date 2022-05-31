@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.5.0
+
+### Minor Changes
+
+- \__ suffix aliased by \$_
+
 ## 26.4.3
 
 ### Patch Changes
