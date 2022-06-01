@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.5.1
+
+### Patch Changes
+
+- fix: alias functions: sort*val_a\$enter_a_frame*,sort*val_a\$enter_a_frame_fn*,sort*val_a\$exit_a_frame*,sort*val_a\$exit_a_frame_fn*
+
 ## 26.5.0
 
 ### Minor Changes

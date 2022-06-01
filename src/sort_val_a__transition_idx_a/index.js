@@ -6,6 +6,7 @@ export function sort_val_a__enter_a_frame_(sort_val_a) {
 	return sort_val_a__enter_a_frame_fn_()(sort_val_a)
 }
 export {
+	sort_val_a__enter_a_frame_ as sort_val_a$enter_a_frame_,
 	sort_val_a__enter_a_frame_ as entry_thold_a_compact_ctx_,
 	sort_val_a__enter_a_frame_ as entry_thold_a1_compact_ctx_fn,
 	sort_val_a__enter_a_frame_ as _entry_thold_a1_compact_ctx,
@@ -38,6 +39,7 @@ export function sort_val_a__enter_a_frame_fn_(eq_ = eq) {
 	}
 }
 export {
+	sort_val_a__enter_a_frame_fn_ as sort_val_a$enter_a_frame_fn_,
 	sort_val_a__enter_a_frame_fn_ as entry_thold_a_compact_ctx_2,
 	sort_val_a__enter_a_frame_fn_ as entry_thold_a1_compact_ctx_fn2,
 	sort_val_a__enter_a_frame_fn_ as _entry_thold_a1_compact_ctx_fn,
@@ -50,6 +52,7 @@ export function sort_val_a__exit_a_frame_(sort_val_a) {
 	return sort_val_a__exit_a_frame_fn_()(sort_val_a)
 }
 export {
+	sort_val_a__exit_a_frame_ as sort_val_a$exit_a_frame_,
 	sort_val_a__exit_a_frame_ as exit_thold_a_compact_ctx_,
 	sort_val_a__exit_a_frame_ as exit_thold_a1_compact_ctx_fn,
 	sort_val_a__exit_a_frame_ as _exit_thold_a1_compact_ctx,
@@ -84,6 +87,7 @@ export function sort_val_a__exit_a_frame_fn_(eq_ = eq) {
 	}
 }
 export {
+	sort_val_a__exit_a_frame_fn_ as sort_val_a$exit_a_frame_fn_,
 	sort_val_a__exit_a_frame_fn_ as exit_thold_a_compact_ctx_2,
 	sort_val_a__exit_a_frame_fn_ as exit_thold_a1_compact_ctx_fn2,
 	sort_val_a__exit_a_frame_fn_ as _exit_thold_a1_compact_ctx_fn,
