@@ -4,6 +4,7 @@ export { isArray, eql_a_, wrap_a_, wrap_aa_ }
 export * from './a_in_idx_a_map.js'
 export * from './a_length_.js'
 export * from './a_present_.js'
+export * from './async_iter_a_/index.js'
 export * from './binary_sort_rank.js'
 export * from './chunk_aa_.js'
 export * from './circular_idx_.js'

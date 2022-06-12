@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.6.0
+
+### Minor Changes
+
+- feat: + async*gen_a*
+
 ## 26.5.2
 
 ### Patch Changes
