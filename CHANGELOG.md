@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.7.0
+
+### Minor Changes
+
+- extract directories
+
 ## 26.6.0
 
 ### Minor Changes

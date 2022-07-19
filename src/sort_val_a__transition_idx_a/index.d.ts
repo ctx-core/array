@@ -5,7 +5,7 @@ import type { sort_val_a$transition_a_frame_fn_T, sort_val_a$transition_a_frame_
  */
 export declare function sort_val_a__enter_a_frame_<I extends unknown = unknown>(
 	sort_val_a:readonly I[]|undefined
-):sort_val_a$transition_a_frame_T<I>;
+):sort_val_a$transition_a_frame_T<I>
 export {
 	sort_val_a__enter_a_frame_ as sort_val_a$enter_a_frame_,
 	sort_val_a__enter_a_frame_ as entry_thold_a_compact_ctx_,
@@ -13,13 +13,13 @@ export {
 	sort_val_a__enter_a_frame_ as _entry_thold_a1_compact_ctx,
 	sort_val_a__enter_a_frame_ as _ctx__compact__a1__thold__entry,
 }
-declare type eq__T<I extends unknown = unknown> = eq_T<I>;
+declare type eq__T<I extends unknown = unknown> = eq_T<I>
 /**
  * Returns a function that returns a [sort_val_a$transition_a_frame_T](#sort_val_a$transition_a_frame_T)
  */
 export declare function sort_val_a__enter_a_frame_fn_<I extends unknown = unknown>(
 	eq_?:eq__T<readonly I[]>
-):sort_val_a$transition_a_frame_fn_T<I>;
+):sort_val_a$transition_a_frame_fn_T<I>
 export {
 	sort_val_a__enter_a_frame_fn_ as sort_val_a$enter_a_frame_fn_,
 	sort_val_a__enter_a_frame_fn_ as entry_thold_a_compact_ctx_2,
@@ -32,7 +32,7 @@ export {
  */
 export declare function sort_val_a__exit_a_frame_<I extends unknown = unknown>(
 	sort_val_a?:readonly I[]
-):sort_val_a$transition_a_frame_T<I>;
+):sort_val_a$transition_a_frame_T<I>
 export {
 	sort_val_a__exit_a_frame_ as sort_val_a$exit_a_frame_,
 	sort_val_a__enter_a_frame_ as exit_thold_a_compact_ctx_,
@@ -45,7 +45,7 @@ export {
  */
 export declare function sort_val_a__exit_a_frame_fn_<I extends unknown = unknown>(
 	eq_?:eq__T<readonly I[]>
-):sort_val_a$transition_a_frame_fn_T<I>;
+):sort_val_a$transition_a_frame_fn_T<I>
 export {
 	sort_val_a__exit_a_frame_fn_ as sort_val_a$exit_a_frame_fn_,
 	sort_val_a__exit_a_frame_fn_ as exit_thold_a1_compact_ctx_fn2,
