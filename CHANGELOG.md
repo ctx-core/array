@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.8.0
+
+### Minor Changes
+
+- gte*0_a*,lte*0_a*: + generic array member type: <T extends number = number>
+
 ## 26.7.8
 
 ### Patch Changes
