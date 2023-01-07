@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.8.6
+
+### Patch Changes
+
+- @ctx-core/object: ^22.9.0 -> ^22.9.1
+
 ## 26.8.5
 
 ### Patch Changes
