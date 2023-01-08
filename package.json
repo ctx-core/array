@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "26.8.8",
+	"version": "26.8.9",
 	"description": "ctx-core array",
 	"keywords": [
 		"ctx-core",
@@ -35,7 +35,7 @@
 	"dependencies": {
 		"@ctx-core/combinators": "^8.0.39",
 		"@ctx-core/function": "^21.6.0",
-		"@ctx-core/object": "^23.0.0",
+		"@ctx-core/object": "^23.0.1",
 		"@ctx-core/set": "^12.1.7"
 	},
 	"devDependencies": {
