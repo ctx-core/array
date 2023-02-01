@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.8.15
+
+### Patch Changes
+
+- @ctx-core/combinators: ^8.0.40 -> ^8.0.41
+
 ## 26.8.14
 
 ### Patch Changes
