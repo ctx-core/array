@@ -4,6 +4,7 @@ export { isArray, eql_a_, wrap_a_, wrap_aa_ }
 export * from './a_in_idx_a_map/index.js'
 export * from './a_length_/index.js'
 export * from './a_present_/index.js'
+export * from './all_union_a__/index.js'
 export * from './async_iter_a_/index.js'
 export * from './binary_sort_rank/index.js'
 export * from './chunk_aa_/index.js'

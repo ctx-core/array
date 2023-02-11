@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.10.0
+
+### Minor Changes
+
+- - all_union_a\_\_
+
 ## 26.9.0
 
 ### Minor Changes
