@@ -24,4 +24,7 @@ export function maybe_zip_with(a2, fn, or = null) {
 export function default_zip_with_2() {
 	return (a, _i)=>a
 }
-export { zip_with as zipWith, maybe_zip_with as maybe_zipWith, }
+export {
+	zip_with as zipWith,
+	maybe_zip_with as maybe_zipWith,
+}

@@ -1,7 +1,9 @@
 /**
  * Return a compare function to sort on key values.
  */
-export declare function key_compare_<Obj extends object|readonly unknown[] = object>(
+export declare function key_compare_<
+	Obj extends object|readonly unknown[] = object
+>(
 	key:keyof Obj, asc?:boolean
 ):(a:Obj, b:Obj)=>number
 export {

@@ -14,7 +14,12 @@ export function idx_key_r_(a, key, item_key_idx_val_ = I__) {
 	}
 	return idx_key_r
 }
-export function maybe_idx_key_r_(maybe_a, key, item_key_idx_val_ = I__, or = null) {
+export function maybe_idx_key_r_(
+	maybe_a,
+	key,
+	item_key_idx_val_ = I__,
+	or = null
+) {
 	return maybe_a ? idx_key_r_(maybe_a, key, item_key_idx_val_) : or
 }
 export {

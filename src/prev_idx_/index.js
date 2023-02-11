@@ -5,4 +5,7 @@ import { circular_idx_ } from '../circular_idx_/index.js'
 export function prev_idx_(length, index = 0) {
 	return circular_idx_(length, index - 1)
 }
-export { prev_idx_ as _prev_idx, prev_idx_ as _idx__prev, }
+export {
+	prev_idx_ as _prev_idx,
+	prev_idx_ as _idx__prev,
+}

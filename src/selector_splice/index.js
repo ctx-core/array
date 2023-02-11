@@ -8,4 +8,7 @@ export function selector_splice(a, selector) {
 	}
 	return a
 }
-export { selector_splice as splice__selector, selector_splice as splice__selector__a1, }
+export {
+	selector_splice as splice__selector,
+	selector_splice as splice__selector__a1,
+}

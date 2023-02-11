@@ -14,4 +14,7 @@ export function maybe_compact(maybe_a, or = null) {
 	if (!maybe_a) return or
 	return compact(maybe_a)
 }
-export { compact as compact_a1, compact as compact__a1, }
+export {
+	compact as compact_a1,
+	compact as compact__a1,
+}

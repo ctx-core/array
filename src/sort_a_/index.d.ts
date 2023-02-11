@@ -2,11 +2,18 @@ import type { compare_T } from '../_types'
 /**
  * Sorts a copy of `a` by the `compare` function.
  */
-export declare function sort_a_<I extends unknown = unknown>(
-	a:readonly I[], compare?:compare_T<I>
+export declare function sort_a_<
+	I extends unknown = unknown
+>(
+	a:readonly I[],
+	compare?:compare_T<I>
 ):I[]
-export declare function maybe_sort_a_<I extends unknown = unknown, Or = null>(
-	maybe_a:readonly I[]|undefined, compare?:compare_T<I>, or?:Or
+export declare function maybe_sort_a_<
+	I extends unknown = unknown, Or = null
+>(
+	maybe_a:readonly I[]|undefined,
+	compare?:compare_T<I>,
+	or?:Or
 ):I[]|Or
 export {
 	sort_a_ as sort_a1_,

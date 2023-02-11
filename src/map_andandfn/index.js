@@ -5,4 +5,7 @@ import { andandfn_ } from '@ctx-core/function'
 export function map_andandfn(a, ...attr_a) {
 	return a.map(andandfn_(...attr_a))
 }
-export { map_andandfn as map__andand_, map_andandfn as map__andand__fn, }
+export {
+	map_andandfn as map__andand_,
+	map_andandfn as map__andand__fn,
+}

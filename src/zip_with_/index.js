@@ -5,4 +5,8 @@ import { zip_with } from '../zip_with/index.js'
 export function zip_with_(fn) {
 	return (...a2)=>zip_with(a2, fn)
 }
-export { zip_with_ as _zip_with, zip_with_ as _zipWith, zip_with_ as _fn__zipWith, }
+export {
+	zip_with_ as _zip_with,
+	zip_with_ as _zipWith,
+	zip_with_ as _fn__zipWith,
+}

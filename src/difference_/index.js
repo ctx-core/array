@@ -8,4 +8,7 @@ export function difference_(aa_nowrap) {
 	const aa = wrap_aa_(aa_nowrap)
 	return Array.from(difference_set_(/** @type {unknown} */aa))
 }
-export { difference_ as _difference, difference_ as _difference__a1, }
+export {
+	difference_ as _difference,
+	difference_ as _difference__a1,
+}

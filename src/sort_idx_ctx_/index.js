@@ -26,4 +26,7 @@ export function sort_idx_ctx_(maybe_a, compare = compare_()) {
 		sort_val_a
 	}
 }
-export { sort_idx_ctx_ as _sort_idx_ctx, sort_idx_ctx_ as _ctx__idx__sort, }
+export {
+	sort_idx_ctx_ as _sort_idx_ctx,
+	sort_idx_ctx_ as _ctx__idx__sort,
+}

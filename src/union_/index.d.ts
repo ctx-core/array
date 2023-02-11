@@ -6,4 +6,9 @@ import type { a_nowrap_T, wrap_aa_item_T } from '@ctx-core/function'
 export declare function union_<I extends unknown = unknown>(
 	aa_nowrap:a_nowrap_T<I>
 ):wrap_aa_item_T<I>[]
-export { union_ as _union, union_ as _union__a1, union_ as _uniq, union_ as _uniq__a1, }
+export {
+	union_ as _union,
+	union_ as _union__a1,
+	union_ as _uniq,
+	union_ as _uniq__a1,
+}

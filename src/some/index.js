@@ -11,4 +11,7 @@ export function some(a, predicate) {
 	}
 	return false
 }
-export { some as some_a1, some as some__a1, }
+export {
+	some as some_a1,
+	some as some__a1,
+}

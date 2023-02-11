@@ -2,11 +2,17 @@ import type { item_key_idx_val_fn_T } from '../_types'
 /**
  * Returns a Hash where each key is `a[idx][key]` & value is `idx`.
  */
-export declare function idx_key_r_<Obj extends Record<string, string> = Record<string, string>>(
-	a:readonly Obj[], key:string|number, item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>
+export declare function idx_key_r_<
+	Obj extends Record<string, string> = Record<string, string>
+>(
+	a:readonly Obj[],
+	key:string|number,
+	item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>
 ):idx_key_r_T
 export declare type idx_key_r_T = Record<string, number>
-export declare function maybe_idx_key_r_<Obj extends Record<string, string> = Record<string, string>, Or = null>(
+export declare function maybe_idx_key_r_<
+	Obj extends Record<string, string> = Record<string, string>, Or = null
+>(
 	maybe_a:readonly Obj[]|undefined,
 	key:string|number,
 	item_key_idx_val_?:item_key_idx_val_fn_T<string, Obj>,

@@ -1,7 +1,9 @@
 /**
  * Returns a hash of arrays grouped by each key in each `ctx` in `ctx_a`.
  */
-export declare function key_r_a_<Val extends object = object>(
+export declare function key_r_a_<
+	Val extends object = object
+>(
 	ctx_a_nowrap:(Record<string, Val>|readonly Record<string, Val>[])
 ):Record<string, Val[]>
 export {

@@ -5,4 +5,8 @@ import { every } from '../every/index.js'
 export function every_(predicate) {
 	return (a)=>every(a, predicate)
 }
-export { every_ as _every, every_ as _every_fn, every_ as _fn__every, }
+export {
+	every_ as _every,
+	every_ as _every_fn,
+	every_ as _fn__every,
+}

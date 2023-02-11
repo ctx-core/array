@@ -1,5 +1,5 @@
 /**
- * Returns a [sort_val_a$transition_a_frame_T](#sort_val_a$transition_a_frame_T)
+ * Returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T)
  */
 export function compact_a_ctx_(sparse_a) {
 	const idx_a = []
@@ -11,9 +11,9 @@ export function compact_a_ctx_(sparse_a) {
 			val_a.push(val)
 		}
 	}
-	return {
-		idx_a,
-		val_a
-	}
+	return { idx_a, val_a }
 }
-export { compact_a_ctx_ as compact_a1_ctx_fn, compact_a_ctx_ as _compact_a1_ctx, }
+export {
+	compact_a_ctx_ as compact_a1_ctx_fn,
+	compact_a_ctx_ as _compact_a1_ctx,
+}

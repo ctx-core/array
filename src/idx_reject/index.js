@@ -11,7 +11,11 @@ export function idx_reject(a, is_match_) {
 	}
 	return out_a
 }
-export function maybe_idx_reject(maybe_a, is_match_, or = null) {
+export function maybe_idx_reject(
+	maybe_a,
+	is_match_,
+	or = null
+) {
 	if (!maybe_a) return or
 	return idx_reject(maybe_a, is_match_)
 }

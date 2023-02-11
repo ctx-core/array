@@ -15,4 +15,7 @@ export function maybe_every(maybe_a, predicate, or = null) {
 	if (!maybe_a) return or
 	return every(maybe_a, predicate)
 }
-export { every as every_a1, every as every__a1, }
+export {
+	every as every_a1,
+	every as every__a1,
+}

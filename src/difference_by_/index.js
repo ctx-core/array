@@ -1,6 +1,5 @@
 import { wrap_aa_ } from '@ctx-core/function'
-export function difference_by_(aa_nowrap, by_ = (item)=>item
-) {
+export function difference_by_(aa_nowrap, by_ = item=>item) {
 	const a2 = wrap_aa_(aa_nowrap)
 	const set = new Set()
 	const difference = []
@@ -20,4 +19,7 @@ export function difference_by_(aa_nowrap, by_ = (item)=>item
 	}
 	return difference
 }
-export { difference_by_ as _difference_by, difference_by_ as _difference__by, }
+export {
+	difference_by_ as _difference_by,
+	difference_by_ as _difference__by,
+}

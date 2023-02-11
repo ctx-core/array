@@ -2,8 +2,12 @@ import { a_length_ } from '../a_length_'
 /**
  * Returns true if `a` is has a length
  */
-export declare function a_present_<Val extends unknown = unknown>(a:readonly Val[]):boolean
-export declare function maybe_a_present_fn<Val extends unknown = unknown, Or = null>(
+export declare function a_present_<
+	Val extends unknown = unknown
+>(a:readonly Val[]):boolean
+export declare function maybe_a_present_fn<
+	Val extends unknown = unknown, Or = null
+>(
 	maybe_a:readonly Val[]|undefined, or?:Or
 ):boolean|Or
 export {

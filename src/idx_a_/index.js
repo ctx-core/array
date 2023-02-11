@@ -8,4 +8,8 @@ export function idx_a_(count, start = 0) {
 	}
 	return idx_a
 }
-export { idx_a_ as idx_a1_fn, idx_a_ as _idx_a1, idx_a_ as _a1__idx, }
+export {
+	idx_a_ as idx_a1_fn,
+	idx_a_ as _idx_a1,
+	idx_a_ as _a1__idx,
+}

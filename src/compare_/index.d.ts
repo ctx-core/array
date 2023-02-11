@@ -2,7 +2,9 @@ import type { compare_T } from '../_types'
 /**
  * Returns a basic ascending or descending `compare` function to be used for sorting.
  */
-export declare function compare_<I extends unknown = unknown>(asc?:boolean):compare_T<I>
+export declare function compare_<
+	I extends unknown = unknown
+>(asc?:boolean):compare_T<I>
 /**
  * Compare function to sort by ascending order.
  */

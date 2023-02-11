@@ -1,7 +1,9 @@
 /**
  * Returns a Function that returns from [_value_hash](#_value_hash).
  */
-export declare function value_r_2<Out extends unknown = unknown>(
+export declare function value_r_2<
+	Out extends unknown = unknown
+>(
 	value_:(key:string, idx:number)=>Out
 ):(value_a:readonly string[])=>Record<string, Out>
 export {

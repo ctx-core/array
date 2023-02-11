@@ -1,8 +1,12 @@
 /**
  * Returns length of `in_a`
  */
-export declare function a_length_<Val extends unknown = unknown>(a:readonly Val[]):number
-export declare function maybe_a_length$<Val extends unknown = unknown, Or = null>(
+export declare function a_length_<
+	Val extends unknown = unknown
+>(a:readonly Val[]):number
+export declare function maybe_a_length$<
+	Val extends unknown = unknown, Or = null
+>(
 	maybe_a:readonly Val[]|undefined, or?:Or
 ):number|Or
 export {

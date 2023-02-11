@@ -6,7 +6,10 @@ import { idx_key_r_, maybe_idx_key_r_ } from '../idx_key_r_/index.js'
 export function idx_key_r_2(item_key_idx_val_ = I__) {
 	return (a, key)=>idx_key_r_(a, key, item_key_idx_val_)
 }
-export function maybe_idx_key_r_2(item_key_idx_val_ = I__, or = null) {
+export function maybe_idx_key_r_2(
+	item_key_idx_val_ = I__,
+	or = null
+) {
 	return (maybe_a, key)=>maybe_idx_key_r_(maybe_a, key, item_key_idx_val_, or)
 }
 export {

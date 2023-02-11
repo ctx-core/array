@@ -9,4 +9,9 @@ export function chunk_aa_(a, chunk_length) {
 	}
 	return chunk_aa
 }
-export { chunk_aa_ as chunk_a2_, chunk_aa_ as _a2__chunk, chunk_aa_ as _chunk_a2, chunk_aa_ as chunk_couple_fn, }
+export {
+	chunk_aa_ as chunk_a2_,
+	chunk_aa_ as _a2__chunk,
+	chunk_aa_ as _chunk_a2,
+	chunk_aa_ as chunk_couple_fn,
+}

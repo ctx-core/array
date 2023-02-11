@@ -33,4 +33,7 @@ export function intersection_by_(aa_nowrap, by_ = (v)=>v) {
 	})
 	return intersection
 }
-export { intersection_by_ as _intersection_by, intersection_by_ as _intersection__by, }
+export {
+	intersection_by_ as _intersection_by,
+	intersection_by_ as _intersection__by,
+}

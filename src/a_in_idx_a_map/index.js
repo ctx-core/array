@@ -4,4 +4,7 @@
 export function a_in_idx_a_map(idx_a, a) {
 	return idx_a.map(idx=>a[idx])
 }
-export { a_in_idx_a_map as a1_in_idx_a1_map, a_in_idx_a_map as map__a1__idx__in__a1, }
+export {
+	a_in_idx_a_map as a1_in_idx_a1_map,
+	a_in_idx_a_map as map__a1__idx__in__a1,
+}

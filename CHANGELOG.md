@@ -1,5 +1,17 @@
 # @ctx-core/array
 
+## 26.9.0
+
+### Minor Changes
+
+- maybe_slice: argument default: end_idx = undefined
+
+### Patch Changes
+
+- maybe*sort_a*: maybe_slice: fix: invalid number of arguments
+- Updated dependencies
+  - @ctx-core/set@12.1.10
+
 ## 26.8.17
 
 ### Patch Changes

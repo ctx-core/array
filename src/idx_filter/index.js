@@ -13,7 +13,11 @@ export function idx_filter(in_a, is_match_ = I__) {
 	}
 	return idx_a
 }
-export function maybe_idx_filter(maybe_a, is_match_ = I__, or = null) {
+export function maybe_idx_filter(
+	maybe_a,
+	is_match_ = I__,
+	or = null
+) {
 	if (!maybe_a) return or
 	return idx_filter(maybe_a, is_match_)
 }

@@ -8,4 +8,8 @@ export function maybe_last_(maybe_a, or = null) {
 	if (!maybe_a) return or
 	return last_(maybe_a)
 }
-export { last_ as _last, last_ as _last__a1, maybe_last_ as _maybe_last, }
+export {
+	last_ as _last,
+	last_ as _last__a1,
+	maybe_last_ as _maybe_last,
+}

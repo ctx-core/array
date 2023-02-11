@@ -81,12 +81,13 @@ export declare type ra1000_T<A extends readonly any[]> = ra500_T<ra500_T<A>>;
 /**
  * `ctx` of values & indices.
  */
-export interface sort_val_a$transition_a_frame_T<I> {
+export interface sort_val_a__transition_a_frame_T<I> {
 	idx_a:number[];
 	val_a:I[];
 }
-export declare type compact_a_ctx_I<I> = sort_val_a$transition_a_frame_T<I>;
-export declare type compact_a1_ctx_I<I> = sort_val_a$transition_a_frame_T<I>;
+export declare type sort_val_a$transition_a_frame_T<I> = sort_val_a__transition_a_frame_T<I>
+export declare type compact_a_ctx_I<I> = sort_val_a__transition_a_frame_T<I>;
+export declare type compact_a1_ctx_I<I> = sort_val_a__transition_a_frame_T<I>;
 export declare type compare_1_T<Val extends unknown = unknown> = (val:Val, idx?:number)=>number;
 export declare type compare_T<I extends unknown = unknown> = (a:I, b:I)=>number;
 export declare type is_match_fn_T<Val extends unknown = unknown> = (in_value:Val, idx:number)=>boolean;
@@ -107,6 +108,6 @@ export interface sort_idx_ctx_T<I extends unknown = unknown> {
 }
 export declare type ctx__idx__sort = sort_idx_ctx_T;
 export declare type sort_val_a$transition_a_frame_fn_T<I extends unknown = unknown> =
-	(in_val_a:readonly I[]|undefined)=>sort_val_a$transition_a_frame_T<I>;
+	(in_val_a:readonly I[]|undefined)=>sort_val_a__transition_a_frame_T<I>;
 export declare type thold_a_compact_ctx__T = sort_val_a$transition_a_frame_fn_T;
 export declare type thold_a1_compact_ctx_fn_type = sort_val_a$transition_a_frame_fn_T;

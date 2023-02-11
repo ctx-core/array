@@ -12,4 +12,9 @@ export function value_r_(in_key_a, value_) {
 	}
 	return value_r
 }
-export { value_r_ as value_h_, value_r_ as value_hash_fn, value_r_ as _value_hash, value_r_ as _hash__value, }
+export {
+	value_r_ as value_h_,
+	value_r_ as value_hash_fn,
+	value_r_ as _value_hash,
+	value_r_ as _hash__value,
+}

@@ -9,7 +9,11 @@ export function find(a, fn) {
 	}
 	return undefined
 }
-export function maybe_find(maybe_a, fn, or = null) {
+export function maybe_find(
+	maybe_a,
+	fn,
+	or = null
+) {
 	if (!maybe_a) return or
 	return find(maybe_a, fn)
 }
@@ -22,4 +26,7 @@ export function find_fn(fn) {
 export function maybe_find_fn(fn) {
 	return (maybe_a)=>maybe_find(maybe_a, fn)
 }
-export { find_fn as _find, maybe_find_fn as _maybe_find, }
+export {
+	find_fn as _find,
+	maybe_find_fn as _maybe_find,
+}

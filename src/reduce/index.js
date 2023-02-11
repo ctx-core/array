@@ -8,7 +8,9 @@ export function reduce(a, fn, memo) {
 	}
 	return memo
 }
-export function maybe_reduce(maybe_a, fn, memo, or = null) {
+export function maybe_reduce(
+	maybe_a, fn, memo, or = null
+) {
 	if (!maybe_a) return or
 	return reduce(maybe_a, fn, memo)
 }

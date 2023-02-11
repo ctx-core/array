@@ -1,11 +1,18 @@
 /**
  * Returns Array of `obj[key_a[]]`.
  */
-export declare function r_val_a_<Val extends unknown = unknown>(
-	obj:Record<string, Val>, key_a?:readonly string[]
+export declare function r_val_a_<
+	Val extends unknown = unknown
+>(
+	obj:Record<string, Val>,
+	key_a?:readonly string[]
 ):Val[]
-export declare function maybe_r_val_a_<Val extends unknown = unknown, Or = null>(
-	obj:Record<string, Val>|undefined, key_a?:readonly string[], or?:Or
+export declare function maybe_r_val_a_<
+	Val extends unknown = unknown, Or = null
+>(
+	obj:Record<string, Val>|undefined,
+	key_a?:readonly string[],
+	or?:Or
 ):Val[]|Or
 export {
 	r_val_a_ as key_a1_from_val_a1_fn,

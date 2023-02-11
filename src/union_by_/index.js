@@ -17,4 +17,7 @@ export function union_by_(aa_nowrap, by_ = (v)=>v
 	}
 	return union
 }
-export { union_by_ as _union_by, union_by_ as _union__by, }
+export {
+	union_by_ as _union_by,
+	union_by_ as _union__by,
+}
