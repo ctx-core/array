@@ -1,6 +1,9 @@
-import { isArray } from '@ctx-core/object'
-import { eql_a_, wrap_a_, wrap_aa_ } from '@ctx-core/function'
-export { isArray, eql_a_, wrap_a_, wrap_aa_ }
+import { isArray as _isArray } from '@ctx-core/object'
+import { eql_a_ as _eql_a_, wrap_a_ as _wrap_a_, wrap_aa_ as _wrap_aa_ } from '@ctx-core/function'
+export const isArray = _isArray
+export const eql_a_ = _eql_a_
+export const wrap_a_ = _wrap_a_
+export const wrap_aa_ = _wrap_aa_
 export * from './a_in_idx_a_map/index.js'
 export * from './a_length_/index.js'
 export * from './a_present_/index.js'

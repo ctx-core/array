@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.10.1
+
+### Patch Changes
+
+- eql*a*,wrap*a*,wrap*aa*: fix: unused import error
+
 ## 26.10.0
 
 ### Minor Changes
