@@ -12,6 +12,12 @@ export function key_r_(a, key) {
 	}
 	return key_r
 }
+/**
+ * @param maybe_a{Object[]|undefined}
+ * @param key{string}
+ * @param or{()=>unknown}
+ * @returns {Record<string, unknown>|unknown}
+ */
 export function maybe_key_r_(maybe_a, key, or = null) {
 	return maybe_a ? key_r_(maybe_a, key) : or
 }

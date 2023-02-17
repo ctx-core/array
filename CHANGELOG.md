@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.10.2
+
+### Patch Changes
+
+- maybe*key_r*: + jsdoc
+
 ## 26.10.1
 
 ### Patch Changes
