@@ -18,13 +18,13 @@ export declare function maybe_find<
 /**
  * Returns function that returns value from [find](#find) with `fn` argument.
  */
-export declare function find_fn<I extends unknown = unknown>(
+export declare function find_<I extends unknown = unknown>(
 	fn:(val:I, idx:number)=>I
 ):(a:readonly I[])=>I|undefined
-export declare function maybe_find_fn<I extends unknown = unknown>(
+export declare function maybe_find_<I extends unknown = unknown>(
 	fn:(val:I, idx:number)=>I
 ):(maybe_a:wrap_a_T2<I>)=>I|undefined
 export {
-	find_fn as _find,
-	maybe_find_fn as _maybe_find,
+	find_ as _find,
+	maybe_find_ as _maybe_find,
 }

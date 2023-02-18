@@ -1,9 +1,18 @@
 /**
  * Returns Array of `r[key_a[]]`.
+ * @param r{Record<string, unknown>}
+ * @param key_a{string}
+ * @returns {unknown[]}
  */
 export function r_val_a_(r, key_a) {
 	return key_a ? key_a.map(key=>r[key]) : Object.values(r)
 }
+/**
+ * @param r{Record<string, unknown>|undefined}
+ * @param key_a{string}
+ * @param or{unknown[]|null|undefined}
+ * @returns {unknown[]|null|undefined}
+ */
 export function maybe_r_val_a_(r, key_a, or = null) {
 	if (!r) return or
 	return r_val_a_(r, key_a)

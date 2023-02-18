@@ -1,5 +1,8 @@
 /**
  * Return a compare function to sort on key values.
+ * @param key{Object|unknown[]}
+ * @param asc{boolean}
+ * @returns {(a:Object|unknown[], b:Object|unknown[])=>number}
  */
 export function key_compare_(key, asc = true) {
 	return (a, b)=>{

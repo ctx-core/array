@@ -1,5 +1,8 @@
 /**
  * splice out any `array` elements matching `selector`
+ * @param a{unknown[]}
+ * @param selector{(v:unknown, i:number, a:unknown[])=>unknown}
+ * @returns {unknown[]}
  */
 export function selector_splice(a, selector) {
 	const index = a.findIndex(selector)

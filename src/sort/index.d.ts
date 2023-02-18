@@ -5,7 +5,7 @@ import type { compare_T } from '../_types'
 export declare function sort<
 	I extends unknown = unknown, O extends unknown = readonly I[]
 >(
-	a:readonly  I[], compare?:compare_T<I>
+	a:readonly I[], compare?:compare_T<I>
 ):O
 export declare function maybe_sort<
 	I extends unknown = unknown,

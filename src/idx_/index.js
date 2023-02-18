@@ -1,5 +1,8 @@
 /**
  * Returns idx of first match in `a` with `compare`.
+ * @param in_a{unknown[]|undefined}
+ * @param compare{import('../_types').is_match__T}
+ * @returns {number}
  */
 export function idx_(in_a, compare) {
 	if (in_a) {

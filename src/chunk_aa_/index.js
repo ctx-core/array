@@ -1,6 +1,9 @@
 import { slice } from '../slice/index.js'
 /**
  * Splits array into chunks
+ * @param a{unknown[]}
+ * @param chunk_length{number}
+ * @returns {unknown[][]}
  */
 export function chunk_aa_(a, chunk_length) {
 	let chunk_aa = []

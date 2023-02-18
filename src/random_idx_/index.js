@@ -1,5 +1,7 @@
 /**
  * Returns a random index in `a`.
+ * @param a{unknown[]}
+ * @returns {number}
  */
 export function random_idx_(a) {
 	return Math.floor(Math.random() * a.length)

@@ -1,9 +1,16 @@
 /**
  * Returns the first item in `a`.
+ * @param a{unknown[]}
+ * @returns {unknown}
  */
 export function first_(a) {
 	return a[0]
 }
+/**
+ * @param maybe_a{unknown[]|undefined}
+ * @param or{unknown[]|null|undefined}
+ * @returns {unknown[]|null|undefined}
+ */
 export function maybe_first_(
 	maybe_a,
 	or = null

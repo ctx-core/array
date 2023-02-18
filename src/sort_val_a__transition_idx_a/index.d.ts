@@ -1,5 +1,5 @@
 import type { eq_T } from '@ctx-core/function'
-import type { sort_val_a$transition_a_frame_fn_T, sort_val_a__transition_a_frame_T } from '../_types'
+import type { sort_val_a__transition_a_frame_fn_T, sort_val_a__transition_a_frame_T } from '../_types'
 /**
  * Returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T) of presumably sorted items in `val_a` at each index of the new item for each changed item.
  */
@@ -15,17 +15,14 @@ export {
 	sort_val_a__enter_a_frame_ as _entry_thold_a1_compact_ctx,
 	sort_val_a__enter_a_frame_ as _ctx__compact__a1__thold__entry,
 }
-declare type eq__T<
-	I extends unknown = unknown
-> = eq_T<I>
 /**
  * Returns a function that returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T)
  */
 export declare function sort_val_a__enter_a_frame_fn_<
 	I extends unknown = unknown
 >(
-	eq_?:eq__T<readonly I[]>
-):sort_val_a$transition_a_frame_fn_T<I>
+	eq_?:eq_T<readonly I[]>
+):sort_val_a__transition_a_frame_fn_T<I>
 export {
 	sort_val_a__enter_a_frame_fn_ as sort_val_a$enter_a_frame_fn_,
 	sort_val_a__enter_a_frame_fn_ as entry_thold_a_compact_ctx_2,
@@ -54,8 +51,8 @@ export {
 export declare function sort_val_a__exit_a_frame_fn_<
 	I extends unknown = unknown
 >(
-	eq_?:eq__T<readonly I[]>
-):sort_val_a$transition_a_frame_fn_T<I>
+	eq_?:eq_T<readonly I[]>
+):sort_val_a__transition_a_frame_fn_T<I>
 export {
 	sort_val_a__exit_a_frame_fn_ as sort_val_a$exit_a_frame_fn_,
 	sort_val_a__exit_a_frame_fn_ as exit_thold_a1_compact_ctx_fn2,

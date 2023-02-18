@@ -1,5 +1,8 @@
 /**
  * Returns an `Object.<key,value>` of the given `key_hash[a[][key]] = a[]`.
+ * @param a{Record<string, string>[]}
+ * @param key{string}
+ * @returns {Record<string, Record<string, string>>}}
  */
 export function key_r_(a, key) {
 	const key_r = {}
@@ -13,12 +16,16 @@ export function key_r_(a, key) {
 	return key_r
 }
 /**
- * @param maybe_a{Object[]|undefined}
+ * @param maybe_a{Record<string, string>[]|undefined}
  * @param key{string}
- * @param or{()=>unknown}
- * @returns {Record<string, unknown>|unknown}
+ * @param or{Record<string, string>[]|null|undefined}
+ * @returns {Record<string, Record<string, string>>|null|unknown}
  */
-export function maybe_key_r_(maybe_a, key, or = null) {
+export function maybe_key_r_(
+	maybe_a,
+	key,
+	or = null
+) {
 	return maybe_a ? key_r_(maybe_a, key) : or
 }
 export {

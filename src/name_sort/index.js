@@ -1,6 +1,8 @@
 import { key_compare_ } from '../key_compare_/index.js'
 /**
  * Returns an array sorted by `item.name`
+ * @param a{{name:string}}
+ * @returns {{name:string}[]}
  */
 export function name_sort(a) {
 	return (a.slice(0) || []).sort(key_compare_('name'))

@@ -3,6 +3,9 @@ import { union_set_ } from '@ctx-core/set'
 /**
  * Returns the _union of n arrays
  * @see {@link http://www.2ality.com/2015/01/es6-set-operations.html}
+ * @param aa_nowrap{import('@ctx-core/function').a_nowrap_T}
+ * @returns {import('@ctx-core/function').wrap_aa_item_T[]}
+ * @private
  */
 export function union_(aa_nowrap) {
 	const a2 = wrap_aa_(aa_nowrap)

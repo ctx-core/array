@@ -1,5 +1,9 @@
+/** @type {import('../_types').is_match__T}is_match__T */
 /**
  * Returns Array of indices `idx` not rejected by `is_match_`.
+ * @param a{unknown[]}
+ * @param is_match_{is_match__T}
+ * @returns {number[]}
  */
 export function idx_reject(a, is_match_) {
 	const out_a = []
@@ -11,6 +15,12 @@ export function idx_reject(a, is_match_) {
 	}
 	return out_a
 }
+/**
+ * @param maybe_a{unknown[]|undefined}
+ * @param is_match_{is_match__T}
+ * @param or{number[]|null|undefined}
+ * @returns {number[]|null|undefined}
+ */
 export function maybe_idx_reject(
 	maybe_a,
 	is_match_,

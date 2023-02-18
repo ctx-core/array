@@ -1,7 +1,10 @@
 /**
  * Returns Array of values `>= 0` in `val_a`.
+ * @param val_a{number[]}
+ * @returns {number[]}
  */
 export function gte_0_a_(val_a) {
+	/** @type {number[]} */
 	const gte_0_a = []
 	for (let i = 0; i < val_a.length; i++) {
 		const val = val_a[i]

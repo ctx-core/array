@@ -1,6 +1,9 @@
 import { wrap_a_ } from '@ctx-core/function'
 /**
  * Array#`concat`, setting falsy values to an empty Array (`[]`).
+ * @param a_nowrap{import('@ctx-core/function').a_nowrap_T}
+ * @param rest_a{unknown}
+ * @returns {import('@ctx-core/function').wrap_a_T<unknown>}
  */
 export function concat_truthy_a(a_nowrap, ...rest_a) {
 	let out_a = a_nowrap ? wrap_a_(a_nowrap) : []

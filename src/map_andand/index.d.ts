@@ -1,4 +1,4 @@
-import { andand_key_T } from '@ctx-core/function'
+import type { andand_key_T } from '@ctx-core/function'
 /**
  * Returns Array of mapped `a` with `_andand(...name_a)`.
  */

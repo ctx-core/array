@@ -1,5 +1,10 @@
+/** @typedef {import('@ctx-core/function').a_item_T}a_item_T */
 /**
  * Is i0_a `===` to i1_a based on `fn(a, b, i)`? Checks first level equality.
+ * @param i0_a{unknown[]}
+ * @param i1_a{unknown[]}
+ * @param fn{(a:a_item_T, b:a_item_T, idx:number)=>boolean}
+ * @returns {boolean}
  */
 export function eql_fn_a_(i0_a, i1_a, fn) {
 	if (i0_a === i1_a) return true

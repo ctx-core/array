@@ -1,5 +1,7 @@
 /**
  * Returns an Array of sorted indices inverted from `idx_a`.
+ * @param in_idx_a{number[]|unknown}
+ * @returns {number[]|unknown}
  * @example `invert_idx_a_([2, 1, 3, 0]) -> [3, 1, 0, 2]`
  */
 export function invert_idx_a_(in_idx_a) {

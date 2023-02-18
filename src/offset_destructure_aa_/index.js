@@ -1,5 +1,8 @@
 /**
  * Returns 2d Array where `source_a` is destructured into subarray of length `offset`.
+ * @param source_a{unknown[]}
+ * @param offset{number}
+ * @returns {unknown[][]}
  */
 export function offset_destructure_aa_(source_a, offset = 1) {
 	const offset_destructure_aa = []

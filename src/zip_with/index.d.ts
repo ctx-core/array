@@ -6,8 +6,7 @@ export declare function zip_with<
 	O extends readonly unknown[][] = readonly I[number][number][][]
 >(
 	aa:I,
-	fn?:zip_with_fn_T<I[number],
-		O[number]>
+	fn?:zip_with_fn_T<I[number], O[number]>
 ):O
 export declare function maybe_zip_with<
 	I extends readonly unknown[][] = readonly unknown[][],

@@ -6,7 +6,7 @@ export declare function sort_<
 	I extends unknown = unknown
 >(
 	compare?:compare_T<I>
-):(a:readonly I[])=>I[];
+):(a:readonly I[])=>I[]
 export declare function maybe_sort_<
 	I extends unknown = unknown, Or = null
 >(

@@ -1,5 +1,7 @@
 /**
  * Returns Array of values `<= 0` in `val_a`.
+ * @param val_a{number[]}
+ * @returns {number[]}
  */
 export function lte_0_a_(val_a) {
 	const lte_0_a = []

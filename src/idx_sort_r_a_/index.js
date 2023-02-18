@@ -1,4 +1,9 @@
 import { idx_sort_a_ } from '../idx_sort_a_/index.js'
+/**
+ * @param a_r{Record<string, unknown[]>}
+ * @param idx_a{number[]}
+ * @returns {Record<string, unknown[]>}
+ */
 export function idx_sort_r_a_(a_r, idx_a) {
 	const idx_sort_r_a = {}
 	for (const key in a_r) {

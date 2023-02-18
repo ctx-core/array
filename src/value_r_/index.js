@@ -1,5 +1,8 @@
 /**
  * Returns a Hash with a key for each item in `value_a` & value set to the return of `value_`.
+ * @param in_key_a{string[]|undefined}
+ * @param value_{(key:string, i:number)=>unknown}
+ * @returns {Record<string, unknown>}
  */
 export function value_r_(in_key_a, value_) {
 	const value_r = {}

@@ -1,4 +1,9 @@
 import { wrap_aa_ } from '@ctx-core/function'
+/**
+ * @param aa_nowrap{unknown}
+ * @param [by_]{(item:unknown)=>unknown}
+ * @returns {unknown[]}
+ */
 export function difference_by_(aa_nowrap, by_ = item=>item) {
 	const a2 = wrap_aa_(aa_nowrap)
 	const set = new Set()

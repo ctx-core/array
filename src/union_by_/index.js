@@ -1,6 +1,11 @@
 import { wrap_aa_ } from '@ctx-core/function'
-export function union_by_(aa_nowrap, by_ = (v)=>v
-) {
+/** @typedef {import('@ctx-core/function').wrap_aa_item_T}wrap_aa_item_T */
+/**
+ * @param aa_nowrap{unknown}
+ * @param [by_]{(v:wrap_aa_item_T)=>union_by_}
+ * @returns {unknown[]}
+ */
+export function union_by_(aa_nowrap, by_ = v=>v) {
 	const a2 = wrap_aa_(aa_nowrap)
 	const set = new Set()
 	const union = []

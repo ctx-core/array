@@ -1,18 +1,18 @@
-import type { is_match_fn_T } from '../_types'
+import type { is_match__T } from '../_types'
 /**
  * Returns function that returns value from [reject](#reject) with `fn` argument.
  */
 export declare function reject_<
 	I extends unknown = unknown, O extends unknown = readonly I[]
 >(
-	is_match_:is_match_fn_T<I>
+	is_match_:is_match__T<I>
 ):(a:readonly I[])=>O
 export declare function maybe_reject_<
 	I extends unknown = unknown,
 	O extends unknown = readonly I[],
 	Or = null
 >(
-	is_match_:is_match_fn_T<I>,
+	is_match_:is_match__T<I>,
 	or?:Or
 ):(a:readonly I[]|undefined)=>O|Or
 export {

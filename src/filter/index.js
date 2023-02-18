@@ -1,5 +1,9 @@
+/** @typedef {import('../_types').is_match__T}is_match__T */
 /**
  * Returns Array where items in `a` are filtered by `fn`.
+ * @param a{unknown[]}
+ * @param is_match_fn{is_match__T}
+ * @returns {unknown[]}
  */
 export function filter(a, is_match_fn) {
 	const out_a = []
@@ -11,6 +15,16 @@ export function filter(a, is_match_fn) {
 	}
 	return out_a
 }
+export {
+	filter_ as _filter,
+	filter_ as _fn__filter,
+}
+/**
+ * @param maybe_a{unknown[]|undefined}
+ * @param is_match_fn{is_match__T}
+ * @param or{unknown[]|null|undefined}
+ * @returns {unknown[]|null|undefined}
+ */
 export function maybe_filter(
 	maybe_a,
 	is_match_fn,
@@ -22,14 +36,20 @@ export function maybe_filter(
 /**
  * Returns function that returns value from [filter](#filter) with `fn` argument.
  */
+/**
+ * @param is_match_fn{is_match__T}
+ * @returns {(a:unknown[])=>unknown[]}
+ */
 export function filter_(is_match_fn) {
 	return (a)=>filter(a, is_match_fn)
 }
+/**
+ * @param is_match_fn{is_match__T}
+ * @returns {(maybe_a:unknown[]|undefined)=>unknown[]}
+ */
 export function maybe_filter_(is_match_fn) {
 	return (maybe_a)=>filter(maybe_a, is_match_fn)
 }
 export {
-	filter_ as _filter,
-	filter_ as _fn__filter,
 	maybe_filter_ as _maybe_filter,
 }

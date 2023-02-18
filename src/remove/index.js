@@ -1,6 +1,9 @@
 import { remove_idx } from '../remove_idx/index.js'
 /**
  * Remove each `...item_a` from `a`.
+ * @param a{unknown[]}
+ * @param item_a{unknown}
+ * @returns {unknown}
  */
 export function remove(a, ...item_a) {
 	for (let i = 0; i < item_a.length; i++) {
@@ -12,6 +15,11 @@ export function remove(a, ...item_a) {
 	}
 	return a
 }
+/**
+ * @param maybe_a{unknown[]|undefined}
+ * @param item_a{unknown}
+ * @returns {unknown}
+ */
 export function maybe_remove(maybe_a, ...item_a) {
 	if (!maybe_a) return
 	return remove(maybe_a, ...item_a)

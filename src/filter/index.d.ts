@@ -1,4 +1,4 @@
-import type { is_match_fn_T } from '../_types'
+import type { is_match__T } from '../_types'
 /**
  * Returns Array where items in `a` are filtered by `fn`.
  */
@@ -6,13 +6,13 @@ export declare function filter<
 	Val extends unknown = unknown
 >(
 	a:readonly Val[],
-	is_match_fn:is_match_fn_T<Val>
+	is_match_fn:is_match__T<Val>
 ):Val[]
 export declare function maybe_filter<
 	Val extends unknown = unknown, Or = null
 >(
 	maybe_a:readonly Val[]|undefined,
-	is_match_fn:is_match_fn_T<Val>,
+	is_match_fn:is_match__T<Val>,
 	or?:Or
 ):Val[]|Or
 /**
@@ -21,12 +21,12 @@ export declare function maybe_filter<
 export declare function filter_<
 	I extends unknown = unknown
 >(
-	is_match_fn:is_match_fn_T<I>
+	is_match_fn:is_match__T<I>
 ):(a:readonly I[])=>I[]
 export declare function maybe_filter_<
 	I extends unknown = unknown
 >(
-	is_match_fn:is_match_fn_T<I>
+	is_match_fn:is_match__T<I>
 ):(maybe_a:readonly I[]|undefined)=>I[]
 export {
 	filter_ as _filter,

@@ -1,6 +1,11 @@
 /**
  * Returns an Array of incrementing index (`idx`) values with `start=0`.
  */
+/**
+ * @param count{number}
+ * @param start{number}
+ * @returns {number[]}
+ */
 export function idx_a_(count, start = 0) {
 	const idx_a = []
 	for (let i = 0; i < count; i++) {

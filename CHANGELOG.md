@@ -1,5 +1,28 @@
 # @ctx-core/array
 
+## 26.11.0
+
+### Minor Changes
+
+- +sort_idx_o_T: aliased by sort_idx_ctx_T
+- - find\_: aliased by find_fn
+- - sort_idx_ctx\_\_: aliased by sort_idx_ctx_2
+- - idx_item_r\_\_: aliased by item_r_idx_2
+- - sort_idx_ctx\_\_T: aliased by sort_idx_ctx_2_T
+- - is_match\_\_T: aliased by is_match_fn_T
+- - maybe*a\_\_length*: aliased by maybe_a_length$
+
+### Patch Changes
+
+- - jsdocs
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/function@21.7.0
+
 ## 26.10.2
 
 ### Patch Changes

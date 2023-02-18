@@ -1,4 +1,9 @@
 import { wrap_aa_ } from '@ctx-core/function'
+/**
+ * @param aa_nowrap{unknown}
+ * @param by_{(v:import('@ctx-core/function').wrap_aa_item_T<unknown>)=>unknown}
+ * @returns {unknown[]}
+ */
 export function intersection_by_(aa_nowrap, by_ = (v)=>v) {
 	const a2 = wrap_aa_(aa_nowrap)
 	const intersection_map = new Map()

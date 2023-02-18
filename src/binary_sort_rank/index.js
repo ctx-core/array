@@ -1,5 +1,8 @@
 /**
  * Returns the rank of the item where the compare function === 0, using binarySort
+ * @param a{unknown[]}
+ * @param compare_1{import('../_types').compare_1_T}
+ * @returns {number}
  */
 export function binary_sort_rank(a, compare_1) {
 	let min_index = 0

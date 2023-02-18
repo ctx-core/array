@@ -1,5 +1,8 @@
 /**
  * Returns true if some `predicate(value)` is truthy
+ * @param a{unknown[]}
+ * @param predicate{(val:unknown, index:number, a:unknown[])=>unknown}
+ * @returns {boolean}
  */
 export function some(a, predicate) {
 	let index = -1

@@ -1,4 +1,4 @@
-import { wrap_aa_item_T } from '@ctx-core/function'
+import type { wrap_aa_item_T } from '@ctx-core/function'
 export declare function intersection_by_<
 	I extends unknown = unknown, O extends unknown = unknown
 >(

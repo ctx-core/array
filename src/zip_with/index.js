@@ -1,5 +1,9 @@
+/** @typedef {import('./index.d.ts').zip_with_fn_T}zip_with_fn_T */
 /**
  * Returns 2d Array where each item being the return value of `fn` given the index value for each Array in `wrap_aa_T`.
+ * @param aa{unknown[][]}
+ * @param [fn]{zip_with_fn_T}
+ * @returns {unknown[][]}
  */
 export function zip_with(aa, fn) {
 	if (!fn) fn = default_zip_with_2()
@@ -17,10 +21,19 @@ export function zip_with(aa, fn) {
 	}
 	return zip_with_aa
 }
+/**
+ * @param a2{unknown[][]}
+ * @param [fn]{zip_with_fn_T}
+ * @param [or]{unknown[][]|null|undefined}
+ * @returns {unknown[][]|null|undefined}
+ */
 export function maybe_zip_with(a2, fn, or = null) {
 	if (!a2) return or
 	return zip_with(a2, fn)
 }
+/**
+ * @returns {(a:unknown[], i:number)=>unknown[]}
+ */
 export function default_zip_with_2() {
 	return (a, _i)=>a
 }

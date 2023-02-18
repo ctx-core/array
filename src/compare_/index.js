@@ -1,5 +1,7 @@
 /**
  * Returns a basic ascending or descending `compare` function to be used for sorting.
+ * @param [asc]:boolean
+ * @returns {import('../_types').compare_T}
  */
 export function compare_(asc = true) {
 	return (a, b)=>{
@@ -8,19 +10,23 @@ export function compare_(asc = true) {
 		return 0
 	}
 }
+export {
+	compare_ as _compare,
+	compare_ as _fn__compare,
+}
 /**
  * Compare function to sort by ascending order.
  */
 export const asc_compare = compare_(true)
+export {
+	asc_compare as compare__asc,
+	asc_compare as fn__compare__asc,
+}
 /**
  * Compare function to sort by descending order.
  */
 export const desc_compare = compare_(false)
 export {
-	compare_ as _compare,
-	compare_ as _fn__compare,
-	asc_compare as compare__asc,
-	asc_compare as fn__compare__asc,
 	desc_compare as compare__desc,
 	desc_compare as fn__compare__desc,
 }

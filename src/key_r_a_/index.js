@@ -1,6 +1,8 @@
 import { wrap_a_, concat } from '@ctx-core/function'
 /**
  * Returns a hash of arrays grouped by each key in each `ctx` in `ctx_a`.
+ * @param ctx_a_nowrap{Record<string, object>|Record<string, object>[]}
+ * @returns {Record<string, object[]>}
  */
 export function key_r_a_(ctx_a_nowrap) {
 	const ctx_a = wrap_a_(ctx_a_nowrap)

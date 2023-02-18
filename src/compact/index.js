@@ -1,5 +1,7 @@
 /**
  * Removes null values from the array
+ * @param a{unknown[]}
+ * @returns {unknown[]}
  */
 export function compact(a) {
 	const out_a = []
@@ -10,6 +12,11 @@ export function compact(a) {
 	}
 	return out_a
 }
+/**
+ * @param maybe_a{unknown[]}
+ * @param [or]{unknown[]|null|undefined}
+ * @returns {unknown[]|null|undefined}
+ */
 export function maybe_compact(maybe_a, or = null) {
 	if (!maybe_a) return or
 	return compact(maybe_a)

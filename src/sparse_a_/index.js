@@ -1,5 +1,8 @@
 /**
  * Returns a sparsely populated Array with `idx_a` indices & `val_a` values
+ * @param idx_a{number[]}
+ * @param val_a{unknown[]}
+ * @returns {unknown[]}
  */
 export function sparse_a_(idx_a, val_a) {
 	const sparse_a = []

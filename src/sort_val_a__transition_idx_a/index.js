@@ -1,6 +1,11 @@
 import { eq } from '@ctx-core/function'
+/** @typedef {import('@ctx-core/function').eq_T}eq_T */
+/** @typedef {import('../_types').sort_val_a__transition_a_frame_fn_T}sort_val_a__transition_a_frame_fn_T */
+/** @typedef {import('../_types').sort_val_a__transition_a_frame_T}sort_val_a__transition_a_frame_T */
 /**
  * Returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T) of presumably sorted items in `val_a` at each index of the new item for each changed item.
+ * @param sort_val_a{unknown[]|undefined}
+ * @returns {sort_val_a__transition_a_frame_T}
  */
 export function sort_val_a__enter_a_frame_(sort_val_a) {
 	return sort_val_a__enter_a_frame_fn_()(sort_val_a)
@@ -14,9 +19,11 @@ export {
 }
 /**
  * Returns a function that returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T)
+ * @param [eq_]{eq_T}
+ * @returns {sort_val_a__transition_a_frame_fn_T}
  */
 export function sort_val_a__enter_a_frame_fn_(eq_ = eq) {
-	return (sort_val_a)=>{
+	return sort_val_a=>{
 		const idx_a = []
 		const val_a = []
 		if (sort_val_a) {
@@ -47,6 +54,8 @@ export {
 }
 /**
  * Returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T) of presumably sorted items in `val_a` at each index of the old item for each changed item.
+ * @param [sort_val_a]{unknown[]}
+ * @returns {sort_val_a__transition_a_frame_T}
  */
 export function sort_val_a__exit_a_frame_(sort_val_a) {
 	return sort_val_a__exit_a_frame_fn_()(sort_val_a)
@@ -60,10 +69,17 @@ export {
 }
 /**
  * Returns a function that returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T)
+ * @param [eq_]{eq_T}
+ * @returns {sort_val_a__transition_a_frame_fn_T}
  */
 export function sort_val_a__exit_a_frame_fn_(eq_ = eq) {
-	return (sort_val_a)=>{
+	/**
+	 * @param sort_val_a{unknown[]}
+	 */
+	return sort_val_a=>{
+		/** @type {number[]} */
 		const idx_a = []
+		/** @type {unknown[]} */
 		const val_a = []
 		if (sort_val_a) {
 			const sort_val_a_length = sort_val_a.length
@@ -80,10 +96,7 @@ export function sort_val_a__exit_a_frame_fn_(eq_ = eq) {
 				}
 			}
 		}
-		return {
-			idx_a,
-			val_a
-		}
+		return { idx_a, val_a, }
 	}
 }
 export {

@@ -1,5 +1,7 @@
 /**
  * Returns a [sort_val_a__transition_a_frame_T](#sort_val_a__transition_a_frame_T)
+ * @param sparse_a{unknown[]}
+ * @returns {import('../_types').sort_val_a__transition_a_frame_T}
  */
 export function compact_a_ctx_(sparse_a) {
 	const idx_a = []

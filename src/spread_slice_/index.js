@@ -1,6 +1,8 @@
 import { slice } from '../slice/index.js'
 /**
  * Returns a function that slices the spread argument array with `arg_a`
+ * @param arg_a{unknown}
+ * @returns {import('./index.d.ts').spread_slice__arg_T}
  */
 export function spread_slice_(...arg_a) {
 	return (...a)=>slice(a, ...arg_a)

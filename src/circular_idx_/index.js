@@ -1,5 +1,8 @@
 /**
  * Returns `idx` % `length`.
+ * @param length{number}
+ * @param [idx]{number}
+ * @returns {number}
  */
 export function circular_idx_(length, idx = 0) {
 	return (length + idx % length) % length || 0

@@ -1,6 +1,9 @@
 import { circular_idx_ } from '../circular_idx_/index.js'
 /**
  * Returns Index of the next item, circular wrapping to the beginning (`0`).
+ * @param length{number}
+ * @param index{number}
+ * @returns {number}
  */
 export function next_idx_(length, index = 0) {
 	return circular_idx_(length, index + 1)

@@ -1,5 +1,8 @@
 /**
  * Returns Array of values from `a` with index in `idx_a`.
+ * @param idx_a{number[]}
+ * @param a{unknown[]}
+ * @returns {unknown[]}
  */
 export function a_in_idx_a_map(idx_a, a) {
 	return idx_a.map(idx=>a[idx])

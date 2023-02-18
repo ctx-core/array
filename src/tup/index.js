@@ -1,3 +1,7 @@
+/**
+ * @param data{unknown}
+ * @returns {unknown[]}
+ */
 export function tup(...data) {
 	return data
 }

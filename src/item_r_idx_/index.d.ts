@@ -1,4 +1,4 @@
-import type { idx_item_r_fn_T } from '../item_r_idx_2'
+import type { idx_item_r_fn_T } from '../item_r_idx__'
 /**
  * Returns an Object where each key is `_item(a[idx], idx)` and value is `idx`.
  */

@@ -1,6 +1,11 @@
 import { I__ } from '@ctx-core/combinators'
+/** @typedef {import('../_types').is_match__T}is_match__T */
+/** @typedef {import('@ctx-core/function').a_item_T}a_item_T */
 /**
  * Returns Array of `idx` indices filtered by `fn`.
+ * @param in_a{unknown[]}
+ * @param is_match_{is_match__T<a_item_T<unknown>>}
+ * @returns {number[]}
  */
 export function idx_filter(in_a, is_match_ = I__) {
 	const a = in_a
@@ -13,6 +18,12 @@ export function idx_filter(in_a, is_match_ = I__) {
 	}
 	return idx_a
 }
+/**
+ * @param maybe_a{number[]|undefined}
+ * @param is_match_{is_match__T<a_item_T<unknown>>}
+ * @param or{number[]|null|undefined}
+ * @returns {number[]|null|undefined}
+ */
 export function maybe_idx_filter(
 	maybe_a,
 	is_match_ = I__,
@@ -23,10 +34,17 @@ export function maybe_idx_filter(
 }
 /**
  * Returns function that returns value from [idx_filter](#idx_filter) with `fn` argument.
+ * @param is_match_{is_match__T<number>}
+ * @returns {(a:number[])=>number[]}
  */
 export function idx_filter_(is_match_ = I__) {
 	return (a)=>idx_filter(a, is_match_)
 }
+/**
+ * @param is_match_{is_match__T<number>}
+ * @returns {(a:number[]|undefined)=>number[]|undefined}
+ * @private
+ */
 export function maybe_idx_filter_(is_match_ = I__) {
 	return (a)=>maybe_idx_filter(a, is_match_)
 }
