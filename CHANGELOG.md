@@ -1,5 +1,25 @@
 # @ctx-core/array
 
+## 26.11.5
+
+### Patch Changes
+
+- aliases: fix: + generic type
+
+  is_match_fn_T
+  \_is_match_T
+  \_is_match_type
+  \_item_key_idx_val_T
+  \_item_key_idx_val_type
+  sort_idx_ctx_2_T
+  sort_idx_ctx_a1_fn_type
+  fn**a1**ctx**idx**sort
+  sort_idx_ctx_T
+  ctx**idx**sort
+  sort_val_a$transition_a_frame_fn_T
+  thold_a_compact_ctx\_\_T
+  thold_a1_compact_ctx_fn_type
+
 ## 26.11.4
 
 ### Patch Changes
