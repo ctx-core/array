@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.11.13
+
+### Patch Changes
+
+- @ctx-core/function: 21.8.0
+
 ## 26.11.12
 
 ### Patch Changes
