@@ -1,6 +1,5 @@
-export type {
-	eql_a_, isArray, flatten, wrap_a_, wrap_aa_, wrap_a_T, wrap_aa_item_T, a_nowrap_T
-} from '@ctx-core/function'
+export { eql_a_, isArray, flatten, wrap_a_, wrap_aa_ } from '@ctx-core/function'
+export type { wrap_a_T, wrap_aa_item_T, a_nowrap_T } from '@ctx-core/function'
 export * from './_types'
 export * from './a_in_idx_a_map'
 export * from './a_length_'

@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.11.21
+
+### Patch Changes
+
+- fix: export { eql*a*, isArray, flatten, wrap*a*, wrap*aa* } from '@ctx-core/function'
+
 ## 26.11.20
 
 ### Patch Changes
