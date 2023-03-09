@@ -1,6 +1,6 @@
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
-import { numeric_range_ } from './index'
+import { numeric_range_ } from '../index'
 test('numeric_range_', ()=>{
 	equal(numeric_range_(5), [0, 1, 2, 3, 4])
 	equal(numeric_range_(0, 5), [0, 1, 2, 3, 4])
