@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.12.0
+
+### Minor Changes
+
+- - numeric*range*
+
 ## 26.11.21
 
 ### Patch Changes
