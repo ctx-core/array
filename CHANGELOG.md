@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 26.12.32
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.3.3 -> ^20.3.4
+- Updated dependencies
+  - @ctx-core/combinators@8.0.61
+  - @ctx-core/function@21.17.19
+  - @ctx-core/object@27.4.23
+  - @ctx-core/set@12.1.45
+
 ## 26.12.31
 
 ### Patch Changes
