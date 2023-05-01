@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.12.34
+
+### Patch Changes
+
+- @ctx-core/object: ^27.4.24 -> ^27.4.25
+
 ## 26.12.33
 
 ### Patch Changes
