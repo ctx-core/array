@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 26.13.0
+
+### Minor Changes
+
+- - chunk_aa_T
+
+  chunk*aa*: returns chunk_aa_T
+
 ## 26.12.45
 
 ### Patch Changes
