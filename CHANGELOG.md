@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.14.0
+
+### Minor Changes
+
+- - idx*sort_a_sort_idx_o*: aliased by idx*sort_a_sort_idx_ctx*
+
 ## 26.13.0
 
 ### Minor Changes
