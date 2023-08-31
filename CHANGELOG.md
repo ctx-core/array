@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 26.14.1
+
+### Patch Changes
+
+- @ctx-core/object: ^28.0.4 -> ^28.0.5
+
 ## 26.14.0
 
 ### Minor Changes
