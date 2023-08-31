@@ -6,7 +6,10 @@ import { sort } from '../sort/index.js'
  * @param [compare]{import('../_types').compare_T}
  * @returns {import('../_types').sort_idx_o_T}
  */
-export function sort_idx_ctx_(maybe_a, compare = compare_()) {
+export function sort_idx_o_(
+	maybe_a,
+	compare = compare_()
+) {
 	const sort_a = []
 	const sort_val_a = []
 	const sort_idx_a = []
@@ -30,6 +33,7 @@ export function sort_idx_ctx_(maybe_a, compare = compare_()) {
 	}
 }
 export {
-	sort_idx_ctx_ as _sort_idx_ctx,
-	sort_idx_ctx_ as _ctx__idx__sort,
+	sort_idx_o_ as sort_idx_ctx_,
+	sort_idx_o_ as _sort_idx_ctx,
+	sort_idx_o_ as _ctx__idx__sort,
 }
