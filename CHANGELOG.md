@@ -1,5 +1,16 @@
 # @ctx-core/array
 
+## 26.15.5
+
+### Patch Changes
+
+- tsx: ^3.13.0 -> ^3.14.0
+- Updated dependencies
+  - @ctx-core/combinators@8.0.63
+  - @ctx-core/function@21.20.2
+  - @ctx-core/object@28.2.1
+  - @ctx-core/set@12.1.50
+
 ## 26.15.4
 
 ### Patch Changes
