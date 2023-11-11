@@ -1,5 +1,28 @@
 # @ctx-core/array
 
+## 27.0.0
+
+### Major Changes
+
+- ∋ ctx-core/array
+
+### Minor Changes
+
+- fix:types package.json exports
+- tsconfig:
+
+      "module": "ESNext"
+      "moduleResolution": "nodenext"
+      "target": "ESNext"
+
+### Patch Changes
+
+- package.json: - "svelte": "./src/index.js"
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@2.1.0
+
 ## 26.15.9
 
 ### Patch Changes
@@ -96,7 +119,7 @@
 
 - - chunk_aa_T
 
-  chunk*aa*: returns chunk_aa_T
+chunk*aa*: returns chunk_aa_T
 
 ## 26.12.45
 
@@ -885,7 +908,8 @@
 
 ### Patch Changes
 
-- fix: alias functions: sort*val_a\$enter_a_frame*,sort*val_a\$enter_a_frame_fn*,sort*val_a\$exit_a_frame*,sort*val_a\$exit_a_frame_fn*
+- fix: alias functions: sort*val_a\$enter_a_frame*,sort*val_a\$enter_a_frame_fn*,sort*val_a\$exit_a_frame*,sort
+  _val_a\$exit_a_frame_fn_
 
 ## 26.5.0
 
