@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 27.0.3
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - ctx-core@2.2.2
+
 ## 27.0.2
 
 ### Patch Changes
