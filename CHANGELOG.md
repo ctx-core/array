@@ -1,5 +1,15 @@
 # @ctx-core/array
 
+## 27.0.4
+
+### Patch Changes
+
+- package.json: files:
+
+      *.d.ts
+      *.js
+      *.json
+
 ## 27.0.3
 
 ### Patch Changes
