@@ -1,5 +1,17 @@
 # @ctx-core/array
 
+## 27.0.17
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@4.0.0
+
 ## 27.0.16
 
 ### Patch Changes
