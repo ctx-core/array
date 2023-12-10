@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 27.1.1
+
+### Patch Changes
+
+- TupleExclude: fix: type error
+- Updated dependencies
+  - ctx-core@4.11.1
+
 ## 27.1.0
 
 ### Minor Changes
