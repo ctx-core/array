@@ -1,5 +1,21 @@
 # @ctx-core/array
 
+## 27.1.0
+
+### Minor Changes
+
+- minor:
+
+      + TupleRest
+      + TupleFirst
+      + TupleExclude
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@4.11.0
+
 ## 27.0.38
 
 ### Patch Changes
