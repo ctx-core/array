@@ -1,5 +1,11 @@
 # @ctx-core/array
 
+## 27.1.30
+
+### Patch Changes
+
+- ctx-core: ^5.8.0 -> ^5.9.0
+
 ## 27.1.29
 
 ### Patch Changes
