@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 27.1.43
+
+### Patch Changes
+
+- ./array: fix: + difference\_
+- Updated dependencies
+  - ctx-core@5.18.1
+
 ## 27.1.42
 
 ### Patch Changes
