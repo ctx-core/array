@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/array",
-	"version": "27.1.44",
+	"version": "27.1.45",
 	"description": "ctx-core array",
 	"keywords": [
 		"ctx-core",
@@ -38,7 +38,7 @@
 		"test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^5.18.3"
+		"ctx-core": "^5.18.4"
 	},
 	"devDependencies": {
 		"c8": "^9.1.0",
