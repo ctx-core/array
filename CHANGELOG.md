@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 27.1.117
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+
 ## 27.1.116
 
 ### Patch Changes
