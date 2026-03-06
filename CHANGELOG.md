@@ -1,5 +1,13 @@
 # @ctx-core/array
 
+## 27.1.168
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+
 ## 27.1.167
 
 ### Patch Changes
